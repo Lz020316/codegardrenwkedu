@@ -1,0 +1,318 @@
+@charset "UTF-8";
+/*尾部开始*/
+.footer{
+    height:1.4928rem;
+    background-color: #222;
+    position: relative;
+    font-family: "微软雅黑" !important;
+}
+.footer a:hover{
+    text-decoration: none !important;
+}
+.footer .center{
+    width: 11.70rem;
+    margin: 0 auto;
+}
+.footer .nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer .nav ul li a{
+    margin-right: 0.3rem;
+    color: #999 !important;
+    line-height: 1;
+}
+.footer figure img{
+    width: 0.94rem;
+    height: 0.94rem;
+    border-radius: 5px;
+}
+.footer figure{
+    margin-top: 10px;
+    margin-right: 0.2rem;
+}
+.footer figure:nth-of-type(1){
+    margin-right: 0.15rem;
+}
+.footer figure figcaption{
+    color: #999;
+    line-height:1;
+}
+.footer figure:nth-of-type(2) figcaption p:before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    background: url("../images/weixin.png") 0 0 / 15px 12px no-repeat;
+    left: 0;
+    top:0;
+}
+.footer figure p{
+    margin:  5px 0;
+}
+.footer figure:nth-of-type(2) figcaption p{
+    padding-left: 15px;
+    text-align: left !important;
+}
+.footer .nav ul li a:hover{
+    color: #fff !important;
+}
+/*尾部结束*/
+@media screen and (max-width:1200px) and (min-width:960px) {
+    .footer{
+        height: auto;/*
+        position: static;*/
+    }/*
+    .footer .nav{
+        position: static;
+        transform: translateY(0);
+    }*/
+
+    /*!*尾部开始*!!*
+    .footer{
+        height: auto !important;
+    }*!
+    .footer .nav{
+        width: 100%;
+    }
+    .footer .nav ul{
+        width: 100%;
+    }
+    .footer .nav ul li{
+        width: 33.33333%;
+        height: 70px;
+    }
+    .footer .nav ul li a{
+        width: 100%;
+        font-size: 0.32rem;
+        height: 1.4rem;
+        line-height: 70px;
+        margin-right: 0 !important;
+    }
+    .footer .center{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer .footer-right{
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer figure img{
+        width: 94px;
+        height: 94px;
+        border-radius: 5px;
+    }
+    .footer figure{
+        margin-top: 20px;
+    }
+    .footer figure:nth-of-type(1){
+        margin-right: 0.3rem;
+    }
+    .footer figure figcaption{
+        color: #999;
+        line-height: 30px;
+    }
+    .footer figure:nth-of-type(2) figcaption p:after{
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 12px;
+        background: url("../images/weixin.png") 0 0 / 15px 12px no-repeat;
+        left: -5px;
+        top: 8px;
+    }
+    !*尾部结束*!*/
+}
+@media screen and (max-width:959px) and (min-width: 768px) {
+    /*尾部开始*/
+    .footer{
+        height: auto !important;
+        position: static;
+    }
+    .footer .nav{
+        width: 100%;
+        position: static;
+        transform: translateY(0);
+    }
+    .footer .nav ul{
+        width: 100%;
+    }
+    .footer .nav ul li{
+        width: 33.33333%;
+    }
+    .footer .nav ul li a{
+        width: 100%;
+        font-size: 0.32rem;
+        line-height:1rem;
+        margin-right: 0 !important;
+    }
+    .footer .center{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer .footer-right{
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer figure img{
+        width: 94px;
+        height: 94px;
+        border-radius: 5px;
+    }
+    .footer figure{
+        margin-top: 20px;
+    }
+    .footer figure:nth-of-type(1){
+        margin-right: 0.3rem;
+    }
+    .footer figure figcaption{
+        color: #999;
+        line-height:1;
+    }
+    /*尾部结束*/
+}
+@media screen and (max-width: 767px) and (min-width:560px){
+    /*尾部开始*/
+    .footer{
+        height: auto !important;
+    }
+    .footer .nav{
+        width: 100%;
+        position: static;
+        transform: translateY(0);
+    }
+    .footer .nav ul{
+        width: 100%;
+    }
+    .footer .nav ul li{
+        width: 33.33333%;
+    }
+    .footer .nav ul li a{
+        width: 100%;
+        font-size: 0.32rem;
+        height: 1rem;
+        line-height:30px;
+        margin-right: 0 !important;
+    }
+    .footer .center{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer .footer-right{
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer figure img{
+        width:2rem;
+        height:2rem;
+        border-radius: 5px;
+    }
+    .footer figure{
+        margin-top: 20px;
+        font-size: .24rem;
+    }
+    .footer figure:nth-of-type(1){
+        margin-right: 0.3rem;
+    }
+    .footer figure:nth-of-type(2) p{
+        margin-left: 5px;
+        padding-left: 18px;
+    }
+    /*尾部结束*/
+}
+@media screen and (max-width: 559px) and (min-width: 480px){
+    /*尾部开始*/
+    .footer{
+        height: auto !important;
+    }
+    .footer .nav{
+        width: 100%;
+        position: static;
+        transform: translateY(0);
+    }
+    .footer .nav ul{
+        width: 100%;
+    }
+    .footer .nav ul li{
+        width: 33.33333%;
+    }
+    .footer .nav ul li a{
+        width: 100%;
+        font-size: 0.32rem;
+        height: 1rem;
+        line-height:30px;
+        margin-right: 0 !important;
+    }
+    .footer .center{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer .footer-right{
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer figure img{
+        width:2rem;
+        height:2rem;
+        border-radius: 5px;
+    }
+    .footer figure{
+        margin-top: 20px;
+        font-size: .24rem;
+    }
+    .footer figure:nth-of-type(1){
+        margin-right: 0.3rem;
+    }
+    /*尾部结束*/
+}
+@media screen and (max-width: 479px){
+    /*尾部开始*/
+    .footer{
+        height: auto !important;
+    }
+    .footer .nav{
+        width: 100%;
+        position: static;
+        transform: translateY(0);
+    }
+    .footer .nav ul{
+        width: 100%;
+    }
+    .footer .nav ul li{
+        width: 33.33333%;
+    }
+    .footer .nav ul li a{
+        width: 100%;
+        font-size: 0.32rem;
+        height: 1rem;
+        line-height:30px;
+        margin-right: 0 !important;
+    }
+    .footer .center{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer .footer-right{
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer figure img{
+        width:2rem;
+        height:2rem;
+        border-radius: 2px;
+    }
+    .footer figure{
+        margin-top: 20px;
+        font-size: .24rem;
+    }
+    .footer figure:nth-of-type(1){
+        margin-right: 0.3rem;
+    }
+    /*尾部结束*/
+}

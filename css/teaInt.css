@@ -1,0 +1,372 @@
+@charset "UTF-8";
+
+.title {
+	font-weight: normal;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.w75 {
+	width: 75%;
+}
+
+.strong {
+	background: #f2f2f2;
+	color: #888;
+}
+
+/* ===========================讲师介绍开始=============================== */
+
+.intrduction .active a {
+	border-color: #ea562e;
+	color: #ea562e !important;
+}
+
+.intrduction p a {
+	border: solid #666;
+	border-width: 0 0 0 5px;
+	color: #000;
+}
+
+.intrduction h3 {
+	color: #333;
+	font-weight: normal;
+}
+
+.intrduction .left p:hover a{
+	color: #428bca;
+}
+.intrduction .right div:nth-child(1) {
+	padding: 4px;
+	border-radius: 4px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+.intrduction .right div:nth-child(1) img {
+	height: 100%;
+}
+.intrduction .right {
+	width: 80%;
+}
+/* ===========================讲师介绍结束=============================== */
+/* ===========================主讲课程开始=============================== */
+.course ul li{
+	width: 23%;
+	margin: 1%;
+}
+.course ul li img{
+	transition: .3s;
+	-webkit-transition: .3s;
+}
+.course ul li:hover img{
+	transform: scale(1.2);
+}
+.course ul li h3{
+	padding: 0 5px;
+}
+.course ul li .study{
+	padding: 0 5px 5px;
+}
+.course .start-study{
+	left: 50%;
+	transform: translate(-50%, 300%);
+	-webkit-transform: translate(-50%, 300%);
+	transition: .3s;
+	-webkit-transition: .3s;
+}
+.course ul li:hover .mark:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0, 0, .5);
+}
+.course ul li:hover .start-study{
+	transform: translate(-50%, -248%);
+	-webkit-transform: translate(-50%, -248%);
+}
+.course ul li:hover{
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.course ul li:hover h3 a{
+	color: #ff662f !important;
+}
+/* ===========================主讲课程结束=============================== */
+/*!* ====================1536px断点以上开始========================== *!
+@media screen and (min-width: 1536px) {
+	.center {
+		width: 12rem;
+	}
+
+	.title {
+		font-size: .26rem;
+		line-height: .44rem;
+		margin-bottom: .15rem;
+	}
+	.start-study{
+		width:1.38rem;
+		line-height: .34rem;
+		border: 1px solid #fff;
+		border-radius:.16rem;
+		font-size:.18rem;
+	}
+	!*******************************讲师介绍*************************!
+	.intrduction{
+		padding-top: 1.4rem;
+	}
+	.intrduction .right div:nth-of-type(2) {
+		padding-left: .2rem;
+		font-size: .14rem;
+	}
+
+	.intrduction .strong {
+		padding: .1rem .15rem;
+	}
+
+	.intrduction p a {
+		font-size: .16rem;
+		margin-top: .2rem;
+		padding-left: .1rem;
+		line-height: .18rem;
+	}
+
+	.intrduction h3 {
+		font-size: .24rem;
+		line-height: .3rem;
+		margin-top: .2rem;
+		margin-bottom: .1rem;
+	}
+
+	.intrduction .left {
+		padding-left: .15rem;
+	}
+
+	!********************************课程介绍******************************!
+
+	.course .study {
+		line-height: .2rem;
+		margin-top: .1rem;
+		font-size: .14rem;
+	}
+
+	.course {
+		line-height: .3rem;
+	}
+
+	.course h3 a {
+		font-size: .16rem;
+	}
+}
+!* ====================1536px断点以上结束========================== *!*/
+/* ====================1535px到1200px断点开始========================== */
+@media screen and (max-width: 1536px) and (min-width: 1200px) {
+	.center {
+		width: 12rem;
+	}
+
+	.title {
+		font-size: .26rem;
+		line-height: .44rem;
+		margin-bottom: .15rem;
+	}
+
+	.start-study{
+		width:1.38rem;
+		line-height: .34rem;
+		border: 1px solid #fff;
+		border-radius:.16rem;
+		font-size:.18rem;
+	}
+	/*****************************************讲师介绍********************************/
+	.intrduction{
+		margin-top: 1rem;
+	}
+	.intrduction .right div:nth-of-type(2) {
+		padding-left: .2rem;
+	}
+
+	.intrduction .strong {
+		padding: .1rem .15rem;
+		font-size: .14rem;
+	}
+
+	.intrduction p a {
+		font-size: .16rem;
+		margin-top: .2rem;
+		padding-left: .1rem;
+		line-height: .18rem;
+	}
+
+	.intrduction h3 {
+		font-size: .24rem;
+		line-height: .3rem;
+		margin-top: .2rem;
+		margin-bottom: .1rem;
+	}
+
+	.intrduction .left {
+		padding-left: .15rem;
+	}
+
+	/******************************课程介绍******************************/
+
+	.course .study {
+		line-height: .2rem;
+		margin-top: .1rem;
+		font-size: .14rem;
+	}
+
+	.course {
+		line-height: .3rem;
+	}
+
+	.course h3 a {
+		font-size: .16rem;
+	}
+}
+/* ====================1535px到1200px断点结束========================== */
+/* ====================1199px到960px断点开始========================== */
+@media screen and (max-width: 1199px) and (min-width: 960px) {
+	/*******************************讲师介绍********************************/
+	.intrduction{
+		margin-top: 1.8rem;
+	}
+	.center {
+		width: 12rem;
+	}
+	.title {
+		font-size: .26rem;
+		line-height: .44rem;
+		margin-bottom: .15rem;
+	}
+	.start-study{
+		width:1.38rem;
+		line-height: .34rem;
+		border: 1px solid #fff;
+		border-radius:.16rem;
+		font-size:.18rem;
+	}
+	.intrduction .right div:nth-of-type(2) {
+		padding-left: .2rem;
+	}
+
+	.intrduction .strong {
+		padding: .1rem .15rem;
+		font-size: .14rem;
+	}
+
+	.intrduction p a {
+		font-size: .16rem;
+		margin-top: .2rem;
+		padding-left: .1rem;
+		line-height: .18rem;
+	}
+
+	.intrduction h3 {
+		font-size: .24rem;
+		line-height: .3rem;
+		margin-top: .2rem;
+		margin-bottom: .1rem;
+	}
+
+	.intrduction .left {
+		padding-left: .15rem;
+	}
+
+	/******************************************课程介绍************************************/
+
+	.course .study {
+		line-height: .2rem;
+		margin-top: .1rem;
+		font-size: .14rem;
+	}
+
+	.course {
+		line-height: .3rem;
+	}
+
+	.course h3 a {
+		font-size: .16rem;
+	}
+}
+/* ====================1199px到960px断点结束========================== */
+/* ====================959px到768px断点开始========================== */
+@media screen and (max-width: 959px) and (min-width: 768px) {
+	/**********************************讲师介绍*****************************/
+	.center {
+		padding: 0 15px;
+		margin: 0 auto;
+	}
+
+	.title {
+		font-size: .32rem;
+		line-height: .8rem;
+		margin-bottom: .15rem;
+	}
+
+	.start-study{
+		width:2.38rem;
+		line-height: .64rem;
+		border: 1px solid #fff;
+		border-radius:.64rem;
+		font-size:.32rem;
+	}
+	/*讲师介绍*/
+	.intrduction{
+		padding-top: 2rem;
+	}
+	.intrduction .right div:nth-of-type(2) {
+		padding-left: .2rem;
+		font-size: .216rem;
+	}
+
+	.intrduction .strong {
+		padding: .1rem .15rem;
+	}
+
+	.intrduction p a {
+		font-size: .216rem;
+		margin-top: .2rem;
+		padding-left: .1rem;
+		line-height: .18rem;
+	}
+
+	.intrduction h3 {
+		font-size: .28rem;
+		line-height: .3rem;
+		margin-top: .2rem;
+		margin-bottom: .1rem;
+	}
+
+	.intrduction .left {
+		padding-left: .15rem;
+	}
+
+	/****************************************课程介绍***********************************/
+
+	.course .study {
+		line-height: .2rem;
+		margin-top: .1rem;
+		font-size: .14rem;
+	}
+	.course ul li{
+		width: 46%;
+		margin: 2%;
+		border-radius:.05rem ;
+	}
+	.course {
+		line-height: .3rem;
+	}
+
+	.course h3 a {
+		line-height: .64rem;
+		font-size: .24rem;
+	}
+	.course ul li:hover .start-study{
+		transform: translate(-50%, -336%);
+		-webkit-transform: translate(-50%, -336%);
+	}
+}
+/* ====================959px到768px断点结束========================== */

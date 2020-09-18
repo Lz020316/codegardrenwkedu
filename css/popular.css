@@ -1,0 +1,388 @@
+@charset "UTF-8";
+body{
+    background-color:#f2f2f2;
+}
+.interview{
+    width:100%;
+}
+.interview .interview-content{
+    display: flex;
+    width:12rem;
+    margin:85px auto;
+}
+.interview .question-son{
+    box-sizing: border-box;
+    background-color:#fff;
+    padding: .15rem;
+    width:9rem;
+}
+.interview .question-son>span{
+    display: block;
+    padding:.2rem 0;
+}
+.interview .question-son>span a{
+    color:red;
+    font-size:.16rem;
+}
+.interview .question-son ul{
+    display: flex;
+    padding:.1rem 0;
+    margin-bottom:.15rem;
+}
+.interview .question-son ul li{
+    margin-right:.05rem;
+    font-size:18px;
+}
+.interview .question-son ul li:nth-of-type(n+2){
+    margin-left:.05rem;
+}
+.question-son-left h2{
+    padding:.2rem 0;
+    font-weight:normal;
+}
+.question-son-left>p span{
+    float: left;
+}
+.question-son-left>p{
+    font-size:.16rem;
+}
+.question-son-left>p a{
+    float: right;
+    color:red;
+}
+.question-son-left div{
+    box-sizing: border-box;
+    padding:.15rem;
+    background-color: #f5f5f5;
+}
+.question-son-left div img{
+    display: block;
+    margin: 0 auto .1rem;
+    width:5.66rem;
+    height:4.88rem;
+}
+.question-son-left div p:first-of-type,
+.question-son-left div p:nth-of-type(7),
+.question-son-left div p:nth-of-type(14){
+    font-weight:bold;
+    margin:.063rem 0 .18rem 0;
+}
+.news-son .news-1,.news-son .news-2{
+    padding:0 .15rem;
+}
+.news-son .news-1{
+    margin-bottom: .15rem;
+    padding-bottom: .15rem;
+}
+.news-son .news-1 ol li a,
+.news-son .news-2 ol li a{
+    display: block;
+}
+.news-son .news-1 ol li a span,
+.news-son .news-2 ol li a span{
+    text-align: center;
+    padding:.01rem .06rem;
+    margin:.05rem .11rem .05rem .05rem;
+    border-radius: .04rem;
+    background-color:#ccc;
+    font-size:.12rem;
+    color:#fff;
+}
+.news-son .news-1 ol li:nth-of-type(-n+3) a span,
+.news-son .news-2 ol li:nth-of-type(-n+3) a span{
+    background-color: #ff583d;
+}
+
+@media screen and (min-width: 1200px) {
+    .interview .question-son ul li:hover a{
+        color:red;
+    }
+    .question-son-left h2{
+        font-size:.2rem;
+
+    }
+    .question-son-left>p{
+        padding:.1rem 0;
+    }
+    .question-son-left div p{
+        text-indent:2em;
+        margin-bottom:.15rem;
+        line-height:.2rem;
+        font-size:.16rem;
+    }
+    .news-son{
+        width:3rem;
+        padding:.15rem .15rem 0 0;
+        margin-left:.15rem;
+        background-color: #fff;
+    }
+    .news-son .news-1 h4,
+    .news-son .news-2 h4{
+        height:.2rem;
+        line-height:.2rem;
+        padding:0 0 .1rem .05rem;
+        font-size:.18rem;
+        font-weight:normal;
+        border-bottom:.01rem solid #ddd;
+    }
+    .news-son .news-1 ol li,
+    .news-son .news-2 ol li{
+        box-sizing: border-box;
+        padding:0 .15rem;
+        height:.43rem;
+        line-height:.43rem;
+        border-bottom:.01rem solid #ddd;
+        font-size:.16rem;
+        transition: .3s background-color;
+    }
+    .news-son .news-1 ol li:hover,
+    .news-son .news-2 ol li:hover{
+        background-color:#F2F2F2;
+    }
+}
+
+/*========================================最小992 最大1199 start  ================================*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .interview .interview-content{
+        box-sizing: border-box;
+        display: flex;
+        width:100%;
+        padding:0 15px;
+        margin:85px auto;
+    }
+    .interview .question-son{
+        box-sizing: border-box;
+        background-color:#fff;
+        padding: .15rem;
+        width:75%;
+    }
+    .question-son ul li a:hover{
+        color:red;
+    }
+    .question-son-left h2{
+        font-size:.22rem;
+    }
+    .question-son-left>p{
+        padding:.1rem 0;
+    }
+    .question-son-left div p{
+        text-indent:2em;
+        margin-bottom:.15rem;
+        line-height:.3rem;
+        font-size:.22rem;
+    }
+    .news-son{
+        width:25%;
+        padding:.15rem .15rem 0 0;
+        margin-left:.15rem;
+        background-color: #fff;
+    }
+    .news-son .news-1{
+        margin-bottom: .15rem;
+        padding-bottom: .15rem;
+    }
+    .news-son .news-1 h4,
+    .news-son .news-2 h4{
+        height:.26rem;
+        line-height:.26rem;
+        padding:0 0 .1rem .05rem;
+        font-size:.24rem;
+        font-weight:normal;
+        border-bottom:.01rem solid #ddd;
+    }
+    .news-son .news-1 ol li,
+    .news-son .news-2 ol li{
+        box-sizing: border-box;
+        padding:0 .15rem;
+        height:.49rem;
+        line-height:.49rem;
+        border-bottom:.01rem solid #ddd;
+        font-size:.2rem;
+        transition: .3s background-color;
+    }
+    .news-son .news-1 ol li a span, .news-son .news-2 ol li a span{
+        font-size:.18rem;
+    }
+}
+/*========================================最小992 最大1199 end  ==================================*/
+
+/*========================================最小768 最大991 start  ==================================*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .interview .interview-content{
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        width:100%;
+        padding:0 15px;
+        margin:85px auto;
+    }
+    .interview .question-son{
+        width:100%;
+    }
+    .interview .question-son ul li{
+        font-size:.32rem;
+    }
+    .question-son-left h2{
+        font-size:.27rem;
+    }
+    .question-son-left>p{
+        padding:.1rem .2rem .1rem 0;
+        font-size:.18rem;
+    }
+    .question-son-left div p{
+        text-indent:2em;
+        margin-bottom:.15rem;
+        line-height:.38rem;
+        font-size:.26rem;
+    }
+    .news-son{
+        width:100%;
+        padding:0 15px;
+        margin-top:.15rem;
+        background-color: #fff;
+    }
+    .news-son .news-1{
+        margin-bottom: .15rem;
+        padding-bottom: .15rem;
+    }
+    .news-son .news-1 h4{
+        margin-top:.1rem;
+    }
+    .news-son .news-1 h4,
+    .news-son .news-2 h4{
+        height:.32rem;
+        line-height:.32rem;
+        padding:.1rem 0 .1rem .05rem;
+        font-size:.3rem;
+        font-weight:normal;
+        border-bottom:.01rem solid #ddd;
+    }
+    .news-son .news-1 ol li,
+    .news-son .news-2 ol li{
+        box-sizing: border-box;
+        padding:0 .15rem;
+        height:.6rem;
+        line-height:.6rem;
+        border-bottom:.01rem solid #ddd;
+        font-size:.26rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 880px) {
+    .question-son-left h2{
+        font-size:.3rem;
+    }
+    .question-son-left div p{
+        font-size:.3rem;
+    }
+    .news-son .news-1 h4, .news-son .news-2 h4{
+         font-size:.32rem;
+     }
+    .news-son .news-1 ol li, .news-son .news-2 ol li{
+        font-size:.3rem;
+    }
+}
+/*========================================最小768 最大991 end  ==================================*/
+
+/*========================================最小320 最大767 start  ==================================*/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .interview .interview-content{
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        width:100%;
+        padding:0 15px;
+        margin:85px auto;
+    }
+    .interview .question-son{
+        width:100%;
+    }
+    .interview .question-son ul li{
+        font-size:.36rem;
+    }
+    .question-son-left h2{
+        font-size:.34rem;
+    }
+    .question-son-left>p{
+        padding:.1rem .2rem .1rem 0;
+        font-size:.28rem;
+    }
+    .question-son-left div p{
+        text-indent:2em;
+        margin-bottom:.15rem;
+        line-height:.46rem;
+        font-size:13px;
+    }
+    .news-son{
+        width:100%;
+        padding:0 15px;
+        margin-top:.15rem;
+        background-color: #fff;
+    }
+    .news-son .news-1{
+        margin-bottom: .15rem;
+        padding-bottom: .15rem;
+    }
+    .news-son .news-1 h4{
+        margin-top:.1rem;
+    }
+    .news-son .news-1 h4,
+    .news-son .news-2 h4{
+        height:.32rem;
+        line-height:.32rem;
+        padding:.1rem 0 .1rem .05rem;
+        font-size:.32rem;
+        font-weight:normal;
+        border-bottom:.01rem solid #ddd;
+    }
+    .news-son .news-1 ol li,
+    .news-son .news-2 ol li{
+        box-sizing: border-box;
+        padding:0 .15rem;
+        height:.6rem;
+        line-height:.6rem;
+        border-bottom:.01rem solid #ddd;
+        font-size:.3rem;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 650px) {
+    .interview .question-son ul li{
+        font-size:.38rem;
+    }
+    .question-son-left h2{
+        font-size:.36rem;
+    }
+    .question-son-left>p{
+        font-size:.3rem;
+    }
+
+    .news-son .news-1 h4, .news-son .news-2 h4{
+        font-size:.34rem;
+    }
+    .news-son .news-1 ol li,
+    .news-son .news-2 ol li{
+        font-size:.32rem;
+        height:.64rem;
+        line-height:.64rem;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 570px) {
+    .interview .question-son ul li{
+        font-size:.4rem;
+    }
+    .question-son-left h2{
+        font-size:.38rem;
+    }
+    .question-son-left>p{
+        font-size:.32rem;
+    }
+    .news-son .news-1 h4, .news-son .news-2 h4{
+        font-size:.36rem;
+    }
+    .news-son .news-1 ol li,
+    .news-son .news-2 ol li{
+        font-size:.34rem;
+        height:.68rem;
+        line-height:.68rem;
+    }
+}
+/*========================================最小320 最大767 end  ====================================*/

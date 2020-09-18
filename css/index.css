@@ -1,0 +1,2425 @@
+@charset "UTF-8";
+/*模态框*/
+.modal{
+    z-index: 1111111111111111 !important;
+}
+.center{
+    width: 11.7rem;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*轮播图开始*/
+.banner{
+    margin-top: 70px;
+}
+.banner .carousel-inner .item img{
+    width: 100%;
+}
+/*轮播图结束*/
+
+/*为你推荐开始*/
+.recommend .center{
+    padding-bottom: 0.25rem;
+}
+.recommend .center ul li{
+    width: calc((100% - 0.9rem) / 4) !important;
+    margin-right: 0.3rem;
+}
+.recommend .center ul li>a{
+    width: 100%;
+    height: 100%;
+}
+.recommend .title h2{
+    font-size: 0.26rem;
+    padding-left: 0.1rem;
+    margin: 25px 0;
+    border-left: 4px solid #ff662f;
+}
+.recommend .title{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.25rem;
+}
+.recommend .title a{
+    color: #ff662f !important;
+    font-size:14px;
+    line-height: 0.78rem;
+}
+.recommend ul li .img{
+    width: 100%;
+    overflow: hidden;
+}
+.recommend ul li:hover .img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(000,000,000,.6);
+}
+.recommend ul li .img img{
+    width: 100%;
+    transition: 1s;
+}
+.recommend ul li .text{
+    box-sizing: border-box;
+    padding: 0.05rem 0.1rem;
+}
+.recommend ul li .text h4 a{
+    font-size: 0.16rem;
+}
+.recommend ul li .text h4{
+    margin: 0.1rem 0;
+}
+.recommend ul li .text span{
+    font-size: 0.14rem;
+}
+.recommend ul li .text>div a{
+    font-size: 0.12rem;
+    color: #ff662f !important;
+}
+.recommend ul li:hover .text h4 a{
+    color: #ff662f !important;
+}
+.recommend ul li:hover .img img{
+    transform: scale(1.2);
+}
+.recommend ul li .img>a{
+    width: 1.36rem;
+    height: 0.32rem;
+    font-size: 0.18rem;
+    line-height: 0.34rem;
+    border:1px solid #fff;
+    border-radius: 0.17rem;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .5s;
+    z-index: -1;
+}
+.recommend ul li:hover .img>a{
+    z-index: 1;
+    top: 50%;
+}
+.recommend ul li:nth-of-type(-n + 2) .img:before{
+    content: '';
+    position: absolute;
+    width: 0.8rem;
+    height: 0.52rem;
+    background: url("../images/vip1.png") 0 0 / 0.8rem 0.52rem no-repeat;
+    top: 0;
+    left: 0;
+    z-index: 111;
+}
+.recommend ul li .text span{
+    color: #999;
+}
+/*为你推荐结束*/
+
+/*大数据最新课程开始*/
+.curriculum .center ul li{
+    width: calc((100% - 0.9rem) / 4) !important;
+    margin-right: 0.3rem;
+}
+.curriculum .center ul li>a{
+    width: 100%;
+    height: 100%;
+}
+.curriculum .title h2{
+    font-size: 0.26rem;
+    padding-left: 0.1rem;
+    margin: 0.1rem 0;
+    border-left: 4px solid #ff662f;
+}
+.curriculum .title{
+    padding-top: 0.2rem;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.25rem;
+}
+.curriculum .title a{
+    color: #ff662f !important;
+    font-size:14px;
+    line-height: 0.43rem;
+}
+.curriculum ul li:hover .img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(000,000,000,.6);
+}
+.curriculum ul li{
+    margin: 0 0.3rem 0.25rem 0;
+}
+.curriculum ul li .img img{
+    width: 100%;
+    transition: 1s;
+}
+.curriculum ul li .text{
+    padding: 0.05rem 0.1rem;
+}
+.curriculum ul li .text h4 a{
+    font-size: 0.16rem;
+}
+.curriculum ul li .text h4{
+    margin: 0.1rem 0;
+}
+.curriculum ul li .text span{
+    font-size: 0.14rem;
+}
+.curriculum ul li .text>div a{
+    font-size: 0.12rem;
+    color: #ff662f !important;
+}
+.curriculum ul li:hover .text h4 a{
+    color: #ff662f !important;
+}
+.curriculum ul li:hover .img img{
+    transform: scale(1.2);
+}
+.curriculum ul li .img>a{
+    width: 1.36rem;
+    height: 0.34rem;
+    font-size: 0.18rem;
+    line-height: 0.34rem;
+    border: 1px solid #fff;
+    border-radius: 0.17rem;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .5s;
+    z-index: -1;
+}
+.curriculum ul li:hover .img>a{
+    z-index: 1;
+    top: 50%;
+}
+.curriculum ul li:not(:nth-of-type(6)) .img:before{
+    content: '';
+    position: absolute;
+    width: 0.8rem;
+    height: 0.52rem;
+    background: url("../images/vip1.png") 0 0 / 0.8rem 0.52rem no-repeat;
+    top: 0;
+    left: 0;
+    z-index: 111;
+}
+/*大数据最新课程结束*/
+
+/*WEB前端最新课程开始*/
+.web .center{
+    padding-top: 0.25rem;
+}
+.web .center ul{
+    padding-bottom: 0.25rem;
+}
+.web .center ul li{
+    width: calc((100% - 7.72%) / 4) !important;
+    margin-right: 0.3rem;
+}
+.web .center ul li > a{
+    width: 100%;
+    height: 100%;
+}
+.web .center ul li img{
+    width: 100%;
+}
+.web .title h2{
+    font-size: 0.26rem;
+    padding-left: 0.1rem;
+    margin: 0.1rem 0;
+    border-left: 4px solid #ff662f;
+}
+.web .title{
+    border-bottom: 0.01rem solid #ddd;
+    margin-bottom: 0.25rem;
+}
+.web .title a{
+    color: #ff662f !important;
+    line-height: 0.43rem;
+}
+.web ul li .img{
+    width: 100%;
+}
+.web ul li:hover .img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(000,000,000,.6);
+}
+.web ul li{
+    margin-right: 0.3rem;
+}
+.web ul li .img img{
+    width: 100%;
+    transition: 1s;
+}
+.web ul li .text{
+    padding: 0.05rem 0.1rem;
+}
+.web ul li .text h4 a{
+    font-size: 0.16rem;
+}
+.web ul li .text h4{
+    margin: 0.1rem 0;
+}
+.web ul li .text span{
+    font-size: 0.14rem;
+}
+.web ul li .text>div a{
+    font-size: 0.12rem;
+    color: #ff662f !important;
+}
+.web ul li:hover .text h4 a{
+    color: #ff662f !important;
+}
+.web ul li:hover .img img{
+    transform: scale(1.2);
+}
+.web ul li .img>a{
+    width: 1.38rem;
+    height: 0.34rem;
+    font-size: 0.18rem;
+    line-height: 0.34rem;
+    border: 1px solid #fff;
+    border-radius: 0.17rem;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .5s;
+    z-index: -1;
+}
+.web ul li:hover .img>a{
+    z-index: 1;
+    top: 50%;
+}
+.web ul li:nth-of-type(-n + 2) .img:before{
+    content: '';
+    position: absolute;
+    width: 0.8rem;
+    height: 0.52rem;
+    background: url("../images/vip1.png") 0 0 / 0.8rem 0.52rem no-repeat;
+    top: 0;
+    left: 0;
+    z-index: 111;
+}
+/*WEB前端最新课程结束*/
+
+/*在线直播开始*/
+.live .title h2{
+    font-size: 0.26rem;
+    padding-left: 0.1rem;
+    margin: 0.1rem 0;
+    border-left:4px solid #ff662f;
+}
+.live .title{
+    border-bottom: 0.01rem solid #ddd;
+    margin-bottom: 0.25rem;
+    padding-top: 0.2rem;
+}
+.live .title a{
+    color: #ff662f !important;
+    line-height: 0.4rem;
+}
+.live ul li{
+    width: calc((100% - 0.9rem) / 4) !important;
+    margin-right: 0.3rem;
+}
+.live ul li > a{
+    width: 100%;
+    height: 100%;
+}
+.live ul li img{
+    width: 100%;
+}
+.live ul li:hover .img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(000,000,000,.6);
+}
+.live ul li .img img{
+    transition: .5s;
+}
+.live ul li:hover .img img{
+    transform: scale(1.2);
+}
+.live ul li .text a{
+    font-size: 0.18rem;
+    line-height: 0.43rem;
+}
+.live ul li .img a{
+    font-size: 0.18rem;
+    width: 1.38rem;
+    height: 0.34rem;
+    line-height: 0.34rem;
+    border: 1px solid #fff;
+    border-radius: 0.16rem;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: .5s;
+}
+.live ul li:hover .img a{
+    top: 50%;
+    z-index: 111;
+}
+.live ul li:hover .text a{
+    color: #ff662f !important;
+}
+.live ul{
+    padding-bottom: 0.25rem;
+}
+/*在线直播结束*/
+
+/*vip专区开始*/
+.vip  .center{
+    display: flex;
+}
+.vip > div > div{
+    width: calc((100% - 0.3rem) / 2);
+}
+.vip{
+    background-color: #f7f8fa;
+    padding: 0.44rem 0 0.5rem;
+}
+.vip .vip-left{
+    padding-top: 0.35rem;
+}
+.vip .vip-left .top .content-left i{
+    width: 0.44rem;
+    height: 0.5rem;
+    background: url("../images/vip3.png") 0 0 / 0.44rem 0.5rem no-repeat;
+}
+.vip .content-left{
+    width: 1.68rem;
+    border-right: 1px #ddd solid;
+    padding-top: 0.35rem;
+}
+.vip .vip-left .top .content-left h3{
+    font-size: 0.3rem;
+    margin: 0.2rem 0 0.13rem;
+}
+.vip .vip-left .top .content-left small{
+    font-size: 0.22rem;
+    color: #ffa900;
+    padding-bottom: 0.1rem;
+}
+.vip .vip-left .top{
+    padding-bottom: 0.3rem;
+    border-bottom: 0.01rem solid #ddd;
+}
+.vip .vip-left .bottom{
+    padding: 0.25rem 0;
+}
+.vip .vip-left .bottom button{
+    width: 1.74rem;
+    height: 0.48rem;
+    background: #ffa900;
+    border-radius: 0.05rem;
+
+}
+.vip .vip-left .bottom button a{
+    width: 100%;
+    height: 100%;
+    font-size: 0.18rem;
+    line-height: 0.48rem;
+}
+.vip .vip-left{
+    margin-right: 0.3rem;
+}
+.vip .vip-left .top .content-right{
+    padding-left: 0.34rem;
+}
+.vip .vip-left .top .content-right dd{
+    font-size: 0.14rem;
+    margin-top: 0.2rem;
+    padding-left: 0.34rem;
+}
+.vip .vip-left .top .content-right dt{
+    font-size: 0.2rem;
+    margin-bottom: 0.1rem;
+}
+.vip .vip-left .top .content-right dd:after{
+    content: '';
+    position: absolute;
+    width: 0.2rem;
+    height: 0.14rem;
+    background: url("../images/vip2.png") 0 0 / 0.2rem 0.14rem no-repeat;
+    top: 0.02rem;
+    left: 0;
+}
+.vip .vip-right .top .content-left i{
+    width: 0.44rem;
+    height: 0.5rem;
+    background: url("../images/vip5.png") 0 0 / 0.44rem 0.5rem no-repeat;
+}
+.vip .vip-right .top .content-left small{
+    color: #ff662f;
+}
+.vip .vip-right .top .content-right dd:after{
+    content: '';
+    position: absolute;
+    width: 0.2rem;
+    height: 0.14rem;
+    background: url("../images/vip4.png") 0 0 / 0.2rem 0.14rem no-repeat;
+    top: 0.02rem;
+    left: 0;
+}
+.vip .vip-right .bottom button{
+    width: 1.74rem;
+    height: 0.48rem;
+    background: #ff662f;
+    border-radius: 0.05rem;
+
+}
+.vip .vip-left .bottom:hover a{
+    opacity: .9;
+}
+/*vip专区结束*/
+
+/*学员薪资开始*/
+.salary .center{
+    display: flex;
+    padding-bottom: 0.25rem;
+}
+.salary .center>div{
+    width: 50%;
+}
+.salary .salary-left{
+    margin-right: 0.3rem;
+}
+.salary .salary-left .title h2{
+    font-size: 0.26rem;
+    padding-left: 0.1rem;
+    border-left: 0.04rem solid #ff662f;
+    margin-bottom: 0.1rem;
+}
+.salary .salary-left .title .box{
+    border-bottom: 0.01rem solid #ddd;
+}
+.salary .salary-left .title{
+    padding: 0.25rem 0;
+}
+.salary .salary-left .content{
+    height: 2.97rem;
+    border: 1px solid #ddd;
+}
+.salary .salary-left .content .caption tr th{
+    font-size: 0.14rem;
+    line-height: 0.36rem;
+    color: #fff;
+    background-color: #FF7043;
+    z-index: 111;
+    text-align: center;
+}
+.salary .salary-left .content .table tr td{
+    line-height: 0.36rem;
+}
+.salary .salary-left .table:hover table:nth-of-type(1),
+.salary .salary-left .table:hover table:nth-of-type(2){
+    animation-play-state: paused;
+}
+.salary .salary-left .table table:nth-of-type(1){
+    animation: top1 10s linear infinite;
+}
+.salary .salary-left .table table:nth-of-type(2){
+    animation: top2 10s linear infinite;
+}
+.table table tr:nth-of-type(even){
+    background-color: #F0F0F0;
+}
+@keyframes top1 {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50.99%{
+        transform: translateY(-100%);
+    }
+    51%{
+        transform: translateY(100%);
+    }
+}
+@keyframes top2 {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50.99%{
+        transform: translateY(-100%);
+    }
+    99.99%{
+        transform: translateY(-200%);
+    }
+}
+.salary .salary-right .content ol li{
+    font-size: 0.16rem;
+    line-height: 0.55rem;
+}
+.salary .salary-right .content ol li span{
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: #ca9191;
+    line-height: 0.2rem;
+    font-size: 0.12rem;
+    border-radius: 0.03rem;
+    margin-right: 0.15rem;
+}
+.salary .salary-right .content ol li:hover{
+    color: #ff662f;
+}
+/*学员薪资结束*/
+
+@media screen and (min-width: 992px) and (max-width:1199px){
+    .center{
+        width: 14.89549rem;
+        padding: 0 15px;
+    }
+    /*为你推荐开始*/
+    .recommend .center{
+        padding-bottom: 0.3876rem;
+    }
+    .recommend .center ul li{
+        width: calc((100% - 0.93rem) / 3) !important;
+        margin-right: 0.465rem;
+    }
+    .recommend .center ul li:nth-of-type(3){
+        display: none;
+    }
+    .title h2{
+        font-size: 0.335127rem !important;
+        padding-left: 0.155rem !important;
+        margin: 0.3871rem 0 0.3rem !important;
+    }
+    .title{
+        margin-bottom: 0.2rem !important;
+    }
+    .title a{
+        font-size: 0.2168rem !important;
+        line-height: 1.068rem !important;
+    }
+    .recommend ul li .text{
+        padding: 0.078rem 0.155rem;
+    }
+    .recommend ul li .text h4 a{
+        font-size: 0.248rem;
+    }
+    .recommend ul li .text h4{
+        margin: 0.155rem 0;
+    }
+    .recommend ul li .text span{
+        font-size: 0.217rem;
+    }
+    .recommend ul li .text>div a{
+        font-size: 0.186rem;
+    }
+    .recommend ul li .img>a{
+        width: 2.1rem;
+        height: 0.496rem;
+        font-size: 0.279rem;
+        line-height: 0.496rem;
+        border-radius: 0.264rem;
+    }
+    .recommend ul li:nth-of-type(-n + 2) .img:before{
+        width: 1.24rem;
+        height: 0.806rem;
+        background: url("../images/vip1.png") 0 0 / 1.24rem 0.806rem no-repeat;
+    }
+    /*为你推荐结束*/
+
+    /*大数据最新课程开始*/
+    .curriculum .center ul li{
+        width: calc((100% - 0.93rem) / 3) !important;
+        margin-right: 0.465rem;
+    }
+    .curriculum .center ul li:nth-of-type(3){
+        display: none !important;
+    }
+    .curriculum .center ul li:nth-of-type(5){
+        display: none !important;
+    }
+    .curriculum ul li .text{
+        padding: 0.078rem 0.155rem;
+    }
+    .curriculum ul li .text h4 a{
+        font-size: 0.248rem;
+    }
+    .curriculum ul li .text h4{
+        margin: 0.155rem 0;
+    }
+    .curriculum ul li .text span{
+        font-size: 0.217rem;
+    }
+    .curriculum ul li .text>div a{
+        font-size: 0.186rem;
+    }
+    .curriculum ul li .img>a{
+        width: 2.1rem;
+        height: 0.496rem;
+        font-size: 0.279rem;
+        line-height: 0.496rem;
+        border-radius: 0.264rem;
+    }
+    .curriculum ul li:not(:nth-of-type(6)) .img:before{
+        width: 1.24rem;
+        height: 0.806rem;
+        background: url("../images/vip1.png") 0 0 / 1.24rem 0.806rem no-repeat;
+    }
+    /*大数据最新课程结束*/
+
+    /*WEB前端最新课程开始*/
+    .web .center ul li{
+        width: calc((100% - 0.93rem) / 3) !important;
+        margin-right: 0.465rem;
+    }
+    .web .center ul li:nth-of-type(3){
+        display: none !important;
+    }
+    .web .title h2{
+        font-size: 0.434rem;
+        padding-left: 0.155rem;
+        margin: 0.3rem 0 0.2rem 0;
+    }
+    .web .title{
+        margin-bottom: 0.2rem;
+    }
+    .web .title a{
+        line-height: 0.946rem;
+    }
+    .web ul li .text{
+        padding: 0.078rem 0.155rem;
+    }
+    .web ul li .text h4 a{
+        font-size: 0.248rem;
+    }
+    .web ul li .text h4{
+        margin: 0.155rem 0;
+    }
+    .web ul li .text span{
+        font-size: 0.217rem;
+    }
+    .web ul li .text>div a{
+        font-size: 0.186rem;
+    }
+    .web ul li .img>a{
+        width: 2.1rem;
+        height: 0.496rem;
+        font-size: 0.279rem;
+        line-height: 0.496rem;
+        border-radius: 0.264rem;
+    }
+    .web ul li:nth-of-type(-n + 2) .img:before{
+        width: 1.24rem;
+        height: 0.806rem;
+        background: url("../images/vip1.png") 0 0 / 1.24rem 0.806rem no-repeat;
+    }
+    /*WEB前端最新课程结束*/
+
+    /*在线直播开始*/
+    .live .title h2{
+        font-size: 0.434rem;
+        padding-left: 0.155rem;
+        margin: 0.3rem 0 0.2rem 0;
+    }
+    .live .title{
+        margin-bottom: 0.2rem;
+    }
+    .live .title a{
+        line-height: 0.946rem;
+    }
+    .live ul{
+        flex-wrap: wrap;
+    }
+    .live ul li{
+        width: calc((100% - 0.93rem) / 3) !important;
+        margin-right: 0.465rem;
+    }
+    .live ul li img{
+        width: 100%;
+    }
+    .live ul li:nth-of-type(3){
+        display: none !important;
+    }
+    .live ul li .text a{
+        font-size: 0.2788rem;
+        line-height: 0.6193rem;
+    }
+    .live ul li .img a{
+        font-size:0.3090545249445633rem;
+        width:2.38rem;
+        height: 0.64rem;
+        line-height: 0.64rem;
+        border-radius: 0.64rem;
+    }
+    .live ul{
+        padding-bottom: 0.25rem;
+    }
+    /*在线直播结束*/
+
+    /*VIP专区开始*/
+    .vip > div > div{
+        width: calc((100% - 0.4645rem) / 2) !important;
+        margin-right: 0.4645rem !important;
+    }
+    .vip > div > div:nth-of-type(2){
+        margin-right: 0 !important;
+    }
+    .vip{
+        padding: 0.6813rem 0 0.7742rem;
+    }
+    .vip .vip-left{
+        padding-top: 0.542rem;
+    }
+    .vip .content-left{
+        width: 35.75%;
+        padding-top: 0.31rem;
+    }
+    .vip .vip-left .top .content-left i{
+        width: 0.6967rem;
+        height: 0.7742rem;
+        background: url("../images/vip3.png") 0 0 / 0.6967rem 0.7742rem no-repeat;
+    }
+    .vip .vip-left .top .content-left h3{
+        font-size: 0.465rem;
+        margin: 0.31rem 0 0.2rem;
+    }
+    .vip .vip-left .top .content-left small{
+        font-size: 0.31rem;
+        padding-bottom: 0.155rem;
+    }
+    .vip .vip-left .top{
+        padding-bottom: 0.4645rem;
+    }
+    .vip .vip-left .bottom{
+        padding: 0.387rem 0;
+    }
+    .vip .vip-left .bottom button{
+        width: 2.694rem;
+        height: 0.743rem;
+        border-radius: 0.08rem;
+    }
+    .vip .vip-left .bottom button a{
+        font-size: 0.28rem;
+        line-height: 0.743rem;
+    }
+    .vip .vip-right .bottom button{
+        width: 2.694rem;
+        height: 0.743rem;
+        border-radius: 0.08rem;
+    }
+    .vip .vip-right .top .content-right dd:after{
+        width: 0.2rem;
+        height: 0.14rem;
+        background: url("../images/vip4.png") 0 0 / 0.2rem 0.14rem no-repeat;
+        top: 0.02rem;
+        left: 0;
+    }
+    .vip .vip-left .top .content-right{
+        padding-left: 0.31rem;
+    }
+    .vip .vip-left .top .content-right dd{
+        font-size: 0.22rem;
+        margin-top: 0.31rem;
+        padding-left: 0.526rem;
+    }
+    .vip .vip-left .top .content-right dt{
+        font-size: 0.31rem;
+        margin-bottom: 0.155rem;
+    }
+    .vip .vip-left .top .content-right dd:after{
+        width: 0.2rem;
+        height: 0.14rem;
+        background: url("../images/vip2.png") 0 0 / 0.2rem 0.14rem no-repeat;
+        top: 0.1rem;
+        left: 0;
+    }
+    .vip .vip-right .top .content-left i{
+        width: 0.6967rem;
+        height: 0.7742rem;
+        background: url("../images/vip5.png") 0 0 / 0.6967rem 0.7742rem no-repeat;
+    }
+
+    /*学员薪资开始*/
+    .salary .center{
+        padding-bottom: 0.387rem;
+    }
+    .salary .salary-left{
+        margin-right: 0.465rem;
+    }
+    .salary .salary-left .title h2{
+        font-size: 0.4rem;
+        padding-left: 0.155rem;
+        margin-bottom: 0.155rem;
+    }
+    .salary .salary-left .title{
+        padding: 0.387rem 0;
+    }
+    .salary .salary-left .content{
+        height: 4.6rem;
+    }
+    .salary .salary-left .content .caption tr th{
+        text-align: center;
+        font-size: 0.22rem;
+        line-height: 0.56rem;
+    }
+    .salary .salary-left .content .table tr td{
+        line-height: 0.56rem;
+    }
+    .salary .salary-right .content ol li{
+        font-size: 0.25rem;
+        line-height: 0.85rem;
+    }
+    .salary .salary-right .content ol li span{
+        width: 0.31rem;
+        height: 0.31rem;
+        line-height: 0.31rem;
+        font-size: 0.186rem;
+        border-radius: 0.06rem;
+        margin-right: 0.23rem;
+    }
+    /*学员薪资结束*/
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .center{
+        width: 14.76rem;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    /*轮播图开始*/
+    .banner{
+        margin-top: 50px;
+    }
+    /*轮播图结束*/
+
+    /*为你推荐开始*/
+    .recommend .center ul li{
+        width: calc((100% - 0.6rem) / 2) !important;
+        margin-right: 0.6rem;
+    }
+    .recommend .center ul li:nth-of-type(-n + 6){
+        margin-bottom: 0.5rem !important;
+    }
+    .recommend .center ul li:nth-of-type(-n + 2){
+        margin-bottom: 0.5rem;
+    }
+    .recommend .center ul li:nth-of-type(2){
+        display: block !important;
+        margin-right: 0;
+    }
+    .recommend .center ul li:nth-of-type(3){
+        display: block !important;
+        margin-bottom: 0 !important;
+    }
+    .recommend .center ul li:nth-of-type(4){
+        margin-bottom: 0 !important;
+    }
+    .recommend .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+    }
+    .recommend .title{
+        margin-bottom: 0.4rem;
+    }
+    .recommend .title a{
+        font-size: 0.28rem;
+        line-height: 1.2rem;
+    }
+    .recommend ul li .text{
+        padding: 0.1rem 0.2rem;
+    }
+    .recommend ul li .text h4 a{
+
+        font-size: 0.32rem;
+    }
+    .recommend ul li .text h4{
+        margin: 0.2rem 0;
+    }
+    .recommend ul li .text span{
+        font-size: 0.28rem;
+    }
+    .recommend ul li .text>div a{
+        font-size: 0.24rem;
+    }
+    .recommend ul li .img>a{
+        width: 2.72rem;
+        height: 0.64rem;
+        font-size: 0.36rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+    }
+    .recommend ul li:nth-of-type(-n + 2) .img:before{
+        width: 1.6rem;
+        height: 1.04rem;
+        background: url("../images/vip1.png") 0 0 / 1.6rem 1.04rem no-repeat;
+    }
+    /*为你推荐结束*/
+
+    /*大数据最新课程开始*/
+    .curriculum .center{
+        padding-bottom: 0.5rem;
+    }
+    .curriculum .center ul li{
+        width: calc((100% - 0.6rem) / 2) !important;
+        margin-right: 0.6rem !important;
+        margin-bottom: 0.5rem;
+    }
+    .curriculum .center ul li:nth-of-type(2){
+        margin-right: 0 !important;
+    }
+    .curriculum .center ul li:nth-of-type(3){
+        display: block !important;
+    }
+    .curriculum .center ul li:nth-of-type(4){
+        margin-right: 0 !important;
+    }
+    .curriculum .center ul li:nth-of-type(5){
+        display: block !important;
+    }
+    .curriculum .center ul li:nth-of-type(6){
+        margin-right: 0 !important;
+    }
+    .curriculum .center ul li:nth-of-type(8){
+        margin-right: 0 !important;
+    }
+    .curriculum .center ul li:nth-of-type(7),
+    .curriculum .center ul li:nth-of-type(8){
+        margin-bottom: 0 !important;
+    }
+    .curriculum .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+    }
+    .curriculum .title{
+        margin-bottom: 0.4rem;
+    }
+    .curriculum .title a{
+        font-size: 0.28rem;
+        line-height: 1.2rem;
+    }
+    .curriculum ul li .text{
+        padding: 0.1rem 0.2rem;
+    }
+    .curriculum ul li .text h4 a{
+        font-size: 0.32rem;
+    }
+    .curriculum ul li .text h4{
+        margin: 0.2rem 0;
+    }
+    .curriculum ul li .text span{
+        font-size: 0.28rem;
+    }
+    .curriculum ul li .text>div a{
+        font-size: 0.24rem;
+    }
+    .curriculum ul li .img>a{
+        width: 2.72rem;
+        height: 0.64rem;
+        font-size: 0.36rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+    }
+    .curriculum ul li:not(:nth-of-type(6)) .img:before{
+        width: 1.6rem;
+        height: 1.04rem;
+        background: url("../images/vip1.png") 0 0 / 1.6rem 1.04rem no-repeat;
+    }
+    .ui ul li:nth-of-type(5),
+    .ui ul li:nth-of-type(6){
+        margin-bottom: 0.5rem !important;
+    }
+    /*大数据最新课程结束*/
+
+    /*WEB前端最新课程开始*/
+    .web .center{
+        padding-bottom: 0.5rem;
+    }
+    .web .center ul{
+        flex-wrap: wrap;
+    }
+    .web .center ul li{
+        width: calc((100% - 0.6rem) / 2) !important;
+    }
+    .web .center ul li:nth-of-type(2){
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem;
+    }
+    .web .center ul li:nth-of-type(3){
+        display: block !important;
+    }
+    .web .center ul li:nth-of-type(1){
+        margin-bottom: 0.5rem;
+    }
+    .web .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+    }
+    .web .title{
+        margin-bottom: 0.4rem;
+    }
+    .web .title a{
+        font-size: 0.28rem;
+        line-height: 1.2rem;
+    }
+    .web ul li .text{
+        padding: 0.1rem 0.2rem;
+    }
+    .web ul li .text h4 a{
+        font-size: 0.32rem;
+    }
+    .web ul li .text h4{
+        margin: 0.2rem 0;
+    }
+    .web ul li .text span{
+        font-size: 0.28rem;
+    }
+    .web ul li .text>div a{
+        font-size: 0.24rem;
+    }
+    .web ul li .img>a{
+        width: 2.72rem;
+        height: 0.64rem;
+        font-size: 0.36rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+    }
+    .web ul li:nth-of-type(-n + 2) .img:before{
+        width: 1.24rem;
+        height: 0.806rem;
+        background: url("../images/vip1.png") 0 0 / 1.24rem 0.806rem no-repeat;
+    }
+    /*WEB前端最新课程结束*/
+
+    /*在线直播开始*/
+    .live .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+    }
+    .live .title{
+        margin-bottom: 0.4rem;
+    }
+    .live .title a{
+        font-size: 0.28rem;
+        line-height: 1.2rem;
+    }
+    .live ul{
+        flex-wrap: wrap;
+    }
+    .live ul li{
+        width: calc((100% - 0.6rem) / 2) !important;
+        margin-right: 0.6rem;
+    }
+    .live ul li:nth-of-type( n + 3){
+        margin-top:.4rem ;
+    }
+    .live ul li:nth-of-type(2){
+        margin-right: 0;
+    }
+    .live ul li:nth-of-type(3){
+        display: block !important;
+    }
+    .live ul li .text a{
+        font-size: 0.36rem;
+        line-height: 0.8rem;
+    }
+    .live ul li .img a{
+        width: 2.72rem;
+        height: 0.64rem;
+        font-size: 0.36rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+    }
+    /*在线直播结束*/
+
+    /*vip专区开始*/
+    .vip .center{
+        flex-wrap: wrap;
+    }
+    .vip .vip-left,
+    .vip .vip-right{
+        width: 100% !important;
+        margin-top: .5rem;
+    }
+    .vip{
+        padding: 0.88rem 0 1rem;
+    }
+    .vip .vip-left{
+        padding-top: 0.7rem;
+    }
+    .vip .content-left{
+        width: 4.26rem;
+        padding-top: 0.6rem;
+    }
+    .vip .vip-left .top .content-left h3{
+        font-size: 0.6rem;
+        margin: 0.4rem 0 0.26rem;
+    }
+    .vip .vip-left .top .content-left i{
+        width: 0.88rem;
+        height: 1rem;
+        background: url("../images/vip3.png") 0 0 / 0.88rem 1rem no-repeat;
+    }
+    .vip .vip-left .top .content-left small{
+        font-size: 0.44rem;
+        padding-bottom: 0.2rem;
+    }
+    .vip .vip-left .top{
+        padding-bottom: 0.6rem;
+    }
+    .vip .vip-right .bottom button{
+        width: 3.48rem;
+        height: 0.96rem;
+        border-radius: 0.1rem;
+    }
+    .vip .vip-left .bottom button{
+        width: 3.48rem;
+        height: 0.92rem;
+        border-radius: 0.1rem;
+    }
+    .vip .vip-left .bottom{
+        padding: 0.5rem 0;
+    }
+    .vip .vip-left .bottom button a{
+        font-size: 0.36rem;
+        line-height: 0.96rem;
+    }
+    .vip .vip-right .top .content-right dd:after{
+        width: 0.4rem;
+        height: 0.28rem;
+        background: url("../images/vip4.png") 0 0 / 0.4rem 0.28rem no-repeat;
+        top: 0.04rem;
+        left: 0;
+    }
+    .vip .vip-left .top .content-right dd:after{
+        width: 0.4rem;
+        height: 0.28rem;
+        background: url("../images/vip2.png") 0 0 / 0.4rem 0.28rem no-repeat;
+        top: 0.04rem;
+        left: 0;
+    }
+    .vip .vip-right .top .content-left i{
+        width: 0.88rem;
+        height: 1rem;
+        background: url("../images/vip5.png") 0 0 / 0.88rem 1rem no-repeat;
+    }
+    .vip .vip-left .top .content-right{
+        padding-left: 0.5rem;
+    }
+    .vip .vip-left .top .content-right dd{
+        font-size: 0.28rem;
+        margin-top: 0.4rem;
+        padding-left: 0.68rem;
+    }
+    .vip .vip-left .top .content-right dt{
+        font-size: 0.4rem;
+        margin-bottom: 0.2rem;
+    }
+    /*vip专区结束*/
+
+    /*学员薪资开始*/
+    .salary .center{
+        flex-wrap: wrap;
+    }
+    .salary .center>div{
+        width: 100% !important;
+    }
+    .salary .center{
+        padding-bottom: 0.6rem;
+    }
+    .salary .salary-left .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+        border-left: 4px solid #ff662f;
+    }
+    .salary .salary-left .content{
+        height: 6rem;
+    }
+    .salary .salary-left .content .caption tr th{
+        font-size: 0.28rem;
+        line-height: 0.72rem;
+        text-align: center;
+    }
+    .salary .salary-left .content .table tr td{
+        line-height: 0.72rem;
+    }
+    .salary .salary-right .content ol li{
+        font-size: 0.32rem;
+        line-height: 1.1rem;
+    }
+    .salary .salary-right .content ol li span{
+        width: 0.4rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        font-size: 0.24rem;
+        border-radius: 0.06rem;
+        margin-right: 0.3rem;
+    }
+    /*学员薪资结束*/
+}
+@media screen and (min-width:560px) and (max-width:767px){
+    .center{
+        width: 14.76rem;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    /*轮播图开始*/
+    .banner{
+        margin-top: 50px;
+    }
+    /*轮播图结束*/
+
+    /*为你推荐开始*/
+    .recommend .center ul li{
+        width: calc((100% - 0.6rem) / 2) !important;
+        margin-right: 0.6rem;
+    }
+    .recommend .center ul li:nth-of-type(-n + 6){
+        margin-bottom: 0.5rem !important;
+    }
+    .recommend .center ul li:nth-of-type(-n + 2){
+        margin-bottom: 0.5rem;
+    }
+    .recommend .center ul li:nth-of-type(2){
+        display: block !important;
+        margin-right: 0;
+    }
+    .recommend .center ul li:nth-of-type(3){
+        display: block !important;
+        margin-bottom: 0 !important;
+    }
+    .recommend .center ul li:nth-of-type(4){
+        margin-bottom: 0 !important;
+    }
+    .recommend .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+    }
+    .recommend .title{
+        margin-bottom: 0.4rem;
+    }
+    .recommend .title a{
+        font-size: 0.28rem;
+        line-height: 1.2rem;
+    }
+    .recommend ul li .text{
+        padding: 0.1rem 0.2rem;
+    }
+    .recommend ul li .text h4 a{
+
+        font-size: 0.32rem;
+    }
+    .recommend ul li .text h4{
+        margin: 0.2rem 0;
+    }
+    .recommend ul li .text span{
+        font-size: 0.28rem;
+    }
+    .recommend ul li .text>div a{
+        font-size: 0.24rem;
+    }
+    .recommend ul li .img>a{
+        width: 2.72rem;
+        height: 0.64rem;
+        font-size: 0.36rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+    }
+    .recommend ul li:nth-of-type(-n + 2) .img:before{
+        width: 1.6rem;
+        height: 1.04rem;
+        background: url("../images/vip1.png") 0 0 / 1.6rem 1.04rem no-repeat;
+    }
+    /*为你推荐结束*/
+
+    /*大数据最新课程开始*/
+    .curriculum .center{
+        padding-bottom: 0.5rem;
+    }
+    .curriculum .center ul li{
+        width: calc((100% - 0.6rem) / 2) !important;
+        margin-right: 0.6rem !important;
+        margin-bottom: 0.5rem;
+    }
+    .curriculum .center ul li:nth-of-type(2){
+        margin-right: 0 !important;
+    }
+    .curriculum .center ul li:nth-of-type(3){
+        display: block !important;
+    }
+    .curriculum .center ul li:nth-of-type(4){
+        margin-right: 0 !important;
+    }
+    .curriculum .center ul li:nth-of-type(5){
+        display: block !important;
+    }
+    .curriculum .center ul li:nth-of-type(6){
+        margin-right: 0 !important;
+    }
+    .curriculum .center ul li:nth-of-type(8){
+        margin-right: 0 !important;
+    }
+    .curriculum .center ul li:nth-of-type(7),
+    .curriculum .center ul li:nth-of-type(8){
+        margin-bottom: 0 !important;
+    }
+    .curriculum .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+    }
+    .curriculum .title{
+        margin-bottom: 0.4rem;
+    }
+    .curriculum .title a{
+        font-size: 0.28rem;
+        line-height: 1.2rem;
+    }
+    .curriculum ul li .text{
+        padding: 0.1rem 0.2rem;
+    }
+    .curriculum ul li .text h4 a{
+        font-size: 0.32rem;
+    }
+    .curriculum ul li .text h4{
+        margin: 0.2rem 0;
+    }
+    .curriculum ul li .text span{
+        font-size: 0.28rem;
+    }
+    .curriculum ul li .text>div a{
+        font-size: 0.24rem;
+    }
+    .curriculum ul li .img>a{
+        width: 2.72rem;
+        height: 0.64rem;
+        font-size: 0.36rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+    }
+    .curriculum ul li:not(:nth-of-type(6)) .img:before{
+        width: 1.6rem;
+        height: 1.04rem;
+        background: url("../images/vip1.png") 0 0 / 1.6rem 1.04rem no-repeat;
+    }
+    .ui ul li:nth-of-type(5),
+    .ui ul li:nth-of-type(6){
+        margin-bottom: 0.5rem !important;
+    }
+    /*大数据最新课程结束*/
+
+    /*WEB前端最新课程开始*/
+    .web .center{
+        padding-bottom: 0.5rem;
+    }
+    .web .center ul{
+        flex-wrap: wrap;
+    }
+    .web .center ul li{
+        width: calc((100% - 0.6rem) / 2) !important;
+    }
+    .web .center ul li:nth-of-type(2){
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem;
+    }
+    .web .center ul li:nth-of-type(3){
+        display: block !important;
+    }
+    .web .center ul li:nth-of-type(1){
+        margin-bottom: 0.5rem;
+    }
+    .web .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+    }
+    .web .title{
+        margin-bottom: 0.4rem;
+    }
+    .web .title a{
+        font-size: 0.28rem;
+        line-height: 1.2rem;
+    }
+    .web ul li .text{
+        padding: 0.1rem 0.2rem;
+    }
+    .web ul li .text h4 a{
+        font-size: 0.32rem;
+    }
+    .web ul li .text h4{
+        margin: 0.2rem 0;
+    }
+    .web ul li .text span{
+        font-size: 0.28rem;
+    }
+    .web ul li .text>div a{
+        font-size: 0.24rem;
+    }
+    .web ul li .img>a{
+        width: 2.72rem;
+        height: 0.64rem;
+        font-size: 0.36rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+    }
+    .web ul li:nth-of-type(-n + 2) .img:before{
+        width: 1.24rem;
+        height: 0.806rem;
+        background: url("../images/vip1.png") 0 0 / 1.24rem 0.806rem no-repeat;
+    }
+    /*WEB前端最新课程结束*/
+
+    /*在线直播开始*/
+    .live .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+    }
+    .live .title{
+        margin-bottom: 0.4rem;
+    }
+    .live .title a{
+        font-size: 0.28rem;
+        line-height: 1.2rem;
+    }
+    .live ul{
+        flex-wrap: wrap;
+    }
+    .live ul li:nth-of-type( n + 3){
+        margin-top: .4rem;
+    }
+    .live ul li{
+        width: calc((100% - 0.6rem) / 2) !important;
+        margin-right: 0.6rem;
+    }
+    .live ul li:nth-of-type(2){
+        margin-right: 0;
+    }
+    .live ul li:nth-of-type(3){
+        display: block !important;
+    }
+    .live ul li .text a{
+        font-size: 0.36rem;
+        line-height: 0.8rem;
+    }
+    .live ul li .img a{
+        width: 2.72rem;
+        height: 0.64rem;
+        font-size: 0.36rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+    }
+    /*在线直播结束*/
+
+    /*vip专区开始*/
+    .vip .center{
+        flex-wrap: wrap;
+    }
+    .vip .vip-left,
+    .vip .vip-right{
+        width: 100% !important;
+    }
+    .vip .vip-right{
+        margin-top: .4rem;
+    }
+    .vip{
+        padding: 0.88rem 0 1rem;
+    }
+    .vip .vip-left{
+        padding-top: 0.7rem;
+    }
+    .vip .content-left{
+        width: 4.26rem;
+        padding-top: 0.6rem;
+    }
+    .vip .vip-left .top .content-left h3{
+        font-size: 0.6rem;
+        margin: 0.4rem 0 0.26rem;
+    }
+    .vip .vip-left .top .content-left i{
+        width: 0.88rem;
+        height: 1rem;
+        background: url("../images/vip3.png") 0 0 / 0.88rem 1rem no-repeat;
+    }
+    .vip .vip-left .top .content-left small{
+        font-size: 0.44rem;
+        padding-bottom: 0.2rem;
+    }
+    .vip .vip-left .top{
+        padding-bottom: 0.6rem;
+    }
+    .vip .vip-right .bottom button{
+        width: 3.48rem;
+        height: 0.96rem;
+        border-radius: 0.1rem;
+    }
+    .vip .vip-left .bottom button{
+        width: 3.48rem;
+        height: 0.92rem;
+        border-radius: 0.1rem;
+    }
+    .vip .vip-left .bottom{
+        padding: 0.5rem 0;
+    }
+    .vip .vip-left .bottom button a{
+        font-size: 0.36rem;
+        line-height: 0.96rem;
+    }
+    .vip .vip-right .top .content-right dd:after{
+        width: 0.4rem;
+        height: 0.28rem;
+        background: url("../images/vip4.png") 0 0 / 0.4rem 0.28rem no-repeat;
+        top: 0.04rem;
+        left: 0;
+    }
+    .vip .vip-left .top .content-right dd:after{
+        width: 0.4rem;
+        height: 0.28rem;
+        background: url("../images/vip2.png") 0 0 / 0.4rem 0.28rem no-repeat;
+        top: 0.04rem;
+        left: 0;
+    }
+    .vip .vip-right .top .content-left i{
+        width: 0.88rem;
+        height: 1rem;
+        background: url("../images/vip5.png") 0 0 / 0.88rem 1rem no-repeat;
+    }
+    .vip .vip-left .top .content-right{
+        padding-left: 0.5rem;
+    }
+    .vip .vip-left .top .content-right dd{
+        font-size: 0.28rem;
+        margin-top: 0.4rem;
+        padding-left: 0.68rem;
+    }
+    .vip .vip-left .top .content-right dt{
+        font-size: 0.4rem;
+        margin-bottom: 0.2rem;
+    }
+    /*vip专区结束*/
+
+    /*学员薪资开始*/
+    .salary .center{
+        flex-wrap: wrap;
+    }
+    .salary .center>div{
+        width: 100% !important;
+    }
+    .salary .center{
+        padding-bottom: 0.6rem;
+    }
+    .salary .salary-left .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+        border-left: 4px solid #ff662f;
+    }
+    .salary .salary-left .content{
+        height: 6rem;
+    }
+    .salary .salary-left .content .caption tr th{
+        font-size: 0.28rem;
+        line-height: 0.72rem;
+        text-align: center;
+    }
+    .salary .salary-left .content .table tr td{
+        line-height: 0.72rem;
+    }
+    .salary .salary-right .content ol li{
+        font-size: 0.32rem;
+        line-height: 1.1rem;
+    }
+    .salary .salary-right .content ol li span{
+        width: 0.4rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        font-size: 0.24rem;
+        border-radius: 0.06rem;
+        margin-right: 0.3rem;
+    }
+    /*学员薪资结束*/
+}
+@media screen and (max-width:559px) and (min-width: 480px){
+    .center{
+        width:auto;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    /*轮播图开始*/
+    .banner{
+        margin-top: 50px;
+    }
+    /*轮播图结束*/
+
+    /*为你推荐开始*/
+    .recommend .center ul li{
+        width: calc((100% - 0.6rem) / 2) !important;
+        margin-right: 0.6rem;
+    }
+    .recommend .center ul li:nth-of-type(-n + 6){
+        margin-bottom: 0.5rem !important;
+    }
+    .recommend .center ul li:nth-of-type(-n + 2){
+        margin-bottom: 0.5rem;
+    }
+    .recommend .center ul li:nth-of-type(2){
+        display: block !important;
+        margin-right: 0;
+    }
+    .recommend .center ul li:nth-of-type(3){
+        display: block !important;
+        margin-bottom: 0 !important;
+    }
+    .recommend .center ul li:nth-of-type(4){
+        margin-bottom: 0 !important;
+    }
+    .recommend .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+    }
+    .recommend .title{
+        margin-bottom: 0.4rem;
+    }
+    .recommend .title a{
+        font-size: 0.28rem;
+        line-height: 1.2rem;
+    }
+    .recommend ul li .text{
+        padding: 0.1rem 0.2rem;
+    }
+    .recommend ul li .text h4 a{
+
+        font-size: 0.32rem;
+    }
+    .recommend ul li .text h4{
+        margin: 0.2rem 0;
+    }
+    .recommend ul li .text span{
+        font-size: 0.28rem;
+    }
+    .recommend ul li .text>div a{
+        font-size: 0.24rem;
+    }
+    .recommend ul li .img>a{
+        width: 2.72rem;
+        height: 0.64rem;
+        font-size: 0.36rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+    }
+    .recommend ul li:nth-of-type(-n + 2) .img:before{
+        width: 1.6rem;
+        height: 1.04rem;
+        background: url("../images/vip1.png") 0 0 / 1.6rem 1.04rem no-repeat;
+    }
+    /*为你推荐结束*/
+
+    /*大数据最新课程开始*/
+    .curriculum .center{
+        padding-bottom: 0.5rem;
+    }
+    .curriculum .center ul li{
+        width: calc((100% - 0.6rem) / 2) !important;
+        margin-right: 0.6rem !important;
+        margin-bottom: 0.5rem;
+    }
+    .curriculum .center ul li:nth-of-type(2){
+        margin-right: 0 !important;
+    }
+    .curriculum .center ul li:nth-of-type(3){
+        display: block !important;
+    }
+    .curriculum .center ul li:nth-of-type(4){
+        margin-right: 0 !important;
+    }
+    .curriculum .center ul li:nth-of-type(5){
+        display: block !important;
+    }
+    .curriculum .center ul li:nth-of-type(6){
+        margin-right: 0 !important;
+    }
+    .curriculum .center ul li:nth-of-type(8){
+        margin-right: 0 !important;
+    }
+    .curriculum .center ul li:nth-of-type(7),
+    .curriculum .center ul li:nth-of-type(8){
+        margin-bottom: 0 !important;
+    }
+    .curriculum .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+    }
+    .curriculum .title{
+        margin-bottom: 0.4rem;
+    }
+    .curriculum .title a{
+        font-size: 0.28rem;
+        line-height: 1.2rem;
+    }
+    .curriculum ul li .text{
+        padding: 0.1rem 0.2rem;
+    }
+    .curriculum ul li .text h4 a{
+        font-size: 0.32rem;
+    }
+    .curriculum ul li .text h4{
+        margin: 0.2rem 0;
+    }
+    .curriculum ul li .text span{
+        font-size: 0.28rem;
+    }
+    .curriculum ul li .text>div a{
+        font-size: 0.24rem;
+    }
+    .curriculum ul li .img>a{
+        width: 2.72rem;
+        height: 0.64rem;
+        font-size: 0.36rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+    }
+    .curriculum ul li:not(:nth-of-type(6)) .img:before{
+        width: 1.6rem;
+        height: 1.04rem;
+        background: url("../images/vip1.png") 0 0 / 1.6rem 1.04rem no-repeat;
+    }
+    .ui ul li:nth-of-type(5),
+    .ui ul li:nth-of-type(6){
+        margin-bottom: 0.5rem !important;
+    }
+    /*大数据最新课程结束*/
+
+    /*WEB前端最新课程开始*/
+    .web .center{
+        padding-bottom: 0.5rem;
+    }
+    .web .center ul{
+        flex-wrap: wrap;
+    }
+    .web .center ul li{
+        width: calc((100% - 0.6rem) / 2) !important;
+    }
+    .web .center ul li:nth-of-type(2){
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem;
+    }
+    .web .center ul li:nth-of-type(3){
+        display: block !important;
+    }
+    .web .center ul li:nth-of-type(1){
+        margin-bottom: 0.5rem;
+    }
+    .web .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+    }
+    .web .title{
+        margin-bottom: 0.4rem;
+    }
+    .web .title a{
+        font-size: 0.28rem;
+        line-height: 1.2rem;
+    }
+    .web ul li .text{
+        padding: 0.1rem 0.2rem;
+    }
+    .web ul li .text h4 a{
+        font-size: 0.32rem;
+    }
+    .web ul li .text h4{
+        margin: 0.2rem 0;
+    }
+    .web ul li .text span{
+        font-size: 0.28rem;
+    }
+    .web ul li .text>div a{
+        font-size: 0.24rem;
+    }
+    .web ul li .img>a{
+        width: 2.72rem;
+        height: 0.64rem;
+        font-size: 0.36rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+    }
+    .web ul li:nth-of-type(-n + 2) .img:before{
+        width: 1.24rem;
+        height: 0.806rem;
+        background: url("../images/vip1.png") 0 0 / 1.24rem 0.806rem no-repeat;
+    }
+    /*WEB前端最新课程结束*/
+
+    /*在线直播开始*/
+    .live .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+    }
+    .live .title{
+        margin-bottom: 0.4rem;
+    }
+    .live .title a{
+        font-size: 0.28rem;
+        line-height: 1.2rem;
+    }
+    .live ul{
+    flex-wrap: wrap;
+    }
+    .live ul li:nth-of-type(n + 3){
+        margin-top:.4rem ;
+    }
+     .live ul li{
+        width: calc((100% - 0.6rem) / 2) !important;
+        margin-right: 0.6rem;
+    }
+    .live ul li:nth-of-type(2){
+        margin-right: 0;
+    }
+    .live ul li:nth-of-type(3){
+        display: block !important;
+    }
+    .live ul li .text a{
+        font-size: 0.36rem;
+        line-height: 0.8rem;
+    }
+    .live ul li .img a{
+        width: 2.72rem;
+        height: 0.64rem;
+        font-size: 0.36rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+    }
+    /*在线直播结束*/
+
+    /*vip专区开始*/
+    .vip .center{
+        flex-wrap: wrap;
+    }
+    .vip .vip-left,
+    .vip .vip-right{
+        width: 100% !important;
+    }
+    .vip{
+        padding: 0.88rem 0 1rem;
+    }
+    .vip .vip-left{
+        padding-top: 0.7rem;
+        margin-bottom: .4rem;
+    }
+    .vip .content-left{
+        width: 4.26rem;
+        padding-top: 0.6rem;
+    }
+    .vip .vip-left .top .content-left h3{
+        font-size: 0.6rem;
+        margin: 0.4rem 0 0.26rem;
+    }
+    .vip .vip-left .top .content-left i{
+        width: 0.88rem;
+        height: 1rem;
+        background: url("../images/vip3.png") 0 0 / 0.88rem 1rem no-repeat;
+    }
+    .vip .vip-left .top .content-left small{
+        font-size: 0.44rem;
+        padding-bottom: 0.2rem;
+    }
+    .vip .vip-left .top{
+        padding-bottom: 0.6rem;
+    }
+    .vip .vip-right .bottom button{
+        width: 3.48rem;
+        height: 0.96rem;
+        border-radius: 0.1rem;
+    }
+    .vip .vip-left .bottom button{
+        width: 3.48rem;
+        height: 0.92rem;
+        border-radius: 0.1rem;
+    }
+    .vip .vip-left .bottom{
+        padding: 0.5rem 0;
+    }
+    .vip .vip-left .bottom button a{
+        font-size: 0.36rem;
+        line-height: 0.96rem;
+    }
+    .vip .vip-right .top .content-right dd:after{
+        width: 0.4rem;
+        height: 0.28rem;
+        background: url("../images/vip4.png") 0 0 / 0.4rem 0.28rem no-repeat;
+        top: 0.04rem;
+        left: 0;
+    }
+    .vip .vip-left .top .content-right dd:after{
+        width: 0.4rem;
+        height: 0.28rem;
+        background: url("../images/vip2.png") 0 0 / 0.4rem 0.28rem no-repeat;
+        top: 0.04rem;
+        left: 0;
+    }
+    .vip .vip-right .top .content-left i{
+        width: 0.88rem;
+        height: 1rem;
+        background: url("../images/vip5.png") 0 0 / 0.88rem 1rem no-repeat;
+    }
+    .vip .vip-left .top .content-right{
+        padding-left: 0.5rem;
+    }
+    .vip .vip-left .top .content-right dd{
+        font-size: 0.28rem;
+        margin-top: 0.4rem;
+        padding-left: 0.68rem;
+    }
+    .vip .vip-left .top .content-right dt{
+        font-size: 0.4rem;
+        margin-bottom: 0.2rem;
+    }
+    /*vip专区结束*/
+
+    /*学员薪资开始*/
+    .salary .center{
+        flex-wrap: wrap;
+    }
+    .salary .center>div{
+        width: 100% !important;
+    }
+    .salary .center{
+        padding-bottom: 0.6rem;
+    }
+    .salary .salary-left .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+        border-left: 4px solid #ff662f;
+    }
+    .salary .salary-left .content{
+        height: 6rem;
+    }
+    .salary .salary-left .content .caption tr th{
+        font-size: 0.32rem;
+        line-height: 0.86rem;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    .salary .salary-left .content .table tr td{
+        line-height: 0.86rem;
+        font-size: .32rem;
+    }
+    .salary .salary-right .content ol li{
+        font-size: 0.32rem;
+        line-height: 1.1rem;
+    }
+    .salary .salary-right .content ol li span{
+        width: 0.4rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        font-size: 0.24rem;
+        border-radius: 0.06rem;
+        margin-right: 0.3rem;
+    }
+    /*学员薪资结束*/
+}
+@media screen and (max-width: 479px){
+    .center{
+        width:auto !important;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    /*轮播图开始*/
+    .banner{
+        margin-top: 50px;
+    }
+    /*轮播图结束*/
+
+    /*为你推荐开始*/
+    .recommend .center ul li{
+        width: calc((100% - 0.6rem) / 2) !important;
+        margin-right: 0.6rem;
+    }
+    .recommend .center ul li:nth-of-type(-n + 6){
+        margin-bottom: 0.5rem !important;
+    }
+    .recommend .center ul li:nth-of-type(-n + 2){
+        margin-bottom: 0.5rem;
+    }
+    .recommend .center ul li:nth-of-type(2){
+        display: block !important;
+        margin-right: 0;
+    }
+    .recommend .center ul li:nth-of-type(3){
+        display: block !important;
+        margin-bottom: 0 !important;
+    }
+    .recommend .center ul li:nth-of-type(4){
+        margin-bottom: 0 !important;
+    }
+    .recommend .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+    }
+    .recommend .title{
+        margin-bottom: 0.4rem;
+    }
+    .recommend .title a{
+        font-size: 0.28rem;
+        line-height: 1.2rem;
+    }
+    .recommend ul li .text{
+        padding: 0.1rem 0.2rem;
+    }
+    .recommend ul li .text h4 a{
+
+        font-size: 0.32rem;
+    }
+    .recommend ul li .text h4{
+        margin: 0.2rem 0;
+    }
+    .recommend ul li .text span{
+        font-size: 0.28rem;
+    }
+    .recommend ul li .text>div a{
+        font-size: 0.24rem;
+    }
+    .recommend ul li .img>a{
+        width: 2.72rem;
+        height: 0.64rem;
+        font-size: 0.36rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+    }
+    .recommend ul li:nth-of-type(-n + 2) .img:before{
+        width: 1.6rem;
+        height: 1.04rem;
+        background: url("../images/vip1.png") 0 0 / 1.6rem 1.04rem no-repeat;
+    }
+    /*为你推荐结束*/
+
+    /*大数据最新课程开始*/
+    .curriculum .center{
+        padding-bottom: 0.5rem;
+    }
+    .curriculum .center ul li{
+        width: calc((100% - 0.6rem) / 2) !important;
+        margin-right: 0.6rem !important;
+        margin-bottom: 0.5rem;
+    }
+    .curriculum .center ul li:nth-of-type(2){
+        margin-right: 0 !important;
+    }
+    .curriculum .center ul li:nth-of-type(3){
+        display: block !important;
+    }
+    .curriculum .center ul li:nth-of-type(4){
+        margin-right: 0 !important;
+    }
+    .curriculum .center ul li:nth-of-type(5){
+        display: block !important;
+    }
+    .curriculum .center ul li:nth-of-type(6){
+        margin-right: 0 !important;
+    }
+    .curriculum .center ul li:nth-of-type(8){
+        margin-right: 0 !important;
+    }
+    .curriculum .center ul li:nth-of-type(7),
+    .curriculum .center ul li:nth-of-type(8){
+        margin-bottom: 0 !important;
+    }
+    .curriculum .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+    }
+    .curriculum .title{
+        margin-bottom: 0.4rem;
+    }
+    .curriculum .title a{
+        font-size: 0.28rem;
+        line-height: 1.2rem;
+    }
+    .curriculum ul li .text{
+        padding: 0.1rem 0.2rem;
+    }
+    .curriculum ul li .text h4 a{
+        font-size: 0.32rem;
+    }
+    .curriculum ul li .text h4{
+        margin: 0.2rem 0;
+    }
+    .curriculum ul li .text span{
+        font-size: 0.28rem;
+    }
+    .curriculum ul li .text>div a{
+        font-size: 0.24rem;
+    }
+    .curriculum ul li .img>a{
+        width: 2.72rem;
+        height: 0.64rem;
+        font-size: 0.36rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+    }
+    .curriculum ul li:not(:nth-of-type(6)) .img:before{
+        width: 1.6rem;
+        height: 1.04rem;
+        background: url("../images/vip1.png") 0 0 / 1.6rem 1.04rem no-repeat;
+    }
+    .ui ul li:nth-of-type(5),
+    .ui ul li:nth-of-type(6){
+        margin-bottom: 0.5rem !important;
+    }
+    /*大数据最新课程结束*/
+
+    /*WEB前端最新课程开始*/
+    .web .center{
+        padding-bottom: 0.5rem;
+    }
+    .web .center ul{
+        flex-wrap: wrap;
+    }
+    .web .center ul li{
+        width: calc((100% - 0.6rem) / 2) !important;
+    }
+    .web .center ul li:nth-of-type(2){
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem;
+    }
+    .web .center ul li:nth-of-type(3){
+        display: block !important;
+    }
+    .web .center ul li:nth-of-type(1){
+        margin-bottom: 0.5rem;
+    }
+    .web .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+    }
+    .web .title{
+        margin-bottom: 0.4rem;
+    }
+    .web .title a{
+        font-size: 0.28rem;
+        line-height: 1.2rem;
+    }
+    .web ul li .text{
+        padding: 0.1rem 0.2rem;
+    }
+    .web ul li .text h4 a{
+        font-size: 0.32rem;
+    }
+    .web ul li .text h4{
+        margin: 0.2rem 0;
+    }
+    .web ul li .text span{
+        font-size: 0.28rem;
+    }
+    .web ul li .text>div a{
+        font-size: 0.24rem;
+    }
+    .web ul li .img>a{
+        width: 2.72rem;
+        height: 0.64rem;
+        font-size: 0.36rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+    }
+    .web ul li:nth-of-type(-n + 2) .img:before{
+        width: 1.24rem;
+        height: 0.806rem;
+        background: url("../images/vip1.png") 0 0 / 1.24rem 0.806rem no-repeat;
+    }
+    /*WEB前端最新课程结束*/
+
+    /*在线直播开始*/
+    .live .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+    }
+    .live .title{
+        margin-bottom: 0.4rem;
+    }
+    .live .title a{
+        font-size: 0.28rem;
+        line-height: 1.2rem;
+    }
+    .live ul{
+        flex-wrap: wrap;
+    }
+    .live ul li:nth-of-type(n + 3){
+        margin-top: .4rem;
+    }
+     .live ul li{
+        width: calc((100% - 0.6rem) / 2) !important;
+        margin-right: 0.6rem;
+    }
+    .live ul li:nth-of-type(2){
+        margin-right: 0;
+    }
+    .live ul li:nth-of-type(3){
+        display: block !important;
+    }
+    .live ul li .text a{
+        font-size: 0.36rem;
+        line-height: 0.8rem;
+    }
+    .live ul li .img a{
+        width: 2.72rem;
+        height: 0.64rem;
+        font-size: 0.36rem;
+        line-height: 0.64rem;
+        border-radius: 0.32rem;
+    }
+    /*在线直播结束*/
+
+    /*vip专区开始*/
+    .vip .center{
+        flex-wrap: wrap;
+    }
+    .vip .vip-left,
+    .vip .vip-right{
+        width: 100% !important;
+    }
+    .vip{
+        padding: 0.88rem 0 1rem;
+    }
+    .vip .vip-left{
+        padding-top: 0.7rem;
+        margin-bottom: .4rem;
+    }
+    .vip .content-left{
+        width: 4.26rem;
+        padding-top: 0.6rem;
+    }
+    .vip .vip-left .top .content-left h3{
+        font-size: 0.6rem;
+        margin: 0.4rem 0 0.26rem;
+    }
+    .vip .vip-left .top .content-left i{
+        width: 0.88rem;
+        height: 1rem;
+        background: url("../images/vip3.png") 0 0 / 0.88rem 1rem no-repeat;
+    }
+    .vip .vip-left .top .content-left small{
+        font-size: 0.44rem;
+        padding-bottom: 0.2rem;
+    }
+    .vip .vip-left .top{
+        padding-bottom: 0.6rem;
+    }
+    .vip .vip-right .bottom button{
+        width: 3.48rem;
+        height: 0.96rem;
+        border-radius: 0.1rem;
+        outline: none;
+    }
+    .vip .vip-left .bottom button{
+        width: 3.48rem;
+        height: 0.96rem;
+        border-radius: 0.1rem;
+        outline: none;
+    }
+    .vip .vip-left .bottom{
+        padding: 0.5rem 0;
+    }
+    .vip .vip-left .bottom button a{
+        font-size: 0.36rem;
+        line-height: 0.96rem;
+    }
+    .vip .vip-right .top .content-right dd:after{
+        width: 0.4rem;
+        height: 0.28rem;
+        background: url("../images/vip4.png") 0 0 / 0.4rem 0.28rem no-repeat;
+        top: 0.04rem;
+        left: 0;
+    }
+    .vip .vip-left .top .content-right dd:after{
+        width: 0.4rem;
+        height: 0.28rem;
+        background: url("../images/vip2.png") 0 0 / 0.4rem 0.28rem no-repeat;
+        top: 0.04rem;
+        left: 0;
+    }
+    .vip .vip-right .top .content-left i{
+        width: 0.88rem;
+        height: 1rem;
+        background: url("../images/vip5.png") 0 0 / 0.88rem 1rem no-repeat;
+    }
+    .vip .vip-left .top .content-right{
+        padding-left: 0.5rem;
+    }
+    .vip .vip-left .top .content-right dd{
+        font-size: 0.28rem;
+        margin-top: 0.4rem;
+        padding-left: 0.68rem;
+    }
+    .vip .vip-left .top .content-right dt{
+        font-size: 0.4rem;
+        margin-bottom: 0.2rem;
+    }
+    /*vip专区结束*/
+
+    /*学员薪资开始*/
+    .salary .center{
+        flex-wrap: wrap;
+    }
+    .salary .center>div{
+        width: 100% !important;
+    }
+    .salary .center{
+        padding-bottom: 0.6rem;
+    }
+    .salary .salary-left .title h2{
+        font-size: 0.42rem;
+        padding-left: 0.2rem;
+        margin: 0.4rem 0;
+        border-left: 4px solid #ff662f;
+    }
+    .salary .salary-left .content{
+        height: 6rem;
+    }
+    .salary .salary-left .content .caption tr th{
+        font-size: 0.32rem;
+        line-height: 0.86rem;
+        text-align: center;
+    }
+    .salary .salary-left .content .table tr td{
+        line-height: 0.86rem;
+        font-size: .32rem;
+    }
+    .salary .salary-right .content ol li{
+        font-size: 0.32rem;
+        line-height: 1.1rem;
+    }
+    .salary .salary-right .content ol li span{
+        width: 0.5rem;
+        height: 0.5rem;
+        line-height: 0.5rem;
+        font-size: 0.24rem;
+        border-radius: 0.06rem;
+        margin-right: 0.3rem;
+    }
+    /*学员薪资结束*/
+}

@@ -1,0 +1,1634 @@
+@charset "UTF-8";
+/* ====================== 公共样式 ====================== */
+.vip{
+	font-family: "微软雅黑" !important;
+}
+.b1{
+	border-width:1px;
+}
+.bs{
+	border-style:solid;
+}
+.bc{
+	border-color:#ccc;
+}
+.cursor{
+	cursor: pointer;
+}
+.text-DCB06F{
+	color: #DCB06F;
+}
+.fi{
+	font-style: italic;
+}
+.text-line{
+	text-decoration: line-through;
+}
+.pt24rem{
+	padding-top:.24rem;
+}
+.pl30rem{
+	padding-left:.3rem;
+}
+.ptb30rem{
+	padding-top:.3rem ;
+	padding-bottom:.3rem ;
+}
+.mr20rem{
+	margin-right: .1rem;
+}
+.mb10rem{
+	margin-bottom: .1rem;
+}
+.mb18rem{
+	margin-bottom: .18rem;
+}
+.lh50rem{
+	line-height: .50rem;
+}
+.pr5rem{
+	padding-right: .05rem;
+}
+.fs18rem{
+	font-size: .18rem;
+}
+.fs20rem{
+	font-size: .2rem;
+}
+.fs28rem{
+	font-size: .28rem;
+}
+.fs30rem{
+	font-size: .3rem;
+}
+.fs16rem{
+	font-size: .16rem;
+}
+.pt10rem{
+	padding-top: .1rem;
+}
+.pb10rem{
+	padding-bottom: .1rem;
+}
+/* ********** vip外部选项卡导航 ************** */
+.vip-top .vip-nav li{
+	background:#625B76;
+}
+.vip-top .vip-nav li:nth-of-type(2){
+	border-bottom-left-radius:15px ;
+}
+.vip-top .vip-nav{
+	background:-webkit-linear-gradient(top,#625B76 50%,#ffffff 50%);
+}
+.vip-top .vip-nav,.vip-top .content:first-of-type .classify-nav ul .active {
+	background-color: #625B76;
+}
+.vip-top .vip-nav li i{
+	width:44px;
+	height:51px;
+	background:url("../images/vip-icon.v5.png");
+}
+.vip-top .vip-nav li:first-of-type i{
+	background-position: -277px -52px;
+}
+.vip-top .vip-nav li:nth-of-type(2) i{
+	background-position: -277px -104px;
+}
+.vip-top .vip-nav li:last-of-type i{
+	background-position: -277px -156px;
+}
+.vip-top .vip-nav .active:first-of-type{
+	border-top-left-radius:0;
+}
+.vip-top .vip-nav .active:last-of-type{
+	border-top-right-radius: 0;
+}
+.vip-top .vip-nav .active{
+	background-color: #fff;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+.vip-top .vip-nav .active div h2{
+	color: #625B76;
+}
+.vip-top .vip-nav .active div p{
+	color: #666;
+}
+/* ******** 内容部分 ************ */
+.vip-top .content:first-of-type .classify-nav:nth-of-type(1) ul li:hover{
+	background-color: #625B76;
+}
+.vip-top .content:first-of-type .classify-nav ul li:hover a,
+.vip-top .content:first-of-type .classify-nav ul .active a{
+	color: #fff !important;
+}
+.vip-top .content:first-of-type .classify-main .cmc .list{
+	box-sizing: border-box;
+	width: 100px;
+	height:100px;
+	background:url("../images/vip-icon.v5.png");
+}
+.vip-top .content:first-of-type .vip-type li p:nth-of-type(1) i{
+	font-style: italic;
+}
+.vip-top .content:first-of-type .hadoop-right ul .active{
+	border: 2px #DCB06F solid;
+	position: relative;
+}
+.vip .lifelong{
+	background-position:-277px -157px !important;
+}
+.vip-top .content .pay-ify p {
+	background: #009fe8;
+}
+/*vip的下半块*/
+.vip-bottom .cade{
+	border: 2px solid #ddd;
+}
+.vip-bottom .cade:hover{
+	border-color:#dcb06f ;
+	box-shadow: 0 0 20px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+.vip-bottom .cade a:hover{
+	opacity: .8;
+}
+.vip-bottom .cade .error:before{
+	width:14px;
+	height: 14px;
+	background: url(../images/iconss.png) no-repeat 0 -18px;
+}
+.vip-bottom ul li:before{
+	content: "";
+	position: absolute;
+	width:20px;
+	height:14px;
+	background: url(../images/iconss.png) no-repeat;
+}
+.vip-top .content:first-of-type .hadoop-right ul .active:after{
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width:41px;
+	height:41px;
+	background: url(../images/vip-icon.v5.png) no-repeat -506px 0;
+	z-index:11;
+}
+.vip-top .vip-nav li:nth-of-type(2):before,
+.vip-top .vip-nav li:nth-of-type(3):before {
+	content: '' !important;
+	position: absolute;
+	left:0;
+	background-color: #fff;
+}
+.vip-top .content:first-of-type .vip-type li p {
+	border-bottom: 1px dashed #ddd;
+}
+.vip-top .content:first-of-type .vip-type li:nth-of-type(2):before {
+	content: '终身VIP';
+	position: absolute;
+	background: #DCB06F;
+	letter-spacing: 1px;
+	transform: rotate(-45deg);
+	text-align: center;
+	color: #fff;
+	font-size: .14rem;
+}
+.vip-top .content:first-of-type .discounts {
+	background: #ff393c;
+}
+.vip .tst-left i {
+	width: 44px;
+	height: 50px;
+	background: url("../images/vip-icon.v5.png") -277px -104px no-repeat;
+}
+.vip .tst-right dd:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 20px;
+	height: 14px;
+	background:url(../images/vip-icon.v5.png) -527px -45px;;
+}
+.vip-bottom .cade a {
+	border-radius: 6px;
+	margin: 10px auto 0;
+	background: #dcb06f;
+}
+.vip-top .content:first-of-type .hadoop-right ul .active{
+	border: 2px #DCB06F solid;
+	position: relative;
+}
+@media screen and (min-width:1200px){
+	/* ********************vip部分开始******************* */
+	.center{
+		width:12rem;
+	}
+	.vip{
+		padding-top: 1.1rem;
+	}
+	/*vip头部导航*/
+	.vip-top .vip-nav li{
+		padding-left: .5rem;
+	}
+	.vip-top .vip-nav li:nth-of-type(2):before,.vip-top .vip-nav li:nth-of-type(3):before{
+		top:.24rem;
+		width:.01rem;
+		height: .5rem !important;
+	}
+	.vip-top .vip-menu{
+		height: 7.47rem;
+	}
+	/*vip分类VIP类型*/
+	.vip-top .classify-nav ul li{
+		border-radius:.04rem;
+		width: 1.14rem;
+	}
+	.vip-top .classify-nav ul li a{
+		line-height: .44rem;
+	}
+	/*大数据vip*/
+	.vip-top .content:first-of-type .cmc .hadoop-left{
+		width: 3.10rem;
+		padding: 1.2rem 0  1.5rem;
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left h3 {
+		margin:.40rem 0 .3rem;
+		padding-left: .74rem;
+		font-size: .3rem;
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left p{
+		line-height: .40rem;
+		padding-left: .74rem;
+	}
+	/*大数据VIP类别*/
+	.vip-top .content:first-of-type .hadoop-right{
+		width:calc(100% - 3.1rem);
+	}
+	.vip-top .content:first-of-type .hadoop-right .vip-type{
+		padding: .30rem 0 .4rem;
+	}
+	.vip-top .content:first-of-type .vip-type li{
+		padding: .35rem 0 .4rem;
+		width: 46%;
+	}
+	.vip-top .content:first-of-type .vip-type li p{
+		width: 90%;
+		line-height: .28rem;
+		padding: .15rem 0;
+	}
+	.vip-top .content:first-of-type .vip-type li p:nth-of-type(2) i{
+		font-size:.36rem;
+	}
+	.vip-top .content:first-of-type .vip-type li:nth-of-type(2):before{
+		left: -.34rem;
+		top: .16rem;
+		height: .20rem;
+		line-height: .18rem;
+		width: 1.20rem;
+	}
+	.vip-top .content:first-of-type .pay-title{
+		margin:0 .3rem  ;
+	}
+	.vip-top .content:first-of-type .discounts{
+		width: .9rem;
+		border-radius:.12rem;
+		line-height: .25rem;
+		font-size: .14rem;
+	}
+	.vip-top .content:first-of-type .haop-year-sivp span:nth-of-type(3){
+		margin: 0 .2rem;
+	}
+	/*大数据vip 付费方式*/
+	.vip-top .content:first-of-type .pay-ify{
+		margin-top: .4rem;
+	}
+	.vip-top .content .pay-ify [class *= pay] a{
+		width:1.77rem;
+	}
+	.vip-top .content .pay-ify p{
+		width: 1.75rem;
+		line-height: .35rem;
+		background: #009fe8;
+	}
+	.ho-vip-ify{
+		height: 3rem;
+	}
+	.classify-main{
+		height: 6.4rem;
+	}
+	/*全站通*/
+	.vip .tst-left{
+		width: 40%;
+		padding: .46rem 0 0;
+	}
+	.vip .tst-left i{
+		margin: 0 auto .25rem;
+	}
+	.vip .tst-left h3{
+		width: 2.40rem;
+		padding-bottom: .20rem;
+	}
+	.vip .tst-left strong{
+		font-size: .36rem;
+		margin:.25rem 0 ;
+	}
+	.vip .tst-right{
+		width:60%;
+	}
+	.vip .tst-right dl{
+		margin: .5rem;
+	}
+	.vip .tst-right dd{
+		padding-left: .35rem;
+		font-size: .14rem;
+		line-height: 1;
+		margin:.35rem  0  .2rem .3rem ;
+	}
+	.vip .tst-bottom div span:nth-of-type(1){
+		margin-left:3rem;
+	}
+	.vip .tst-bottom span:first-of-type{
+		margin-left:.5rem ;
+	}
+	/*vip下半块 开始*/
+	.vip-bottom{
+		margin-top: .5rem;
+	}
+	.vip-bottom>div{
+		padding:.3rem  1rem ;
+	}
+	.vip-bottom h2{
+		font-size: .3rem;
+	}
+	.vip-bottom .cade{
+		width:3rem;
+		border: 2px solid #ddd;
+	}
+	.vip-bottom .cade:nth-of-type(2){
+		margin: 0 .5rem;
+	}
+	.vip-bottom .cade{
+		line-height:2;
+	}
+	.vip-bottom .cade p:nth-of-type(2){
+		padding: .1rem 0;
+	}
+	.vip-bottom ul li{
+		padding:.2rem 0 .2rem .6rem;
+	}
+	.vip-bottom ul li:before{
+		top: 50%;
+		left: .28rem;
+		transform: translateY(-50%);
+	}
+	.vip-bottom .cade a{
+		width: 1.5rem;
+	}
+	/* ********************vip部分结束******************* */
+}
+/*==========================1199px到960px断点以上开始==========================*/
+@media screen and (max-width:1199px) and (min-width:960px){
+	/* ********************vip部分开始******************* */
+	.center{
+		width:12rem;
+	}
+	.vip{
+		padding-top: 1.7rem;
+	}
+	/*vip头部导航*/
+	.vip-top .vip-nav li{
+		padding-left: .2rem;
+	}
+	.vip-top .vip-nav li i{
+		transform: scale(.8);
+		-webkit-transform: scale(.8);
+	}
+	.vip-top .vip-nav .active div p,
+	.vip-top .vip-nav li div p{
+		font-size: .21rem;
+	}
+	.vip-top .vip-nav li:nth-of-type(2):before,.vip-top .vip-nav li:nth-of-type(3):before{
+		top:.44rem;
+		width:.01rem;
+		height: .5rem !important;
+	}
+	.vip-top .vip-menu{
+		height: 7.47rem;
+	}
+	/*vip分类VIP类型*/
+	.vip-top .classify-nav ul li{
+		border-radius:.04rem;
+		width: 1.14rem;
+		font-size: .216rem;
+	}
+	.vip-top .classify-nav ul li:nth-of-type(3){
+		width:1.8rem;
+	}
+	.vip-top .classify-nav ul li a{
+		line-height: .44rem;
+	}
+	/*大数据vip*/
+	.vip-top .content:first-of-type .cmc .hadoop-left{
+		width: 3.10rem;
+		padding: 1.2rem 0  1.5rem;
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left h3 {
+		margin:.40rem 0 .3rem;
+		padding-left: .74rem;
+		font-size: .3rem;
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left p{
+		line-height: .40rem;
+		padding-left: .74rem;
+		font-size: .21rem;
+	}
+	/*大数据VIP类别*/
+	.vip-top .content:first-of-type .hadoop-right{
+		width:calc(100% - 3.1rem);
+	}
+	.vip-top .content:first-of-type .hadoop-right .vip-type{
+		padding: .30rem 0 .4rem;
+	}
+	.vip-top .content:first-of-type .vip-type li{
+		padding: .35rem 0 .4rem;
+		width: 46%;
+	}
+	.vip-top .content:first-of-type .vip-type li p{
+		width: 90%;
+		line-height: .28rem;
+		padding: .15rem 0;
+		font-size: .24rem;
+	}
+	.vip-top .content:first-of-type .vip-type li p:nth-of-type(2) i{
+		font-size:.36rem;
+	}
+	.vip-top .content:first-of-type .vip-type li:nth-of-type(2):before{
+		left: -.34rem;
+		top: .16rem;
+		height: .20rem;
+		line-height: .18rem;
+		width: 1.20rem;
+		font-size: .168rem;
+	}
+	.vip-top .content:first-of-type .hadoop-right ul .active{
+		border: .02rem #DCB06F solid;
+		position: relative;
+	}
+	.vip-top .content:first-of-type .pay-title{
+		margin:0 .3rem  ;
+		font-size: .21rem;
+	}
+	.vip-top .content:first-of-type .discounts{
+		width: .9rem;
+		border-radius:.12rem;
+		line-height: .25rem;
+		font-size: .14rem;
+	}
+	.vip-top .content:first-of-type .haop-year-sivp span:nth-of-type(3){
+		margin: 0 .2rem;
+	}
+	/*大数据vip 付费方式*/
+	.vip-top .content:first-of-type .pay-ify{
+		margin-top: .4rem;
+	}
+	.vip-top .content .pay-ify [class *= pay] a{
+		width:1.77rem;
+	}
+	.vip-top .content .pay-ify p{
+		width: 1.75rem;
+		line-height: .35rem;
+		background: #009fe8;
+	}
+	.ho-vip-ify{
+		height: 3rem;
+	}
+	.classify-main{
+		height: 6.4rem;
+	}
+	/*全站通*/
+	.vip .tst-left{
+		width: 40%;
+		padding: .1rem 0 0;
+	}
+	.vip .tst-left i{
+		margin: 0 auto .25rem;
+	}
+	.vip .tst-left h3{
+		width: 2.40rem;
+		border-bottom: 1px dashed #ddd;
+		padding-bottom: .20rem;
+	}
+	.vip .tst-left strong{
+		font-size: .36rem;
+		margin:.25rem 0 ;
+	}
+	.vip .tst-right{
+		width:60%;
+	}
+	.vip .tst-right dl{
+		margin: .5rem;
+	}
+	.vip .tst-right dd{
+		padding-left: .35rem;
+		font-size: .14rem;
+		line-height: 1;
+		margin:.35rem  0  .2rem .3rem ;
+	}
+	.vip .tst-bottom div span:nth-of-type(1){
+		margin-left:3rem;
+	}
+	.vip .tst-bottom span:first-of-type{
+		margin-left:.5rem ;
+	}
+	/*vip下半块 开始*/
+	.vip-bottom{
+		margin-top: .5rem;
+	}
+	.vip-bottom>div{
+		padding:.3rem  1rem ;
+	}
+	.vip-bottom h2{
+		font-size: .3rem;
+	}
+	.vip-bottom .cade{
+		width:3rem;
+		border: 2px solid #ddd;
+	}
+	.vip-bottom .cade p{
+		line-height: 2;
+	}
+	.vip-bottom .cade:nth-of-type(2){
+		margin: 0 .5rem;
+	}
+	.vip-bottom .cade p:nth-of-type(2){
+		padding: .1rem 0;
+	}
+	.vip-bottom ul li{
+		padding:.2rem 0 .2rem .6rem;
+	}
+	.vip-bottom ul li:before{
+		top:50%;
+		left: .25rem;
+		transform: translateY(-50%) scale(.8);
+		-webkit-transform: translateY(-50%) scale(.8);
+	}
+	.vip-bottom .cade a{
+		width:2rem;
+	}
+	/* ********************vip部分结束******************* */
+}
+/*==========================1199px到960px断点以上结束==========================*/
+@media screen and (max-width:959px) and (min-width:768px){
+	/* ********************vip部分开始******************* */
+	.fs18rem {
+		font-size: .24rem;
+		line-height: .4;
+	}
+	.fs20rem{
+		font-size: .34rem;
+		line-height: 1.2;
+	}
+	.vip{
+		padding-top: 1.8rem;
+	}
+	.vip-top{
+		padding: 0 15px;
+	}
+	/*vip头部导航*/
+	.vip-top .vip-nav li{
+		padding-left: .2rem;
+		height: 1.4rem;
+	}
+	.vip-top .vip-nav li i{
+		transform: scale(.75);
+	}
+	.vip-top .vip-nav li p{
+		font-size: .216rem;
+	}
+	.vip-top .vip-nav li:nth-of-type(2):before,.vip-top .vip-nav li:nth-of-type(3):before{
+		top:.44rem;
+		width:1px;
+		height: .5rem !important;
+	}
+	.vip-top .vip-menu{
+		height: 7.47rem;
+	}
+	/*vip分类VIP类型*/
+	.vip-top .classify-nav ul li{
+		border-radius:.04rem;
+		width: 1.14rem;
+		font-size: .216rem;
+	}
+	.vip-top .classify-nav ul li:nth-of-type(3){
+		width: 2rem;
+	}
+	.vip-top .classify-nav ul li a{
+		line-height: .44rem;
+	}
+	/*大数据vip*/
+	.vip-top .content:first-of-type .cmc .hadoop-left{
+		width: 3.10rem;
+		padding: 1.2rem 0  1.5rem;
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left h3 {
+		margin:.40rem 0 .3rem;
+		padding-left: .74rem;
+		font-size: .3rem;
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left p{
+		line-height: .40rem;
+		padding-left: .74rem;
+	}
+	/*大数据VIP类别*/
+	.vip-top .content:first-of-type .hadoop-right{
+		width:calc(100% - 3.1rem);
+	}
+	.vip-top .content:first-of-type .hadoop-right .vip-type{
+		padding: .30rem 0 .4rem;
+	}
+	.vip-top .content:first-of-type .vip-type li{
+		padding: .35rem 0 .4rem;
+		width: 46%;
+	}
+	.vip-top .content:first-of-type .vip-type li p{
+		width: 90%;
+		line-height: .28rem;
+		padding: .15rem 0;
+		font-size: .24rem;
+	}
+	.vip-top .content:first-of-type .vip-type li p:nth-of-type(2) i{
+		font-size:.36rem;
+	}
+	.vip-top .content:first-of-type .vip-type li:nth-of-type(2):before{
+		left: -.75rem;
+		top: .16rem;
+		height: .3rem;
+		line-height: .3rem;
+		width: 2.20rem;
+		font-size: .168rem;
+	}
+	.vip-top .content:first-of-type .pay-title{
+		margin:0 .3rem  ;
+	}
+	.vip-top .content:first-of-type .discounts{
+		width: .9rem;
+		border-radius:.12rem;
+		line-height: .25rem;
+		font-size: .14rem;
+	}
+	.vip-top .content:first-of-type .haop-year-sivp span:nth-of-type(3){
+		margin: 0 .2rem;
+	}
+	/*大数据vip 付费方式*/
+	.vip-top .content:first-of-type .pay-ify{
+		margin-top: .4rem;
+	}
+	.vip-top .content .pay-ify [class *= pay] a{
+		width:1.77rem;
+	}
+	.vip-top .content .pay-ify p{
+		width: 1.75rem;
+		line-height: .35rem;
+		background: #009fe8;
+	}
+	.ho-vip-ify{
+		height: 3.1rem;
+	}
+	.classify-main{
+		height: 6.4rem;
+	}
+	/*全站通*/
+	.vip .tst-left{
+		width: 40%;
+		padding: .2rem 0;
+	}
+	.vip .tst-left i{
+		margin: 0 auto .25rem;
+	}
+	.vip .tst-left h3{
+		width: 2.40rem;
+		border-bottom: 1px dashed #ddd;
+		padding-bottom: .20rem;
+	}
+	.vip .tst-left strong{
+		font-size: .36rem;
+		margin:.25rem 0 ;
+	}
+	.vip .tst-right{
+		width:60%;
+	}
+	.vip .tst-right dl{
+		margin: .2rem;
+	}
+	.vip .tst-right dd{
+		padding-left: .6rem;
+		font-size: .14rem;
+		line-height: 1;
+		margin:.2rem  0  .2rem .3rem ;
+	}
+	.vip .tst-right dd:before{
+		transform: scale(.8);
+		-webkit-transform: scale(.8);
+	}
+	.vip .tst-bottom div span:nth-of-type(1){
+		margin-left:3rem;
+	}
+	.vip .tst-bottom span:first-of-type{
+		margin-left:.5rem ;
+	}
+	/*vip下半块 开始*/
+	.vip-bottom{
+		margin-top: .5rem;
+	}
+	.vip-bottom>div{
+		padding:.3rem  1rem ;
+	}
+	.vip-bottom h2{
+		font-size: .3rem;
+	}
+	.vip-bottom .cade{
+		width:3.92rem;
+		border: 2px solid #ddd;
+	}
+	.vip-bottom .cade:nth-of-type(2){
+		margin: 0 .5rem;
+	}
+	.vip-bottom .cade p:nth-of-type(2){
+		padding: .1rem 0;
+		line-height: 2;
+	}
+	.vip-bottom ul li{
+		padding:.2rem 0 .2rem .8rem;
+	}
+	.vip-bottom ul li:before{
+		top: 50%;
+		left: .2rem;
+		transform: translateY(-50%);
+	}
+	.vip-bottom .cade a{
+		width: 2rem;
+		font-size: .28rem;
+		line-height: 2.4;
+	}
+	/* ********************vip部分结束******************* */
+}
+@media screen and (max-width:767px) and (min-width:560px){
+	/* ********************vip部分开始******************* */
+	.fs20rem{
+		font-size: .34rem;
+		line-height: 1.2;
+	}
+	.fs18rem{
+		font-size: .3rem;
+		line-height: .4;
+	}
+	.vip{
+		padding-top: 1.8rem;
+	}
+	.vip-top{
+		padding: 0 15px;
+	}
+	/*vip头部导航*/
+	.vip-top .vip-nav li{
+		padding-left:0;
+		height: 1.5rem;
+	}
+	.vip-top .vip-nav li h2{
+		font-size: .4rem;
+	}
+	.vip-top .vip-nav li i{
+		margin-right: 0;
+		transform: scale(.65) translate(-.1rem,-.28rem);
+	}
+	.vip-top .vip-nav li p{
+		font-size: .216rem;
+	}
+	.vip-top .vip-nav li:nth-of-type(2):before,.vip-top .vip-nav li:nth-of-type(3):before{
+		top:.44rem;
+		width:0;
+		height: .5rem !important;
+	}
+	.vip-top .vip-menu{
+		height: 7.47rem;
+	}
+	/*vip分类VIP类型*/
+	.vip-top .classify-nav ul li{
+		border-radius:.04rem;
+		width: 2.14rem;
+		font-size: .216rem;
+	}
+	.vip-top .classify-nav ul li:nth-of-type(3){
+		width: 2rem;
+	}
+	.vip-top .classify-nav ul li a{
+		line-height:1.8;
+	}
+	/*大数据vip*/
+	.vip-top .content:first-of-type .cmc .hadoop-left{
+		width: 3.10rem;
+		padding:0 0  1.5rem;
+	}
+	.vip-top .content:first-of-type .classify-main .cmc .list{
+		transform: scale(.7);
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left h3 {
+		margin:.40rem 0 .3rem;
+		padding-left: .74rem;
+		font-size: .4rem;
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left p{
+		line-height: .40rem;
+		padding-left: .74rem;
+	}
+	/*大数据VIP类别*/
+	.vip-top .content:first-of-type .hadoop-right ul .active:after{
+		transform: scale(.7);
+		-webkit-transform: scale(.7);
+		-webkit-transform-origin:  bottom right;
+		transform-origin:  bottom right;
+	}
+	.vip-top .content:first-of-type .hadoop-right{
+		width:calc(100% - 3.1rem);
+	}
+	.vip-top .content:first-of-type .hadoop-right .vip-type{
+		padding: .30rem 0 .4rem;
+	}
+	.vip-top .content:first-of-type .vip-type li{
+		padding: .35rem 0 .4rem;
+		width: 46%;
+	}
+	.vip-top .content:first-of-type .vip-type li p{
+		width: 90%;
+		line-height: .28rem;
+		padding: .15rem 0;
+		font-size: .24rem;
+	}
+	.vip-top .content:first-of-type .vip-type li p:nth-of-type(2) i{
+		font-size:.36rem;
+	}
+	.vip-top .content:first-of-type .vip-type li:nth-of-type(2):before{
+		left: -1.1rem;
+		top: .16rem;
+		height: .4rem;
+		line-height: .4rem;
+		width: 3rem;
+		font-size: .168rem;
+	}
+	.vip-top .content:first-of-type .pay-title{
+		margin:0 .3rem  ;
+	}
+	.vip-top .content:first-of-type .discounts{
+		width: 1.5rem;
+		border-radius: 1rem;
+		line-height: 1.5;
+		font-size: .14rem;
+	}
+	.vip-top .content:first-of-type .haop-year-sivp span:nth-of-type(3){
+		margin: 0 .2rem;
+	}
+	/*大数据vip 付费方式*/
+	.vip-top .content:first-of-type .pay-ify{
+		margin-top: .3rem;
+		padding-bottom: .3rem;
+	}
+	.vip-top .content .pay-ify [class *= pay] a{
+		width:1.77rem;
+	}
+	.vip-top .content .pay-ify p{
+		width: 1.75rem;
+		line-height: 1.3;
+		background: #009fe8;
+	}
+	.ho-vip-ify{
+		height: 3.4rem;
+	}
+	.classify-main{
+		height: 6.4rem;
+	}
+	/*全站通*/
+	.vip .tst-left{
+		width: 40%;
+		padding: .1rem 0;
+	}
+	.vip .tst-left i{
+		margin: 0 auto .25rem;
+	}
+	.vip .tst-left h3{
+		width: 2.40rem;
+		border-bottom: 1px dashed #ddd;
+		padding-bottom: .20rem;
+	}
+	.vip .tst-left strong{
+		font-size: .36rem;
+		margin:.25rem 0 ;
+	}
+	.vip .tst-right{
+		width:60%;
+	}
+	.vip .tst-right dl{
+		margin: .1rem;
+	}
+	.vip .tst-right dd{
+		padding-left: .6rem;
+		font-size: .14rem;
+		line-height: 1;
+		margin:.2rem  0  .2rem .3rem ;
+	}
+	.vip .tst-right dd:before{
+		transform: scale(.8);
+		-webkit-transform: scale(.8);
+	}
+	.vip .tst-bottom div span:nth-of-type(1){
+		margin-left:3rem;
+	}
+	.vip .tst-bottom span:first-of-type{
+		margin-left:.5rem ;
+	}
+	/*vip下半块 开始*/
+	.vip-bottom{
+		margin-top: .5rem;
+	}
+	.vip-bottom>div{
+		padding:.3rem  1rem ;
+	}
+	.vip-bottom h2{
+		font-size: .4rem;
+	}
+	.vip-bottom .cade{
+		width:3.92rem;
+		border: 2px solid #ddd;
+	}
+	.vip-bottom .cade:nth-of-type(2){
+		margin: 0 .5rem;
+	}
+	.vip-bottom .cade p:nth-of-type(2){
+		padding: .1rem 0;
+		line-height: 2;
+	}
+	.vip-bottom ul li{
+		padding:.2rem 0 .2rem .8rem;
+	}
+	.vip-bottom ul li:before{
+		top: 50%;
+		left: .2rem;
+		transform: translateY(-50%);
+	}
+	.vip-bottom .cade a{
+		width: 2rem;
+		font-size: .28rem;
+		line-height: 2.4;
+	}
+	/* ********************vip部分结束******************* */
+}
+@media screen and (max-width:559px) and (min-width:480px){
+	/* ********************vip部分开始******************* */
+	.fs20rem{
+		font-size: .34rem;
+		line-height: 1.2;
+	}
+	.fs18rem{
+		font-size: .18rem;
+		line-height: .4;
+	}
+	.vip{
+		padding-top: 1.8rem;
+	}
+	.vip-top{
+		padding: 0 15px;
+	}
+	/*vip头部导航*/
+	.vip-top .vip-nav li{
+		padding-left:0;
+		word-wrap: break-word;
+		height: 1.7rem;
+	}
+	.vip-top .vip-nav li h2{
+		font-size: .4rem;
+	}
+	.vip-top .vip-nav li div{
+		width: 60%;
+	}
+	.vip-top .vip-nav li i{
+		margin-right:-12% ;
+		transform: scale(.4)  translate(-0.8rem,-1rem);
+	}
+	.vip-top .vip-nav li p{
+		font-size: .216rem;
+		line-height: 1.1;
+	}
+	.vip-top .vip-nav li:nth-of-type(2):before,.vip-top .vip-nav li:nth-of-type(3):before{
+		top:.44rem;
+		width:0;
+		height: .5rem !important;
+	}
+	.vip-top .vip-menu{
+		height:11.3rem;
+	}
+	/*vip分类VIP类型*/
+	.vip-top .classify-nav ul li{
+		border-radius:.04rem;
+		width:3rem;
+		font-size: .216rem;
+	}
+	.vip-top .classify-nav ul li a{
+		line-height:1.2;
+	}
+	/*大数据vip*/
+	.vip-top .content:first-of-type .cmc .hadoop-left{
+		width:100%;
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left>div{
+		clear: both;
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left>div i{
+		float: left;
+		margin-right: .4rem !important;
+		transform: scale(.7);
+		-webkit-transform: scale(.7);
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left h3 {
+		margin:.40rem 0 .3rem;
+		padding-left: .74rem;
+		font-size: .8rem;
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left p{
+		line-height:2;
+		padding-left: .74rem;
+	}
+	/*大数据VIP类别*/
+	.vip-top .content:first-of-type .hadoop-right ul .active:after{
+		transform: scale(.7);
+		-webkit-transform: scale(.7);
+		-webkit-transform-origin:  bottom right;
+		transform-origin:  bottom right;
+	}
+	.vip-top .content:first-of-type .hadoop-right{
+		width:100%;
+	}
+	.vip-top .content:first-of-type .hadoop-right .vip-type{
+		padding: .30rem 0 .4rem;
+	}
+	.vip-top .content:first-of-type .vip-type li{
+		padding: .35rem 0 .4rem;
+		width: 46%;
+	}
+	.vip-top .content:first-of-type .vip-type li p{
+		width: 90%;
+		line-height: .28rem;
+		padding: .15rem 0;
+		font-size: .24rem;
+	}
+	.vip-top .content:first-of-type .vip-type li p:nth-of-type(2) i{
+		font-size:.36rem;
+	}
+	.vip-top .content:first-of-type .vip-type li:nth-of-type(2):before{
+		left: -1.1rem;
+		top: .16rem;
+		height: .4rem;
+		line-height: .4rem;
+		width: 3rem;
+		font-size: .168rem;
+	}
+	.vip-top .content:first-of-type .pay-title{
+		margin:0 .3rem  ;
+	}
+	.vip-top .content:first-of-type .discounts{
+		width: 1.5rem;
+		border-radius: 1rem;
+		line-height: 1.5;
+		font-size: .14rem;
+	}
+	.vip-top .content:first-of-type .haop-year-sivp span:nth-of-type(3){
+		margin: 0 .2rem;
+	}
+	/*大数据vip 付费方式*/
+	.vip-top .content:first-of-type .pay-ify{
+		padding-bottom: .3rem;
+	}
+	.vip-top .content .pay-ify [class *= pay] a{
+		width:1.77rem;
+	}
+	.vip-top .content .pay-ify p{
+		width: 1.75rem;
+		line-height: 1.4;
+		background: #009fe8;
+	}
+	.ho-vip-ify{
+		height: 3.4rem;
+	}
+	.classify-main{
+		height:11.4rem;
+	}
+	/*全站通*/
+	.vip .tst-left{
+		width: 100%;
+		padding: .2rem 0;
+	}
+	.vip .tst-left i{
+		margin: 0 auto .25rem;
+	}
+	.vip .tst-left h3{
+		width: 2.40rem;
+		border-bottom: 1px dashed #ddd;
+		padding-bottom: .20rem;
+	}
+	.vip .tst-left strong{
+		font-size: .36rem;
+		margin:.25rem 0 ;
+	}
+	.vip .tst-right{
+		width:100%;
+	}
+	.vip .tst-right dl{
+		margin: .2rem;
+	}
+	.vip .tst-right dd{
+		padding-left: .6rem;
+		font-size: .14rem;
+		line-height: 1;
+		margin:.2rem  0  .2rem .3rem ;
+	}
+	.vip .tst-right dd:before{
+		transform: scale(.8);
+		-webkit-transform: scale(.8);
+	}
+	.vip .tst-bottom div span:nth-of-type(1){
+		margin-left:3rem;
+	}
+	.vip .tst-bottom span:first-of-type{
+		margin-left:.5rem ;
+	}
+	/*vip下半块 开始*/
+	.vip-bottom{
+		margin-top: .5rem;
+	}
+	.vip-bottom>div{
+		padding:.3rem  1rem ;
+	}
+	.vip-bottom h2{
+		font-size: .4rem;
+	}
+	.vip-bottom .cade{
+		width:3.92rem;
+		border: 2px solid #ddd;
+	}
+	.vip-bottom .cade:nth-of-type(2){
+		margin: 0 .5rem;
+	}
+	.vip-bottom .cade p:nth-of-type(2){
+		padding: .1rem 0;
+		line-height: 2;
+	}
+	.vip-bottom ul li{
+		padding:.2rem 0 .2rem .8rem;
+	}
+	.vip-bottom ul li:before{
+		top: 50%;
+		left: .2rem;
+		transform: translateY(-50%);
+	}
+	.vip-bottom .cade a{
+		width: 2rem;
+		font-size: .28rem;
+		line-height: 2.4;
+	}
+	/* ********************vip部分结束******************* */
+}
+@media screen and (max-width:479px) and (min-width: 320px){
+	/* ********************vip部分开始******************* */
+	.fs20rem{
+		font-size: .34rem;
+		line-height: 1.2;
+	}
+	.fs18rem{
+		font-size: .18rem;
+		line-height:1.5;
+	}
+	.vip{
+		padding-top: 1.8rem;
+	}
+	.vip-top{
+		padding: 0 15px;
+	}
+	/*vip头部导航*/
+	.vip-top .vip-nav li{
+		padding-left:0;
+		word-wrap: break-word;
+	}
+	.vip-top .vip-nav li h2{
+		font-size: .4rem;
+	}
+	.vip-top .vip-nav li div{
+		width: 60%;
+	}
+	.vip-top .vip-nav li i{
+		margin-right:-12% ;
+		transform: scale(.4)  translate(-0.8rem,-1rem);
+	}
+	.vip-top .vip-nav li p{
+		font-size: .216rem;
+		line-height: 1.1;
+	}
+	.vip-top .vip-nav li:nth-of-type(2):before,.vip-top .vip-nav li:nth-of-type(3):before{
+		top:.44rem;
+		width:0;
+		height: .5rem !important;
+	}
+	.vip-top .vip-menu,.classify-main{
+		height:16rem;
+	}
+	/*vip分类VIP类型*/
+	.vip-top .classify-nav ul li{
+		border-radius:.04rem;
+		width:3rem;
+		font-size: .216rem;
+	}
+	.vip-top .classify-nav ul li a{
+		line-height:1.5;
+	}
+	/*大数据vip*/
+	.vip-top .content:first-of-type .cmc .hadoop-left{
+		width:100%;
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left>div{
+		clear: both;
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left>div i{
+		float: left;
+		margin-right: .4rem !important;
+		transform: scale(.7);
+		-webkit-transform: scale(.7);
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left h3 {
+		margin:.40rem 0 .3rem;
+		padding-left: .74rem;
+		font-size: .8rem;
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left p{
+		line-height:2;
+		padding-left: .74rem;
+	}
+	/*大数据VIP类别*/
+	.vip-top .content:first-of-type .hadoop-right ul .active:after{
+		transform: scale(.7);
+		-webkit-transform: scale(.7);
+		-webkit-transform-origin:  bottom right;
+		transform-origin:  bottom right;
+	}
+	.vip-top .content:first-of-type .hadoop-right{
+		width:100%;
+	}
+	.vip-top .content:first-of-type .hadoop-right .vip-type{
+		padding: .30rem 0 .4rem;
+	}
+	.vip-top .content:first-of-type .vip-type li{
+		padding: .35rem 0 .4rem;
+		width: 46%;
+	}
+	.vip-top .content:first-of-type .vip-type li p{
+		width: 90%;
+		line-height: .28rem;
+		padding: .15rem 0;
+		font-size: .24rem;
+	}
+	.vip-top .content:first-of-type .vip-type li p:nth-of-type(2) i{
+		font-size:.36rem;
+	}
+	.vip-top .content:first-of-type .vip-type li:nth-of-type(2):before{
+		left: -1rem;
+		height: .4rem;
+		line-height: .4rem;
+		width: 3rem;
+		font-size: .168rem;
+	}
+	.vip-top .content:first-of-type .pay-title{
+		margin:0 .3rem  ;
+	}
+	.vip-top .content:first-of-type .discounts{
+		width: 2.5rem;
+		border-radius: 1rem;
+		line-height: 1.5;
+		font-size: .14rem;
+	}
+	.vip-top .content:first-of-type .haop-year-sivp>div{
+		word-wrap: break-word;
+	}
+	.vip-top .content:first-of-type .haop-year-sivp span:nth-of-type(3){
+		margin: 0 .2rem;
+	}
+	/*大数据vip 付费方式*/
+	.vip-top .content:first-of-type .pay-ify{
+		padding-bottom: .3rem;
+	}
+	.vip-top .content .pay-ify [class *= pay] a{
+		width:2.8rem;
+	}
+	.vip-top .content .pay-ify p{
+		width: 2.75rem;
+		line-height:1.5;
+		background: #009fe8;
+	}
+	.ho-vip-ify{
+		height: 6.4rem;
+	}
+	/*全站通*/
+	.vip .tst-left,.tst-right{
+		width: 100%;
+		padding: .2rem 0;
+	}
+	.vip .tst-left i{
+		margin: -15px auto -11px;
+		transform: scale(.4);
+	}
+	.vip .tst-left h3{
+		width: 2.40rem;
+		border-bottom: 1px dashed #ddd;
+		padding-bottom: .20rem;
+	}
+	.vip .tst-left strong{
+		font-size: .36rem;
+		margin:.25rem 0 ;
+	}
+	.vip .tst-right dl{
+		margin: .2rem;
+	}
+	.vip .tst-right dd{
+		padding-left: 1rem;
+		font-size: .14rem;
+		line-height: 1.1;
+		margin: .2rem 0 .2rem .3rem;
+	}
+	.vip .tst-right dd:before{
+		transform: scale(.8);
+		-webkit-transform: scale(.8);
+	}
+	.vip .tst-bottom div span:nth-of-type(1){
+		margin-left:0;
+	}
+	.vip .tst-bottom span:first-of-type{
+		margin-left:.5rem ;
+	}
+	/*vip下半块 开始*/
+	.vip-bottom{
+		margin-top: .5rem;
+	}
+	.vip-bottom>div{
+		padding:.3rem  1rem ;
+	}
+	.vip-bottom h2{
+		font-size: .8rem;
+		line-height: 1.5;
+	}
+	.vip-bottom .cade{
+		width:100%;
+		border: 2px solid #ddd;
+		margin-top: .4rem;
+	}
+	.vip-bottom .cade h3{
+		font-size: .6rem;
+		line-height: 1.5;
+		font-family: "微软雅黑" !important;
+	;
+	}
+	.vip-bottom .cade p:nth-of-type(2){
+		padding: .1rem 0;
+		line-height: 2;
+	}
+	.vip-bottom ul li{
+		padding:.2rem 0 .2rem 1.8rem;
+	}
+	.vip-bottom ul li:before{
+		top: 50%;
+		left: .5rem;
+		transform: translateY(-50%);
+	}
+	.vip-bottom .cade a{
+		width: 5rem;
+		font-size: .28rem;
+		line-height: 2.4;
+	}
+	/* ********************vip部分结束******************* */
+}
+@media screen and (max-width: 319px){
+	/* ********************vip部分开始******************* */
+	.fs20rem{
+		font-size: .34rem;
+		line-height: 1.2;
+	}
+	.fs18rem{
+		font-size: .18rem;
+		line-height:1.5;
+	}
+	.vip{
+		padding-top: 1.8rem;
+	}
+	.vip-top{
+		padding: 0 15px;
+	}
+	/*vip头部导航*/
+	.vip-top .vip-nav li{
+		padding-left:0;
+		word-wrap: break-word;
+	}
+	.vip-top .vip-nav li h2{
+		font-size: .4rem;
+	}
+	.vip-top .vip-nav li div{
+		width: 60%;
+	}
+	.vip-top .vip-nav li i{
+		margin-right:-12% ;
+		transform: scale(.4)  translate(-0.8rem,-1rem);
+	}
+	.vip-top .vip-nav li p{
+		font-size: .216rem;
+		line-height: 1.1;
+	}
+	.vip-top .vip-nav li:nth-of-type(2):before,.vip-top .vip-nav li:nth-of-type(3):before{
+		top:.44rem;
+		width:0;
+		height: .5rem !important;
+	}
+	.vip-top .vip-menu{
+		height:15rem;
+	}
+	/*vip分类VIP类型*/
+	.vip-top .classify-nav ul li{
+		border-radius:.04rem;
+		width:3rem;
+		font-size: .216rem;
+	}
+	.vip-top .classify-nav ul li a{
+		line-height:1.5;
+	}
+	/*大数据vip*/
+	.vip-top .content:first-of-type .cmc .hadoop-left{
+		width:100%;
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left>div{
+		clear: both;
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left>div i{
+		float: left;
+		margin-right: .4rem !important;
+		transform: scale(.7);
+		-webkit-transform: scale(.7);
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left h3 {
+		margin:.40rem 0 .3rem;
+		padding-left: .74rem;
+		font-size: .8rem;
+	}
+	.vip-top .content:first-of-type .cmc .hadoop-left p{
+		line-height:2;
+		padding-left: .74rem;
+	}
+	/*大数据VIP类别*/
+	.vip-top .content:first-of-type .hadoop-right ul .active:after{
+		transform: scale(.7);
+		-webkit-transform: scale(.7);
+		-webkit-transform-origin:  bottom right;
+		transform-origin:  bottom right;
+	}
+	.vip-top .content:first-of-type .hadoop-right{
+		width:100%;
+	}
+	.vip-top .content:first-of-type .hadoop-right .vip-type{
+		padding: .30rem 0 .4rem;
+	}
+	.vip-top .content:first-of-type .vip-type li{
+		padding: .35rem 0 .4rem;
+		width: 46%;
+	}
+	.vip-top .content:first-of-type .vip-type li p{
+		width: 90%;
+		line-height: .28rem;
+		padding: .15rem 0;
+		font-size: .24rem;
+	}
+	.vip-top .content:first-of-type .vip-type li p:nth-of-type(2) i{
+		font-size:.36rem;
+	}
+	.vip-top .content:first-of-type .vip-type li:nth-of-type(2):before{
+		left: -1rem;
+		height: .4rem;
+		line-height: .4rem;
+		width: 3rem;
+		font-size: .168rem;
+	}
+	.vip-top .content:first-of-type .pay-title{
+		margin:0 .3rem  ;
+	}
+	.vip-top .content:first-of-type .discounts{
+		width: 2.5rem;
+		border-radius: 1rem;
+		line-height: 1.5;
+		font-size: .14rem;
+	}
+	.vip-top .content:first-of-type .haop-year-sivp>div{
+		word-wrap: break-word;
+	}
+	.vip-top .content:first-of-type .haop-year-sivp span:nth-of-type(3){
+		margin: 0 .2rem;
+	}
+	/*大数据vip 付费方式*/
+	.vip-top .content:first-of-type .pay-ify{
+		padding-bottom: .3rem;
+	}
+	.vip-top .content .pay-ify [class *= pay] a{
+		width:2.8rem;
+	}
+	.vip-top .content .pay-ify p{
+		width: 2.75rem;
+		line-height:1.5;
+		background: #009fe8;
+	}
+	.ho-vip-ify{
+		height: 5.4rem;
+	}
+	.classify-main{
+		height:13.4rem;
+	}
+	/*全站通*/
+	.vip .tst-left{
+		width: 40%;
+		padding: .2rem 0;
+	}
+	.vip .tst-left i{
+		margin: 0 auto .25rem;
+	}
+	.vip .tst-left h3{
+		width: 2.40rem;
+		border-bottom: 1px dashed #ddd;
+		padding-bottom: .20rem;
+	}
+	.vip .tst-left strong{
+		font-size: .36rem;
+		margin:.25rem 0 ;
+	}
+	.vip .tst-right{
+		width:60%;
+	}
+	.vip .tst-right dl{
+		margin: .2rem;
+	}
+	.vip .tst-right dd{
+		padding-left: 1rem;
+		font-size: .14rem;
+		line-height: 1.1;
+		margin: .2rem 0 .2rem .3rem;
+	}
+	.vip .tst-right dd:before{
+		transform: scale(.8);
+		-webkit-transform: scale(.8);
+	}
+	.vip .tst-bottom div span:nth-of-type(1){
+		margin-left:3rem;
+	}
+	.vip .tst-bottom span:first-of-type{
+		margin-left:.5rem ;
+	}
+	/*vip下半块 开始*/
+	.vip-bottom{
+		margin-top: .5rem;
+	}
+	.vip-bottom>div{
+		padding:.3rem  1rem ;
+	}
+	.vip-bottom h2{
+		font-size: .8rem;
+		line-height: 1.5;
+	}
+	.vip-bottom .cade{
+		width:100%;
+		border: 2px solid #ddd;
+		margin-top: .4rem;
+	}
+	.vip-bottom .cade h3{
+		font-size: .6rem;
+		line-height: 1.5;
+		font-family: "微软雅黑" !important;
+	;
+	}
+	.vip-bottom .cade p:nth-of-type(2){
+		padding: .1rem 0;
+		line-height: 2;
+	}
+	.vip-bottom ul li{
+		padding:.2rem 0 .2rem 1.8rem;
+	}
+	.vip-bottom ul li:before{
+		top: 50%;
+		left: .5rem;
+		transform: translateY(-50%);
+	}
+	.vip-bottom .cade a{
+		width: 5rem;
+		font-size: .28rem;
+		line-height: 2.4;
+	}
+	/* ********************vip部分结束******************* */
+}

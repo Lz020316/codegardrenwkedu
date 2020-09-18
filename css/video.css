@@ -1,0 +1,1021 @@
+@charset "UTF-8";
+.vanda{
+    width:100%;
+    background-color: #0e0308;
+}
+.video .video-left{
+    width:70%;
+    float: left;
+}
+.video .video-left video{
+     width:100%;
+     height:100%;
+ }
+.video-left .share{
+    padding:.15rem 0 .15rem .15rem;
+    background-color:#26262b;
+}
+.video-left .share a{
+    display: inline-block;
+    width:.25rem;
+    height:.24rem;
+    margin:0 .05rem;
+    background: url("../images/video_1_03.gif") no-repeat 0 0 / .25rem .24rem;
+}
+.video-left .share a:nth-of-type(2){
+    background: url("../images/video_2_03.gif") no-repeat 0 0 / .25rem .24rem;
+}
+.video-left .share a:nth-of-type(3){
+    background: url("../images/video_3_03.gif") no-repeat 0 0 / .25rem .24rem;
+}
+.video-left .share a:last-of-type{
+    background: url("../images/video_4_03.gif") no-repeat 0 0 / .25rem .24rem;
+}
+.video .video-right{
+    float: right;
+    width:30%;
+    background-color:#333;
+}
+.video .video-right dl dt{
+    position: relative;
+    border-bottom:1px solid #26262b;
+}
+.video .video-right dl dt a{
+    display: block;
+    color:#999 !important;
+}
+.video .video-right dl dt:before{
+    content: '';
+    position:absolute;
+    top:.22rem;
+    left:.15rem;
+    border:5px solid transparent;
+    border-top-color:#888;
+}
+.video .video-right dl dd a{
+    color:#999 !important;
+}
+.summary{
+    width:100%;
+}
+.summary-left .active{
+    border-bottom-color:#ffd500 !important;
+}
+.summary-left #news{
+    border:1px solid #ddd;
+    border-radius:5px;
+}
+.summary-left #news ul{
+    border-bottom:1px solid #ddd;
+}
+.summary-left #news .con ol{
+    padding-left:.4rem;
+}
+.summary-left #news .con:nth-of-type(2) ol li{
+    width:90%;
+    box-sizing: border-box;
+    padding:.2rem 0 .2rem .2rem;
+    border-radius:5px;
+    background-color:#f5f5f5;
+    margin-bottom:.2rem;
+    box-shadow:-1px 1px 2px rgba(0,0,0,.4) inset;
+}
+.summary-left #news .con:nth-of-type(2) ol li a{
+    color:#428bca;
+}
+.summary-left #news .con:last-of-type img{
+    display: block;
+    margin:.25rem auto;
+}
+.summary-right>div{
+    border:1px solid #ddd;
+    border-radius:5px;
+}
+.summary-right ul{
+    margin-top:.15rem;
+}
+.summary-right ul li{
+    width:3rem;
+    position: relative;
+    margin:.2rem auto 0;
+    overflow: hidden;
+}
+.summary-right ul li>a{
+    display: block;
+}
+.summary-right ul li img{
+    display: block;
+    width:100%;
+    height:100%;
+    transition: .5s all;
+}
+.summary-right ul li>div{
+    padding:0 0 .1rem .1rem;
+}
+.summary-right ul li>div a:last-of-type{
+    float:right;
+    display: inline-block;
+}
+@media screen and (min-width: 1200px) {
+    .vanda .vanda-content{
+        width:12rem;
+        margin:70px auto 30px;
+        /*background-color:#f6f6f6;*/
+    }
+    .vanda .vanda-content h3{
+        padding:.3rem 0;
+        margin-bottom:.1rem;
+        font-size:.24rem;
+        color:#ddd;
+        font-weight: normal;
+    }
+    .video-left>div{
+        position: relative;
+    }
+    .video-left>div .control{
+        position: absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        height:40px;
+        background-color: rgb(43, 51, 63);;
+    }
+    .video-left>div .control div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:.4rem;
+        height:100%;
+        float: left;
+    }
+    .video-left>div .control div i,.video-left>div .control div span{
+        font-size:.22rem;
+        color:#fff;
+        cursor: pointer;
+        margin: auto;
+    }
+    .video-left>div .control div:nth-of-type(4) i{
+        font-size:.16rem;
+    }
+    .video-left>div .control div:nth-of-type(5){
+        width:.8rem;
+    }
+    .video-left>div .control div:nth-of-type(6){
+        width:4rem;
+    }
+    .video-left>div .control div:nth-of-type(5) span{
+        font-size:.12rem;
+    }
+    .video-left>div .control div:nth-of-type(6) p{
+        width:90%;
+        height:5px;
+        background-color:rgba(115,133,159,.5);
+    }
+    .video-left>div .control div:nth-of-type(7) i{
+        font-size:.16rem;
+    }
+    .video-left>div .control div:last-of-type i{
+        font-size:.14rem;
+    }
+    #vol:hover #volumePro{
+        display: block !important;
+    }
+
+    .video-left .share span{
+        font-size: .14rem;
+        color: #999;
+    }
+    .video .video-right #wrapper1{
+        height:4.4rem;
+        overflow:hidden;
+    }
+    .video .video-right h4{
+        padding:.1rem 0 .1rem .15rem;
+        border-bottom:1px solid #26262b;
+        font-size:.16rem;
+        color:#fff;
+    }
+    .video .video-right dl dt,.video .video-right dl dd{
+        padding:.15rem 0 .15rem .35rem;
+        font-size:.16rem;
+    }
+    .video .video-right dl dd{
+        padding:.16rem 0 .12rem .35rem;
+        border-bottom:1px solid #26262b;
+        background: url("../images/spirit_03.gif") no-repeat .08rem .19rem / .18rem .11rem;
+    }
+    .video .video-right dl dd:hover{
+        background-color:#26262b;
+    }
+    .video .video-right dl dd span{
+        display: inline-block;
+        padding:.1rem .3rem 0 0;
+        font-size:.12rem;
+    }
+    .summary .summary_content{
+        width:12rem;
+        margin:0 auto;
+    }
+    .summary-left{
+        box-sizing: border-box;
+        width:70%;
+        float: left;
+        padding:0 .15rem;
+    }
+    .summary-left #news ul li{
+        float: left;
+        padding:.2rem 0;
+        border-bottom:2px solid transparent;
+        margin:0 .3rem;
+        font-size: .18rem;
+    }
+    .summary-left #news ul li:hover{
+        border-bottom-color:#ffd500;
+    }
+    .summary-left #news .con h4{
+        padding:.15rem 0 .1rem .2rem;
+    }
+    .summary-left #news .con ol li{
+        padding:.1rem 0;
+        letter-spacing:1px;
+        font-size:.16rem;
+    }
+    .summary-left #news .con:nth-of-type(2) ol li a:hover{
+        color:#2a6496;
+    }
+    .summary-right{
+        width:30%;
+        float: right;
+    }
+    .summary-right h4{
+        margin:.2rem 0 .2rem .15rem;
+        padding-left:.1rem;
+        border-left:2px solid #ffd500;
+        font-size: .18rem;
+    }
+    .summary-right ul li:before{
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        width:.8rem;
+        height:.52rem;
+        background: url("../images/vip1.png") no-repeat 0 0 / .8rem .52rem;
+        z-index:22;
+    }
+    .summary-right ul li:hover{
+        box-shadow:0px 1px 4px #333;
+    }
+    .summary-right ul li:hover img{
+        transform: scale(1.1);
+    }
+    .summary-right ul li>div p{
+        padding:.1rem 0;
+        font-size:.16rem;
+    }
+    .summary-right ul li>div span{
+        padding-right:.2rem;
+        font-size:.14rem;
+        color:#999;
+    }
+    .summary-right ul li>div a:last-of-type{
+        font-size:.12rem;
+        color:#ff662f;
+        float:right;
+        line-height: 1.5;
+        display: inline-block;
+    }
+    .summary-right ul li>div a:last-of-type:hover{
+        color:#2a6496;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width:1199px) {
+    .vanda .vanda-content{
+        box-sizing: border-box;
+        width:100%;
+        padding:0 2%;
+        margin:70px auto 30px;
+        /*background-color:#f6f6f6;*/
+    }
+    .vanda .vanda-content h3{
+        padding:.3rem 0;
+        margin-bottom:.1rem;
+        font-size:.26rem;
+        color:#ddd;
+        font-weight: normal;
+    }
+    .video-left>div{
+        position: relative;
+    }
+    .video-left>div .control{
+        position: absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        height:40px;
+        background-color: rgb(43, 51, 63);;
+    }
+    .video-left>div .control div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:.4rem;
+        height:100%;
+        float: left;
+    }
+    .video-left>div .control div i,.video-left>div .control div span{
+        font-size:.22rem;
+        color:#fff;
+        cursor: pointer;
+        margin: auto;
+    }
+    .video-left>div .control div:nth-of-type(4) i{
+        font-size:.16rem;
+    }
+    .video-left>div .control div:nth-of-type(5){
+        width:.8rem;
+        margin-left:.3rem;
+    }
+    .video-left>div .control div:nth-of-type(6){
+        width:4rem;
+    }
+    .video-left>div .control div:nth-of-type(5) span{
+        font-size:.12rem;
+    }
+    .video-left>div .control div:nth-of-type(6) p{
+        width:90%;
+        height:5px;
+        background-color:rgba(115,133,159,.5);
+    }
+    .video-left>div .control div:nth-of-type(7) i{
+        font-size:.16rem;
+    }
+    .video-left>div .control div:last-of-type i{
+        font-size:.14rem;
+    }
+    #vol:hover #volumePro{
+        display: block !important;
+    }
+
+    .video-left .share span{
+        font-size: .16rem;
+        color: #999;
+    }
+    .video .video-right #wrapper1{
+        height:5.3rem;
+        overflow:hidden;
+    }
+    .video .video-right h4{
+        padding:.1rem 0 .1rem .15rem;
+        border-bottom:1px solid #26262b;
+        font-size:.18rem;
+        color:#fff;
+    }
+    .video .video-right dl dt,.video .video-right dl dd{
+        padding:.15rem 0 .15rem .35rem;
+        font-size:.2rem;
+    }
+    .video .video-right dl dd{
+        padding:.16rem 0 .12rem .35rem;
+        border-bottom:1px solid #26262b;
+        background: url("../images/spirit_03.gif") no-repeat .08rem .19rem / .24rem .17rem;
+    }
+    .video .video-right dl dd span{
+        display: inline-block;
+        padding:.1rem .3rem 0 0;
+        font-size:.14rem;
+    }
+
+    .summary .summary_content{
+        box-sizing: border-box;
+        width:100%;
+        padding:0 15px;
+        margin:0 auto;
+    }
+    .summary-left{
+        box-sizing: border-box;
+        width:100%;
+    }
+    .summary-left #news{
+        border:1px solid #ddd;
+        border-radius:5px;
+    }
+    .summary-left #news ul{
+        border-bottom:1px solid #ddd;
+    }
+    .summary-left #news ul li{
+        float: left;
+        padding:.2rem 0;
+        border-bottom:2px solid transparent;
+        margin:0 .3rem;
+        font-size: .26rem;
+    }
+    .summary-left #news .con h4{
+        padding:.15rem 0 .1rem .2rem;
+        font-size:.24rem;
+    }
+    .summary-left #news .con ol li{
+        padding:.1rem 0;
+        letter-spacing:1px;
+        font-size:.24rem;
+    }
+    .summary-right{
+        box-sizing: border-box;
+        width:100%;
+        margin-top:.15rem;
+    }
+    .summary-right h4{
+        margin:.22rem 0 .22rem .15rem;
+        padding-left:.1rem;
+        border-left:2px solid #ffd500;
+        font-size: .28rem;
+    }
+    .summary-right ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .summary-right ul li{
+        width:46%;
+        margin:.2rem 2% 0 2%;
+    }
+    .summary-right ul li:before{
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        width:.8rem;
+        height:.52rem;
+        background: url("../images/vip1.png") no-repeat 0 0 / .8rem .52rem;
+        z-index:22;
+    }
+    .summary-right ul li>div p{
+        padding:.1rem 0;
+        font-size:.22rem;
+    }
+    .summary-right ul li>div span{
+        padding-right:.2rem;
+        font-size:.2rem;
+        color:#999;
+    }
+    .summary-right ul li>div a:last-of-type{
+        font-size:.12rem;
+        color:#ff662f;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:991px) {
+    .vanda .vanda-content{
+        box-sizing: border-box;
+        width:100%;
+        padding:0 2%;
+        margin:70px auto 30px;
+        /*background-color:#f6f6f6;*/
+    }
+    .vanda .vanda-content h3{
+        padding:.3rem 0;
+        margin-bottom:.1rem;
+        font-size:.3rem;
+        color:#ddd;
+        font-weight: normal;
+    }
+    .video .video-left{
+        width:100%;
+    }
+    .video .video-right{
+        width:100%;
+        background-color:#333;
+    }
+    .video-left>div{
+        position: relative;
+    }
+    .video-left>div .control{
+        position: absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        height:40px;
+        background-color: rgb(43, 51, 63);;
+    }
+    .video-left>div .control div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:.8rem;
+        height:100%;
+        float: left;
+    }
+    .video-left>div .control div i,.video-left>div .control div span{
+        font-size:.4rem;
+        color:#fff;
+        cursor: pointer;
+        margin: auto;
+    }
+    .video-left>div .control div:nth-of-type(2) i{
+        font-size:.36rem;
+    }
+    .video-left>div .control div:nth-of-type(4) i{
+        font-size:.26rem;
+    }
+    .video-left>div .control div:nth-of-type(5){
+        width:.8rem;
+        margin-left:.3rem;
+    }
+    .video-left>div .control div:nth-of-type(6){
+        width:4rem;
+        margin-left:10px;
+    }
+    .video-left>div .control div:nth-of-type(5) span{
+        font-size:.2rem;
+    }
+    .video-left>div .control div:nth-of-type(6) p{
+        width:90%;
+        height:5px;
+        background-color:rgba(115,133,159,.5);
+    }
+    .video-left>div .control div:nth-of-type(7) i{
+        font-size:.24rem;
+    }
+    .video-left>div .control div:last-of-type i{
+        font-size:.22rem;
+    }
+    #vol:hover #volumePro{
+        display: block !important;
+    }
+
+    .video-left .share span{
+        font-size: .2rem;
+        color: #999;
+    }
+    .video .video-right #wrapper1{
+        height:5.3rem;
+        overflow:hidden;
+    }
+    .video .video-right h4{
+        padding:.1rem 0 .1rem .15rem;
+        border-bottom:1px solid #26262b;
+        font-size:.28rem;
+        color:#fff;
+    }
+    .video .video-right dl dt,.video .video-right dl dd{
+        padding:.15rem 0 .15rem .35rem;
+        font-size:.24rem;
+    }
+    .video .video-right dl dd{
+        padding:.16rem 0 .12rem .35rem;
+        border-bottom:1px solid #26262b;
+        background: url("../images/spirit_03.gif") no-repeat .08rem .19rem / .24rem .17rem;
+    }
+    .video .video-right dl dd span{
+        display: inline-block;
+        padding:.1rem .3rem 0 0;
+        font-size:.14rem;
+    }
+
+    .summary .summary_content{
+        box-sizing: border-box;
+        width:100%;
+        padding:0 15px;
+        margin:0 auto;
+    }
+    .summary-left{
+        box-sizing: border-box;
+        width:100%;
+    }
+    .summary-left #news{
+        border:1px solid #ddd;
+        border-radius:5px;
+    }
+    .summary-left #news ul{
+        border-bottom:1px solid #ddd;
+    }
+    .summary-left #news ul li{
+        float: left;
+        padding:.2rem 0;
+        border-bottom:2px solid transparent;
+        margin:0 .3rem;
+        font-size: .3rem;
+    }
+    .summary-left #news .con h4{
+        padding:.15rem 0 .1rem .2rem;
+        font-size:.28rem;
+    }
+    .summary-left #news .con ol li{
+        padding:.1rem 0;
+        letter-spacing:1px;
+        font-size:.28rem;
+    }
+    .summary-right{
+        box-sizing: border-box;
+        width:100%;
+        margin-top:.15rem;
+    }
+    .summary-right h4{
+        margin:.22rem 0 .22rem .15rem;
+        padding-left:.1rem;
+        border-left:2px solid #ffd500;
+        font-size: .32rem;
+    }
+    .summary-right ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .summary-right ul li{
+        width:40%;
+        margin:.2rem 5% 0 5%;
+    }
+    .summary-right ul li:before{
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        width:.8rem;
+        height:.52rem;
+        background: url("../images/vip1.png") no-repeat 0 0 / .8rem .52rem;
+        z-index:22;
+    }
+    .summary-right ul li>div p{
+        padding:.1rem 0;
+        font-size:.26rem;
+    }
+    .summary-right ul li>div span{
+        padding-right:.2rem;
+        font-size:.22rem;
+        color:#999;
+    }
+    .summary-right ul li>div a:last-of-type{
+        font-size:.12rem;
+        color:#ff662f;
+    }
+}
+@media screen and (min-width: 320px) and (max-width:767px) {
+    .vanda .vanda-content{
+        box-sizing: border-box;
+        width:100%;
+        padding:0 2%;
+        margin:70px auto 30px;
+        /*background-color:#f6f6f6;*/
+    }
+    .vanda .vanda-content h3{
+        padding:.3rem 0;
+        margin-bottom:.1rem;
+        font-size:.26rem;
+        color:#ddd;
+        font-weight: normal;
+    }
+    .video .video-left{
+        width:100%;
+    }
+    .video .video-right{
+        width:100%;
+        background-color:#333;
+    }
+    .video-left>div{
+        position: relative;
+    }
+    .video-left>div .control{
+        box-sizing: border-box;
+        padding-left:15px;
+        position: absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        height:40px;
+        background-color: rgb(43, 51, 63);;
+    }
+    .video-left>div .control div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:.4rem;
+        height:100%;
+        margin-right:.2rem;
+        float: left;
+    }
+    .video-left>div .control div i,.video-left>div .control div span{
+        font-size:.44rem;
+        color:#fff;
+        cursor: pointer;
+        margin: auto;
+    }
+    .video-left>div .control div:nth-of-type(2) i{
+        font-size:.38rem;
+    }
+    .video-left>div .control div:nth-of-type(4) i{
+        font-size:.28rem;
+    }
+    .video-left>div .control div:nth-of-type(5){
+        width:1.2rem;
+        margin-left:.3rem;
+    }
+    .video-left>div .control div:nth-of-type(6){
+        width:4rem;
+    }
+    .video-left>div .control div:nth-of-type(5) span{
+        font-size:.22rem;
+    }
+    .video-left>div .control div:nth-of-type(6) p{
+        width:90%;
+        height:5px;
+        background-color:rgba(115,133,159,.5);
+    }
+    .video-left>div .control div:nth-of-type(7) i{
+        font-size:.26rem;
+    }
+    .video-left>div .control div:last-of-type i{
+        font-size:.24rem;
+    }
+    #vol:hover #volumePro{
+        display: block !important;
+    }
+
+    .video-left .share span{
+        font-size: .28rem;
+        color: #999;
+    }
+    .video .video-right #wrapper1{
+        height:5.3rem;
+        overflow:hidden;
+    }
+    .video .video-right h4{
+        padding:.1rem 0 .1rem .15rem;
+        border-bottom:1px solid #26262b;
+        font-size:.3rem;
+        color:#fff;
+    }
+    .video .video-right dl dt,.video .video-right dl dd{
+        padding:.15rem 0 .15rem .4rem;
+        font-size:.3rem;
+    }
+    .video .video-right dl dd{
+        padding:.16rem 0 .12rem .4rem;
+        border-bottom:1px solid #26262b;
+        background: url("../images/spirit_03.gif") no-repeat .08rem .19rem / .24rem .17rem;
+    }
+    .video .video-right dl dd span{
+        display: inline-block;
+        padding:.1rem .3rem 0 0;
+        font-size:.26rem;
+    }
+
+    .summary .summary_content{
+        box-sizing: border-box;
+        width:100%;
+        padding:0 15px;
+        margin:0 auto;
+    }
+    .summary-left{
+        box-sizing: border-box;
+        width:100%;
+    }
+    .summary-left #news{
+        border:1px solid #ddd;
+        border-radius:5px;
+    }
+    .summary-left #news ul{
+        border-bottom:1px solid #ddd;
+    }
+    .summary-left #news ul li{
+        float: left;
+        padding:.2rem 0;
+        border-bottom:2px solid transparent;
+        margin:0 .3rem;
+        font-size: .36rem;
+    }
+    .summary-left #news .con h4{
+        padding:.15rem 0 .1rem .2rem;
+        font-size:.36rem;
+    }
+    .summary-left #news .con ol li{
+        padding:.1rem 0;
+        letter-spacing:1px;
+        font-size:.34rem;
+    }
+    .summary-right{
+        box-sizing: border-box;
+        width:100%;
+        margin-top:.15rem;
+    }
+    .summary-right h4{
+        margin:.22rem 0 .22rem .15rem;
+        padding-left:.1rem;
+        border-left:2px solid #ffd500;
+        font-size: .36rem;
+    }
+    .summary-right ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .summary-right ul li{
+        width:42%;
+        margin:.2rem 4% 0 4%;
+    }
+    .summary-right ul li:before{
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        width:.8rem;
+        height:.52rem;
+        background: url("../images/vip1.png") no-repeat 0 0 / .8rem .52rem;
+        z-index:22;
+    }
+    .summary-right ul li>div p{
+        padding:.1rem 0;
+        font-size:.3rem;
+    }
+    .summary-right ul li>div span{
+        padding-right:.2rem;
+        font-size:.28rem;
+        color:#999;
+    }
+    .summary-right ul li>div a:last-of-type{
+        font-size:.12rem;
+        color:#ff662f;
+    }
+}
+@media screen and (max-width: 320px) {
+    .vanda .vanda-content{
+        box-sizing: border-box;
+        width:100%;
+        padding:0 2%;
+        margin:70px auto 30px;
+        /*background-color:#f6f6f6;*/
+    }
+    .vanda .vanda-content h3{
+        padding:.3rem 0;
+        margin-bottom:.1rem;
+        font-size:.26rem;
+        color:#ddd;
+        font-weight: normal;
+    }
+    .video .video-left{
+        width:100%;
+    }
+    .video .video-right{
+        width:100%;
+        background-color:#333;
+    }
+    .video-left>div{
+        position: relative;
+    }
+    .video-left>div .control{
+        box-sizing: border-box;
+        padding-left:15px;
+        position: absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        height:40px;
+        background-color: rgb(43, 51, 63);;
+    }
+    .video-left>div .control div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:.4rem;
+        height:100%;
+        margin-right:.2rem;
+        float: left;
+    }
+    .video-left>div .control div i,.video-left>div .control div span{
+        font-size:.44rem;
+        color:#fff;
+        cursor: pointer;
+        margin: auto;
+    }
+    .video-left>div .control div:nth-of-type(2) i{
+        font-size:.38rem;
+    }
+    .video-left>div .control div:nth-of-type(4) i{
+        font-size:.28rem;
+    }
+    .video-left>div .control div:nth-of-type(5){
+        width:1.2rem;
+        margin-left:.3rem;
+    }
+    .video-left>div .control div:nth-of-type(6){
+        width:4rem;
+    }
+    .video-left>div .control div:nth-of-type(5) span{
+        font-size:.22rem;
+    }
+    .video-left>div .control div:nth-of-type(6) p{
+        width:90%;
+        height:5px;
+        background-color:rgba(115,133,159,.5);
+    }
+    .video-left>div .control div:nth-of-type(7) i{
+        font-size:.26rem;
+    }
+    .video-left>div .control div:last-of-type i{
+        font-size:.24rem;
+    }
+    #vol:hover #volumePro{
+        display: block !important;
+    }
+
+    .video-left .share span{
+        font-size: .28rem;
+        color: #999;
+    }
+    .video .video-right #wrapper1{
+        height:5.3rem;
+        overflow:hidden;
+    }
+    .video .video-right h4{
+        padding:.1rem 0 .1rem .15rem;
+        border-bottom:1px solid #26262b;
+        font-size:.3rem;
+        color:#fff;
+    }
+    .video .video-right dl dt,.video .video-right dl dd{
+        padding:.15rem 0 .15rem .4rem;
+        font-size:.3rem;
+    }
+    .video .video-right dl dd{
+        padding:.16rem 0 .12rem .4rem;
+        border-bottom:1px solid #26262b;
+        background: url("../images/spirit_03.gif") no-repeat .08rem .19rem / .24rem .17rem;
+    }
+    .video .video-right dl dd span{
+        display: inline-block;
+        padding:.1rem .3rem 0 0;
+        font-size:.26rem;
+    }
+
+    .summary .summary_content{
+        box-sizing: border-box;
+        width:100%;
+        padding:0 15px;
+        margin:0 auto;
+    }
+    .summary-left{
+        box-sizing: border-box;
+        width:100%;
+    }
+    .summary-left #news{
+        border:1px solid #ddd;
+        border-radius:5px;
+    }
+    .summary-left #news ul{
+        border-bottom:1px solid #ddd;
+    }
+    .summary-left #news ul li{
+        float: left;
+        padding:.2rem 0;
+        border-bottom:2px solid transparent;
+        margin:0 .3rem;
+        font-size: .36rem;
+    }
+    .summary-left #news .con h4{
+        padding:.15rem 0 .1rem .2rem;
+        font-size:.36rem;
+    }
+    .summary-left #news .con ol li{
+        padding:.1rem 0;
+        letter-spacing:1px;
+        font-size:.34rem;
+    }
+    .summary-right{
+        box-sizing: border-box;
+        width:100%;
+        margin-top:.15rem;
+    }
+    .summary-right h4{
+        margin:.22rem 0 .22rem .15rem;
+        padding-left:.1rem;
+        border-left:2px solid #ffd500;
+        font-size: .36rem;
+    }
+    .summary-right ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .summary-right ul li{
+        width:42%;
+        margin:.2rem 4% 0 4%;
+    }
+    .summary-right ul li:before{
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        width:.8rem;
+        height:.52rem;
+        background: url("../images/vip1.png") no-repeat 0 0 / .8rem .52rem;
+        z-index:22;
+    }
+    .summary-right ul li>div p{
+        padding:.1rem 0;
+        font-size:.3rem;
+    }
+    .summary-right ul li>div span{
+        padding-right:.2rem;
+        font-size:.28rem;
+        color:#999;
+    }
+    .summary-right ul li>div a:last-of-type{
+        font-size:.12rem;
+        color:#ff662f;
+    }
+}

@@ -1,0 +1,393 @@
+@charset "UTF-8";
+
+.interview .question ul{
+    padding:.15rem .15rem 0 .15rem;
+}
+.interview .question ul li{
+    padding:0.15rem 0;
+    border-bottom:1px solid #ccc;
+    cursor: pointer;
+}
+.interview .question ul li a{
+    display: flex;
+    width:100%;
+}
+.interview .question ul li img{
+    display:block;
+    width:2.6rem;
+    height:1.6rem;
+}
+.interview .question .li-right{
+    box-sizing: border-box;
+}
+.interview .question .li-right h3{
+    font-weight: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.interview .question .li-right>p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.interview .question .li-right div{
+    height:.2rem;
+    line-height: .2rem;
+    font-size:.14rem;
+    padding-top:.12rem;
+}
+.interview .question .li-right div span{
+    color:red;
+}
+.interview .question .li-right div span i{
+    display: inline-block;
+    padding-right:.02rem;
+    font-size:.16rem;
+}
+.news .news-1,.news .news-2{
+    padding:0 .15rem;
+}
+.news .news-1{
+    margin-bottom: .15rem;
+    padding-bottom: .15rem;
+}
+.news .news-1 ol li, .news .news-2 ol li{
+    box-sizing: border-box;
+}
+.news .news-1 ol li a, .news .news-2 ol li a{
+    display: block;
+}
+.news .news-1 ol li a span, .news .news-2 ol li a span{
+    text-align: center;
+    border-radius: .04rem;
+    background-color:#ccc;
+    color:#fff;
+}
+.news .news-1 ol li:nth-of-type(-n+3) a span, .news .news-2 ol li:nth-of-type(-n+3) a span{
+    background-color: #ff583d;
+}
+.paging ol li:nth-of-type(3) a{
+    color:red;
+}
+@media screen and (min-width: 1200px) {
+    .interview{
+        width:100%;
+        margin:.85rem auto 0;
+    }
+    .interview .interview-content{
+        display: flex;
+        width:12rem;
+        margin: 0 auto;
+    }
+    .interview .question{
+        width:9rem;
+    }
+    .interview .news{
+        width:3rem;
+    }
+    .interview .question ul li .li-right{
+        width:6.1rem;
+        padding:0 .15rem 0 .20rem;
+    }
+    .interview .question ul li .li-right h3{
+        font-size: .22rem;
+        height:.22rem;
+        line-height: .22rem;
+        margin-bottom:.15rem;
+    }
+    .interview .question ul li .li-right>p{
+        height:.5rem;
+        line-height:.25rem;
+        margin:0 0 .15rem .25rem;
+        font-size:.14rem;
+        text-indent:.03rem;
+
+    }
+    .news{
+        padding:.15rem;
+    }
+    .news .news-1 h4, .news .news-2 h4{
+        line-height:1.5;
+        padding:0 0 .02rem .05rem;
+        font-size:.2rem;
+        font-weight:normal;
+        border-bottom:.01rem solid #ddd;
+    }
+    .news .news-1 ol li, .news .news-2 ol li{
+        padding:0 .15rem;
+        height:.43rem;
+        line-height:.43rem;
+        border-bottom:.01rem solid #ddd;
+        font-size:.16rem;
+    }
+    .news .news-1 ol li a span, .news .news-2 ol li a span{
+        padding:.01rem .07rem;
+        margin:.05rem .11rem .05rem .05rem;
+    }
+    .news .news-1 ol li:hover, .news .news-2 ol li:hover{
+        background-color:#F2F2F2;
+    }
+    .interview .question ul li{
+        transition: 1s background-color;
+    }
+    .interview .question ul li:hover{
+        background-color: #f2f2f2;
+    }
+    .news .news-1 ol li ,
+    .news .news-2 ol li{
+        transition: 1s background-color;
+    }
+    .paging ol li a:hover{
+        color:red;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .interview{
+        width:100%;
+        margin:85px auto;
+    }
+    .interview .interview-content{
+        display: flex;
+        box-sizing: border-box;
+        padding:0 10px;
+    }
+    .interview .question{
+        width:60%;
+    }
+    .interview .news{
+        width:40%;
+    }
+    .interview .question ul li .li-right{
+        width:6.1rem;
+        padding:0 .15rem 0 .20rem;
+    }
+    .interview .question ul li .li-right h3{
+        font-size: .26rem;
+        line-height: .4rem;
+        padding:.1rem 0;
+
+    }
+    .interview .question ul li .li-right>p{
+        line-height:.25rem;
+        margin:0 0 .15rem .25rem;
+        font-size:.18rem;
+        text-indent:.03rem;
+    }
+    .interview .question ul li .li-right div{
+        font-size:.18rem;
+    }
+    .interview .question .li-right div span i{
+        font-size:.18rem;
+    }
+    .news{
+        padding:.15rem;
+    }
+    .news .news-1 h4,.news .news-2 h4{
+        padding-bottom:.1rem;
+        padding-left:.05rem;
+        font-size:.26rem;
+        font-weight:normal;
+        border-bottom:1px solid #ddd;
+    }
+    .news .news-1 ol li ,.news .news-2 ol li{
+        padding:0 .15rem;
+        height:.54rem;
+        line-height:.54rem;
+        border-bottom:1px solid #ddd;
+        font-size:.2rem;
+    }
+    .news .news-1 ol li a span,.news .news-2 ol li a span{
+        font-size:.14rem;
+        padding:.03rem .09rem;
+        margin:.05rem .11rem .05rem .05rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .interview{
+        width:100%;
+        margin:65px auto;
+    }
+    .interview .interview-content{
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width:100%;
+        padding:0 15px;
+        margin: 0 auto;
+    }
+    .interview .question{
+        width:100%;
+    }
+    .interview .news{
+        width:100%;
+    }
+    .interview .question ul li img{
+        width:5rem;
+        height:3rem;
+    }
+    .interview .question ul li .li-right{
+        width:12.2rem;
+        padding:0 .3rem 0 .4rem;
+    }
+    .interview .question ul li .li-right h3{
+        font-size: .34rem;
+        line-height: .8rem;
+        padding:.2rem 0;
+    }
+    .interview .question ul li .li-right>p{
+        line-height:.5rem;
+        margin:0 0 .3rem .5rem;
+        font-size:.26rem;
+        text-indent:1.5em;
+    }
+    .interview .question ul li .li-right div{
+        height:.4rem;
+        line-height: .4rem;
+        font-size:.24rem;
+        padding-top:.24rem;
+    }
+    .interview .question ul li .li-right div i{
+       font-size:.24rem;
+    }
+    .news{
+        padding:.3rem;
+    }
+    .news .news-1,.news .news-2{
+        padding:0 .3rem;
+    }
+    .news .news-1{
+        margin-bottom: .3rem;
+        padding-bottom: .3rem;
+    }
+    .news .news-1 h4,.news .news-2 h4{
+        padding-bottom:.1rem;
+        padding-left:.05rem;
+        font-size:.38rem;
+        font-weight:normal;
+        border-bottom:1px solid #ddd;
+    }
+    .news .news-1 ol li ,.news .news-2 ol li{
+        padding:0 .3rem;
+        height:.9rem;
+        line-height:.9rem;
+        border-bottom:1px solid #ddd;
+        font-size:.26rem;
+    }
+    .news .news-1 ol li a span,.news .news-2 ol li a span{
+        font-size:.18rem;
+        padding:.06rem .12rem;
+        margin:.1rem .22rem .1rem .1rem;
+        border-radius: .08rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .interview{
+        width:100%;
+        margin:65px auto;
+    }
+    .interview .interview-content{
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        margin:0 auto;
+        padding:0 15px;
+    }
+    .interview .question{
+        width:100%;
+    }
+    .interview .news{
+        width:100%;
+    }
+    .interview .question ul{
+        padding:.15rem .15rem 0 .15rem;
+    }
+    .interview .question ul li img{
+        width:5rem;
+        height:3rem;
+    }
+    .interview .question ul li .li-right{
+        width:12.2rem;
+        padding:0 .3rem 0 .4rem;
+    }
+    .interview .question ul li .li-right h3{
+        font-size: .46rem;
+        line-height: .8rem;
+        padding:.2rem 0;
+    }
+    .interview .question ul li .li-right>p{
+        line-height:.5rem;
+        margin:0 0 .3rem .5rem;
+        font-size:.34rem;
+        text-indent:1.5em;
+    }
+    .interview .question ul li .li-right div{
+        height:.4rem;
+        line-height: .4rem;
+        font-size:.32rem;
+        padding-top:.24rem;
+    }
+    .interview .question ul li .li-right div i{
+        font-size:.32rem;
+    }
+    .news{
+        padding:.3rem;
+    }
+    .news .news-1,.news .news-2{
+        padding:0 .3rem;
+    }
+    .news .news-1{
+        margin-bottom: .3rem;
+        padding-bottom: .3rem;
+    }
+    .news .news-1 h4,.news .news-2 h4{
+        padding-bottom:.1rem;
+        padding-left:.05rem;
+        font-size:.52rem;
+        font-weight:normal;
+        border-bottom:1px solid #ddd;
+    }
+    .news .news-1 ol li ,.news .news-2 ol li{
+        padding:0 .3rem;
+        height:.9rem;
+        line-height:.9rem;
+        border-bottom:1px solid #ddd;
+        font-size:.34rem;
+    }
+    .news .news-1 ol li a span,.news .news-2 ol li a span{
+        padding:.06rem .12rem;
+        margin:.1rem .22rem .1rem .1rem;
+        border-radius: .08rem;
+    }
+
+}
+
+/*公共分页 开始*/
+.paging{
+    display: flex;
+    justify-content: center;
+    padding:50px 0;
+}
+.paging ol{
+    width:288px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.paging ol li{
+    width:10%;
+    height:24px;
+    line-height:24px;
+    border:1px solid #333;
+    border-radius:6px;
+}
+.paging ol li a{
+    display: block;
+}
+/*公共分页 结束*/
+

@@ -1,0 +1,418 @@
+@charset "UTF-8";
+.content{
+    padding:70px 0;
+    font-family: "微软雅黑" !important;
+}
+.center{
+    width: 11.7rem;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.content .list-ol{
+    padding: 0.08rem 0.15rem;
+    margin-bottom: 0.2rem;
+}
+.content .list-ol li:nth-of-type(2){
+    padding-left: 0.1rem;
+    margin-left:.05rem;
+}
+.content .list-ol li:nth-of-type(2) a:before{
+    content: '/';
+    position: absolute;
+    font-size: 0.12rem;
+    line-height: 0.15rem;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+}
+.content .list-ol li a{
+    font-size: 0.12rem;
+    line-height:1;
+}
+.tab .tab-choose{
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    margin-bottom: 0.12rem;
+}
+.tab .tab-choose .choose{
+    padding: 0.1rem 0.1rem 0.1rem 0.5rem;
+}
+.tab .tab-choose .choose span{
+    width: 10%;
+    font-size: 0.14rem;
+    line-height: 0.32rem;
+}
+.tab .tab-choose .choose div ul li a{
+    line-height: 0.32rem;
+    font-size: 0.14rem;
+    padding: 0 0.2rem;
+    margin-bottom: 0.1rem;
+    border-radius: 4px;
+}
+.tab .tab-choose .choose div ul li a:hover{
+    background-color: #ff662f;
+    color: #fff !important;
+}
+.tab .tab-choose .choose .active{
+    background-color: #ff662f;
+    color: #fff !important;
+}
+.tab .tab-content ul{
+    padding: .2rem;
+}
+.tab .tab-content ul li{
+    width: calc((100% - 0.9rem) / 4);
+    margin-right: 0.3rem;
+    transition: .05s;
+}
+.tab .tab-content ul li:nth-of-type(4n){
+    margin-right: 0;
+}
+.tab .tab-content ul li img{
+    width: 100%;
+}
+.tab .tab-content ul li .text > a{
+    line-height: 0.3rem;
+    font-size: 0.16rem;
+}
+.tab .tab-content ul li .text > div span{
+    font-size: 0.14rem;
+    line-height: 0.2rem;
+}
+.tab .tab-content ul li .text > div a{
+    font-size: 0.14rem;
+    color: red;
+    line-height: 0.2rem;
+}
+.tab .tab-content ul li .text > div{
+    margin-top: 0.1rem;
+}
+.tab .tab-content ul li .text{
+    padding: 0.05rem 0.1rem;
+}
+.tab .tab-content ul li:nth-of-type(-n + 8){
+    margin-bottom: 0.2rem;
+}
+.tab .tab-content ul li:hover{
+    box-shadow: 0 0 5px #000;
+}
+.tab .tab-content ul li:hover .text>a{
+    color: #ff662f;
+}
+.paging{
+    padding: 0.7rem 0 0.1rem;
+}
+.paging a{
+    width: 0.3rem;
+    height: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 40%;
+    margin: 0 5px;
+    line-height: 0.3rem;
+    font-size:.16rem;
+}
+.paging a:hover{
+    border-radius: 50%;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    box-shadow: 2px 2px 3px #cccccc;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .center{
+        width: 14.89549rem;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .content{
+        padding-top: 1.4rem;
+    }
+    .content .list-ol a{
+        font-size: 12px !important;
+    }
+    .content .list{
+        padding: 0.124rem 0.232rem;
+        margin-bottom: 0.2rem;
+    }
+    .content .list li:nth-of-type(2){
+        padding-left: 0.31rem;
+    }
+    .content .list li:nth-of-type(2):after{
+        font-size: 0.186rem;
+        line-height: 0.232rem;
+        left: 0.155rem;
+    }
+    .content .list li a{
+        font-size: 0.186rem;
+        line-height: 0.232rem;
+    }
+    .content .list li{
+        line-height: 0.31rem;
+    }
+    .tab .tab-choose{
+        margin-bottom: 0.186rem;
+    }
+    .tab .tab-choose .choose{
+        padding: 0.155rem 0.155rem 0.155rem 0.774rem;
+    }
+    .tab .tab-choose .choose span{
+        font-size: 0.22rem;
+        line-height: 0.5rem;
+    }
+    .tab .tab-choose .choose div ul li a{
+        line-height: 0.5rem;
+        font-size: 0.22rem;
+        padding: 0 0.31rem;
+        margin-bottom: 0.155rem;
+    }
+    .tab .tab-content ul li{
+        width: calc((100% - 0.93rem) / 3);
+        margin-right: 0.465rem;
+    }
+    .tab .tab-content ul li:nth-of-type(4n){
+        margin-right: 0.465rem;
+    }
+    .tab .tab-content ul li:nth-of-type(3n){
+        margin-right: 0;
+    }
+    .tab .tab-content ul li .text > a{
+        line-height: 0.465rem;
+        font-size: 0.25rem;
+    }
+    .tab .tab-content ul li .text > div span{
+        font-size: 0.22rem;
+        line-height: 0.31rem;
+    }
+    .tab .tab-content ul li .text > div a{
+        font-size: 0.22rem;
+        line-height: 0.31rem;
+    }
+    .tab .tab-content ul li .text > div{
+        margin-top: 0.155rem;
+    }
+    .tab .tab-content ul li .text{
+        padding: 0.1rem 0.155rem;
+    }
+    .tab .tab-content ul li:nth-of-type(-n + 9){
+        margin-bottom: 0.31rem;
+    }
+    .paging{
+        padding: 1.1rem 0 0.155rem;
+    }
+    .paging a{
+        width: 0.465rem;
+        height: 0.465rem;
+        margin: 0 0.08rem;
+        line-height: 0.465rem;
+        font-size: .16rem;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width: 768px){
+    .center{
+        width:auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .content{
+        padding-top: 1.8rem;
+    }
+    .content .list{
+        padding: 0.16rem 0.3rem;
+        margin-bottom: 0.4rem;
+    }
+    .tab .tab-choose{
+        margin-bottom: 0.22rem;
+    }
+    .tab .tab-choose .choose{
+        padding: 0.2rem 0.2rem 0.2rem 1rem;
+        flex-wrap: wrap;
+    }
+    .tab .tab-choose .choose span{
+        width: 100%;
+        font-size: 0.28rem;
+        line-height: 0.64rem;
+    }
+    .tab .tab-choose .choose div{
+        width: 100%;
+    }
+    .tab .tab-choose .choose div ul{
+        flex-wrap: wrap;
+    }
+    .tab .tab-choose .choose div ul li{
+        width: 100%;
+    }
+    .tab .tab-choose .choose div ul li a{
+        width: 100%;
+        line-height: 0.64rem;
+        font-size: 0.28rem;
+        margin-bottom: 0.2rem;
+        padding: 0;
+    }
+    .tab .tab-choose .choose div ul li:hover a{
+        background-color: #ff662f;
+    }
+    .content .list li:nth-of-type(2){
+        padding-left: 0.4rem;
+    }
+    .content .list li:nth-of-type(2):after{
+        font-size: 0.28rem;
+        line-height: 0.3rem;
+        left: 0.2rem;
+    }
+    .content .list li a{
+        font-size: 0.22rem;
+        line-height: 0.3rem;
+    }
+    .content .list li{
+        line-height: 0.4rem;
+    }
+    .tab .tab-content ul li{
+        width: calc((100% - 0.6rem) / 2);
+        margin-right: 0.6rem;
+    }
+    .tab .tab-content ul li:nth-of-type(2n){
+        margin-right: 0 !important;
+    }
+    .tab .tab-content ul li:nth-of-type(3n){
+        margin-right: 0.6rem;
+    }
+    .tab .tab-content ul li .text > a{
+        line-height: 0.6rem;
+        font-size: 0.32rem;
+    }
+    .tab .tab-content ul li .text > div span{
+        font-size: 0.28rem;
+        line-height: 0.4rem;
+    }
+    .tab .tab-content ul li .text > div a{
+        font-size: 0.28rem;
+        line-height: 0.4rem;
+    }
+    .tab .tab-content ul li .text > div{
+        margin-top: 0.2rem;
+    }
+    .tab .tab-content ul li .text{
+        padding: 0.1rem 0.2rem;
+    }
+    .tab .tab-content ul li{
+        margin-top: 0.4rem;
+    }
+    .paging{
+        padding: 1.4rem 0 0.2rem;
+    }
+    .paging a{
+        width: 0.6rem;
+        height: 0.6rem;
+        margin: 0 0.1rem;
+        line-height: 0.6rem;
+        font-size: .16rem;
+    }
+}
+@media screen and (max-width:767px){
+    .center{
+        width: 14.76rem;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .content{
+        padding-top: 1.8rem;
+    }
+    .content .list{
+        padding: 0.16rem 0.3rem;
+        margin-bottom: 0.4rem;
+    }
+    .tab .tab-choose{
+        margin-bottom: 0.22rem;
+    }
+    .tab .tab-choose .choose{
+        padding: 0.2rem 0.2rem 0.2rem 1rem;
+        flex-wrap: wrap;
+    }
+    .tab .tab-choose .choose span{
+        width: 100%;
+        font-size: 0.28rem;
+        line-height: 0.64rem;
+    }
+    .tab .tab-choose .choose div{
+        width: 100%;
+    }
+    .tab .tab-choose .choose div ul{
+        flex-wrap: wrap;
+    }
+    .tab .tab-choose .choose div ul li{
+        width: 100%;
+    }
+    .tab .tab-choose .choose div ul li a{
+        width: 100%;
+        line-height: 0.64rem;
+        font-size: 0.28rem;
+        margin-bottom: 0.2rem;
+        padding: 0;
+    }
+    .tab .tab-choose .choose div ul li:hover a{
+        background-color: #ff662f;
+    }
+    .content .list li:nth-of-type(2){
+        padding-left: 0.4rem;
+    }
+    .content .list li:nth-of-type(2):after{
+        font-size: 0.28rem;
+        line-height: 0.3rem;
+        left: 0.2rem;
+    }
+    .content .list li a{
+        font-size: 0.22rem;
+        line-height: 0.3rem;
+    }
+    .content .list li{
+        line-height: 0.4rem;
+    }
+    .tab .tab-content ul li{
+        width: calc((100% - 0.6rem) / 2);
+        margin-right: 0.6rem;
+    }
+    .tab .tab-content ul li:nth-of-type(2n){
+        margin-right: 0 !important;
+    }
+    .tab .tab-content ul li:nth-of-type(3n){
+        margin-right: 0.6rem;
+    }
+    .tab .tab-content ul li .text > a{
+        line-height: 0.6rem;
+        font-size: 0.32rem;
+    }
+    .tab .tab-content ul li .text > div span{
+        font-size: 0.28rem;
+        line-height: 0.4rem;
+    }
+    .tab .tab-content ul li .text > div a{
+        font-size: 0.28rem;
+        line-height: 0.4rem;
+    }
+    .tab .tab-content ul li .text > div{
+        margin-top: 0.2rem;
+    }
+    .tab .tab-content ul li .text{
+        padding: 0.1rem 0.2rem;
+    }
+    .tab .tab-content ul li{
+        margin-top: 0.4rem;
+    }
+    .paging{
+        padding: 1.4rem 0 0.2rem;
+    }
+    .paging a{
+        width: 0.6rem;
+        height: 0.6rem;
+        margin: 0 0.1rem;
+        line-height: 0.6rem;
+        font-size: .16rem;
+    }
+}

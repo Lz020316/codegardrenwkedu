@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="common/reset.css">
+    <link rel="stylesheet" href="common/public.css">
+    <link rel="stylesheet" href="common/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="common/header.css">
+    <link rel="stylesheet" href="common/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--视窗   宽度 = 屏幕可见宽度     缩放倍数=1（不缩放） 允许最大倍数      禁止用户缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <!--让IE用最新版本渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script rel="stylesheet" href="js/html5.js"></script>
+    <script rel="stylesheet" href="js/respond.js"></script>
+    <style>
+        .cursor{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<style>
+    /*==========登陆弹窗==========*/
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+        background-color: transparent;
+        border: 0;
+    }
+
+    .nav-tabs {
+        border: 0;
+    }
+
+    .nav-tabs li a {
+        margin-right: 0;
+        line-height: 1;
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .nav-tabs li a:hover {
+        background-color: transparent;
+        border: 0;
+    }
+
+    a {
+        color: #333 !important;
+    }
+
+    a:hover {
+        text-decoration: none !important;
+    }
+
+
+    .input-group {
+        height: 50px;
+    }
+
+    .input-group input {
+        height: 50px !important;
+    }
+
+    .modal-dialog {
+        width: 420px;
+        border-radius: 5px;
+    }
+
+    .tab-wrap {
+        padding: 19px 19px 13px;
+    }
+
+    .tab-wrap .tab-nav {
+        margin-bottom: 16px;
+    }
+
+    .tab-wrap .tab-nav ul {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+    }
+
+    .tab-wrap .tab-nav ul li {
+        width: 30%;
+        padding: 12px 15px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .tab-wrap .tab-nav ul li a {
+        color: #fff !important;
+    }
+
+    .tab-wrap .tab-nav ul li:nth-of-type(1) {
+        background-color: #33c4f3;
+    }
+
+    .tab-wrap .tab-nav ul li:nth-of-type(2) {
+        background-color: #93d733;
+    }
+
+    .tab-wrap .tab-nav > i {
+        display: block;
+        width: 193px;
+        height: 2px;
+        background-color: #ccc;
+        /*transition: .3s all;*/
+    }
+
+    .input-group-addon {
+        background-color: transparent;
+    }
+
+    .tab-content .input-group-addon {
+        line-height: 20px;
+    }
+
+    .tab-content .input-group-addon i {
+        margin-left: 5px;
+    }
+
+    .user {
+        line-height: 25px;
+        padding-left: 10px;
+        color: #a94442;
+    }
+
+    .btn {
+        padding: 0 !important;
+    }
+
+    #jumpFind {
+        margin-right: 40px;
+    }
+
+    .tab-content form input[type='submit'] {
+        width: 100%;
+        height: 48px;
+        line-height: 48px;
+        margin-top: 15px;
+        font-size: 20px;
+        background-color: #ffb930;
+        border: 0 !important;
+    }
+
+    .land .modal-footer {
+        text-align: center;
+    }
+
+    .land .modal-footer a {
+        font-size: 30px;
+    }
+
+    .land .modal-footer a + a {
+        margin-left: 50px;
+    }
+
+    .land .modal-footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .land .modal-footer div {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .land .modal-footer div img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .land .modal-content {
+        position: relative;
+    }
+
+    .land .modal-content > i {
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    #sec2 .input-group label[for='usertel'] {
+        height: 41px;
+    }
+
+    #sec2 .input-group label i {
+        font-size: 18px;
+    }
+
+    #sec2 .input-group + .input-group, #findPassword .input-group + .input-group {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    #sec2 .input-group input {
+        height: 40px;
+    }
+
+    #sec2 .input-group + .input-group input,
+    #findCheckImg,
+    #findPassword .input-group:nth-of-type(3) input {
+        width: 63%;
+        margin-right: 5%;
+    }
+
+    #sec2 .input-group + .input-group input + button {
+        width: 120px;
+        height: 50px;
+        color: #ffa900;
+        background-color: #fff0d3;
+        border: 1px #ffa900 solid;
+    }
+
+    #v_container {
+        float: left;
+    }
+
+    canvas {
+        width: 120px;
+        height: 40px;
+    }
+
+    .modal-content h3 {
+        text-align: center;
+    }
+
+    #findPassword .input-group,
+    #findPassword input,
+    #findPassword button {
+        height: 40px;
+    }
+
+    #findPassword button {
+        width: 32%;
+        height: 100%;
+        color: #ffa900;
+        background-color: #fff0d3;
+        border: 1px #ffa900 solid;
+    }
+
+    #findPassword input[type='submit'] {
+        width: 100%;
+        height: 48px;
+        line-height: 48px;
+        margin-top: 15px;
+        font-size: 20px;
+        background-color: #ffb930;
+        border: 0 !important;
+    }
+
+    #findPassword .modal-content {
+        padding: 15px;
+    }
+
+    .findPassword .modal-content {
+        position: relative;
+    }
+
+    .findPassword .modal-content > i {
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .register .modal-content {
+        position: relative;
+    }
+
+    .register .modal-content > i {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        z-index: 111111;
+    }
+
+    .register .modal-content > i:empty {
+        right: 10px;
+    }
+
+    .register .modal-content > i:not(:empty) {
+        left: 10px;
+    }
+
+    #registerModal .input-group {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #registerModal input, #registerModal button {
+        height: 40px;
+    }
+
+    #registerModal button {
+        width: 120px;
+        height: 100%;
+        color: #ffa900;
+        background-color: #fff0d3;
+        border: 1px #ffa900 solid;
+    }
+
+    #registerCheckImg, #registerCheckTel {
+        width: 63%;
+        margin-right: 5%;
+    }
+
+    #registerModal .modal-footer input {
+        width: 100%;
+        height: 48px;
+        line-height: 48px;
+        font-size: 20px;
+        background-color: #ffb930;
+        border: 0 !important;
+    }
+
+    .imgCode img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<body>
+<!--头部开始-->
+<header class="header clearFix w100 box-border-box p-fixed">
+    <h1 class="logo pull-left p-relative">
+        <a href="##" class="block"><img src="images/logo.png" alt="" class="p-absolute"></a>
+    </h1>
+    <nav class="pull-left nav">
+        <ul class="flex">
+            <li class="text-center"><a href="index.html" class="inline-block text-fff">首页</a></li>
+            <li class="text-center"><a href="html/Video_Course.html" class="inline-block text-fff">视频课程</a></li>
+            <li class="text-center"><a href="html/interview.html" class="inline-block text-fff">面试集锦</a></li>
+            <li class="text-center"><a href="html/interview.html" class="inline-block text-fff">编程教程</a></li>
+            <li class="text-center"><a href="html/interview.html" class="inline-block text-fff">新闻资讯</a></li>
+            <li class="text-center"><a href="html/vip.html" class="inline-block text-fff">VIP专区</a></li>
+            <li class="text-center"><a href="html/teacher.html" class="inline-block text-fff">名师专区</a></li>
+            <li class="text-center"><a href="html/about_us.html" class="inline-block text-fff">关于我们</a></li>
+        </ul>
+    </nav>
+    <ul class="list p-fixed hide" id="list">
+        <li><a href="../html/index.html" class="text-fff">首页</a></li>
+        <li><a href="html/Video_Course.html" class="text-fff">视频课程</a></li>
+        <li><a href="html/interview.html" class="text-fff">面试集锦</a></li>
+        <li><a href="html/interview.html" class="text-fff">编程教程</a></li>
+        <li><a href="html/interview.html" class="text-fff">新闻资讯</a></li>
+        <li><a href="html/vip.html" class="text-fff">vip专区</a></li>
+        <li><a href="html/teacher.html" class="text-fff">名师专区</a></li>
+        <li><a href="html/about_us.html" class="text-fff">关于我们</a></li>
+    </ul>
+    <div class="pull-right header-right fs0">
+        <a class="inline-block text-center"></a>
+        <a class="inline-block text-center"></a>
+        <a class="inline-block text-center text-ccc" data-toggle='modal' data-target='#land'>登陆</a>
+        <a class="inline-block text-center text-ccc" data-toggle='modal' data-target='#registerModal'>注册</a>
+    </div>
+    <button class="button border-0 pull-right hide" id="btn">
+        <img src="images/icon1.png" alt="展开导航" class="block">
+    </button>
+</header>
+<!--头部结束-->
+<!--=============登陆弹窗============-->
+<div class="land modal fade" id="land" tabindex="-1" data-backdrop='true'>
+    <!--模态框的窗口层-->
+    <div class="modal-dialog">
+        <!--模态框的内容层-->
+        <div class="modal-content">
+            <!--=======登陆切换按钮=======-->
+            <i class="glyphicon glyphicon-remove" id="closeLand"></i>
+            <div class="tab-wrap">
+                <!--tab切换激活按钮开始-->
+                <nav class="tab-nav">
+                    <ul class="nav nav-tabs" id="nav">
+                        <li class="active"><a href="#sec1" data-toggle='tab'>账号登陆</a></li>
+                        <li><a href="#sec2" data-toggle='tab'>手机登陆</a></li>
+                    </ul>
+                    <i></i>
+                </nav>
+                <!--tab切换激活按钮结束-->
+                <!--tab切换内容开始-->
+                <div class="tab-content" id="tab-content">
+                    <div id="sec1" class="tab-pane fade in active">
+                        <form action="" method="post" id="usernameLand">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <label class="input-group-addon" for="username">账号<i
+                                            class="glyphicon glyphicon-user"></i></label>
+                                    <input type="text" class="form-control" id="username" name="username"
+                                           placeholder="请输入用户名或邮箱">
+                                </div>
+                                <span class="user hide">请输入用户名</span>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <label class="input-group-addon" for="password">密码<i
+                                            class="glyphicon glyphicon-lock"></i></label>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                           placeholder="请输入密码"/>
+                                    <i class="glyphicon glyphicon-remove form-control-feedback hide"></i>
+                                </div>
+                            </div>
+                            <a href="javascript:" class="btn btn-link" id="jumpFind">忘记密码</a>
+                            <a href="javascript:" class="btn btn-link" id="jumpRegister">注册</a><br>
+                            <input type="submit" value="登陆" class="btn btn-success dataForm">
+                        </form>
+                    </div>
+                    <div id="sec2" class="tab-pane fade">
+                        <form action="" method="post" id="telLand">
+                            <div class="form-group">
+                                <div class="input-group input-group-tel">
+                                    <label class="input-group-addon" for="usertel"><i class="fa fa-mobile"></i></label>
+                                    <input type="text" class="form-control tel" id="usertel" placeholder="请输入11位的手机号码">
+                                    <span class="user hide">请输入正确的手机号</span>
+                                </div>
+                                <div class="input-group clearfix">
+                                    <input type="text" id="checkImg" class="form-control" placeholder="请输入图形验证码"/>
+                                    <div class="imgCode" id="v_container" style="width: 120px;height: 100%;"
+                                         title="看不清?换一张"></div>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="checkTel" placeholder="请输入短信验证码">
+                                    <button class="btn btn-success" data-loading-text='正在发送...' id="getCheckTel"
+                                            type="button">发送验证码
+                                    </button>
+                                </div>
+                                <input type="submit" value="登陆" class="btn btn-success dataForm">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer loading-mode">
+                <div><a href="" class="WeChat"><img src="images/weixin.png" alt=""></a></div>
+                <div><a href="" class="QQ"><img src="images/qq.png" alt=""></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--========找回密码弹窗===========-->
+<div class="findPassword modal fade" id="findPassword" tabindex="-1" data-backdrop="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <i class="glyphicon glyphicon-remove" id="closeFind"></i>
+            <h3>找回密码</h3>
+            <form action="" method="post" id="findLand">
+                <div class="form-group">
+                    <div class="input-group input-group-tel">
+                        <label class="input-group-addon" for="usertel"><i class="fa fa-mobile"></i></label>
+                        <input type="text" class="form-control tel" id="findUsertel" placeholder="请输入11位的手机号码">
+                        <span class="user hide">请输入正确的手机号</span>
+                    </div>
+                    <div class="input-group clearfix">
+                        <input type="text" id="findCheckImg" class="form-control" placeholder="请输入图形验证码"/>
+                        <div class="imgCode" id="findV_container" style="width: 120px;height: 100%;float: left;"
+                             title="看不清?换一张"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="findCheckTel" placeholder="请输入短信验证码">
+                        <button class="btn btn-success" data-loading-text='正在发送...' id="findGetCheckTel" type="button">
+                            发送验证码
+                        </button>
+                    </div>
+                    <div class="input-group">
+                        <label class="input-group-addon" for="pass">输入密码&nbsp;&nbsp;<i
+                                class="glyphicon glyphicon-lock"></i></label>
+                        <input type="text" class="form-control" id="pass" placeholder="请输入密码">
+                    </div>
+                    <div class="input-group">
+                        <label class="input-group-addon" for="passCon">确认密码&nbsp;&nbsp;<i
+                                class="glyphicon glyphicon-lock"></i></label>
+                        <input type="text" class="form-control" id="passCon" placeholder="请确认密码">
+                    </div>
+                    <input type="submit" value="找回" class="btn btn-success dataForm">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--=======注册弹窗===========-->
+<div class="register modal fade" id="registerModal" tabindex="-1" data-backdrop="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <i class="glyphicon glyphicon-arrow-left" id="returnLand"> 登陆</i>
+            <i class="glyphicon glyphicon-remove" id="closeRegister"></i>
+            <div class="modal-body">
+                <h3>注册</h3>
+                <form action="" method="post" id="registerForm">
+                    <div class="input-group">
+                        <label for="registerUser" class="input-group-addon">账号&nbsp;&nbsp;<i
+                                class="glyphicon glyphicon-user"></i></label>
+                        <input type="text" id="registerUser" class="form-control" placeholder="请输入用户名或者邮箱">
+                    </div>
+                    <div class="input-group">
+                        <label for="registerPass" class="input-group-addon">输入密码&nbsp;&nbsp;<i
+                                class="glyphicon glyphicon-lock"></i></label>
+                        <input type="password" id="registerPass" class="form-control" placeholder="请输入密码">
+                    </div>
+                    <div class="input-group">
+                        <label for="registerPassAgain" class="input-group-addon">确认密码&nbsp;&nbsp;<i
+                                class="glyphicon glyphicon-lock"></i></label>
+                        <input type="password" id="registerPassAgain" class="form-control" placeholder="请再次输入密码">
+                    </div>
+                    <div class="input-group">
+                        <label for="registerEmail" class="input-group-addon">邮箱&nbsp;&nbsp;<i
+                                class="glyphicon glyphicon-envelope"></i></label>
+                        <input type="email" id="registerEmail" class="form-control" placeholder="请输入邮箱">
+                    </div>
+                    <div class="input-group input-group-tel">
+                        <label for="registerTel" class="input-group-addon tel">手机号码&nbsp;&nbsp;<i
+                                class="fa fa-mobile"></i></label>
+                        <input type="tel" id="registerTel" class="form-control" placeholder="请输入11位的手机号码">
+                    </div>
+                    <div class="input-group clearfix">
+                        <input type="text" id="registerCheckImg" class="form-control" placeholder="请输入图形验证码"/>
+                        <div class="imgCode" id="registerV_container" style="width: 120px;height: 100%;float: left;"
+                             title="看不清?换一张"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="registerCheckTel" placeholder="请输入短信验证码">
+                        <button class="btn btn-success" data-loading-text='正在发送...' id="registerGetCheckTel"
+                                type="button">发送验证码
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <input type="submit" class="btn btn-success" form="registerForm" value="注册">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--轮播图开始-->
+<section class="banner">
+    <div class="carousel slide opacity" id="slide">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/banner1.jpg" height="300" alt=""/>
+            </div>
+            <div class="item">
+                <img src="images/banner2.jpg" height="300" alt=""/>
+            </div>
+            <div class="item">
+                <img src="images/banner3.jpg" height="300" alt=""/>
+            </div>
+        </div>
+        <ol class="carousel-indicators">
+            <li data-slide-to='0' data-target='#slide' class="active"></li>
+            <li data-slide-to='1' data-target='#slide'></li>
+            <li data-slide-to='2' data-target='#slide'></li>
+        </ol>
+        <a href="#slide" class="carousel-control left" data-slide='prev'>
+            <i class="glyphicon glyphicon-chevron-left"></i>
+        </a>
+        <a href="#slide" class="carousel-control right" data-slide='next'>
+            <i class="glyphicon glyphicon-chevron-right"></i>
+        </a>
+    </div>
+</section>
+<!--轮播图结束-->
+
+<!--为你推荐开始-->
+<section class="recommend bg-f0f0f0">
+    <div class="center">
+        <div class="title flex flex-between">
+            <h2>为你推荐</h2>
+            <a href="">换一换</a>
+        </div>
+        <ul class="flex flex-wrap">
+            <li class="w25 cursor bg-fff">
+                <div class="img p-relative">
+                    <img src="images/recommend1.png" alt="">
+                    <a href="html/video.html" class="inline-block p-absolute text-center text-fff">开始学习</a>
+                </div>
+                <div class="text">
+                    <h4><a href="html/video.html" class="inline-block">画图讲解hadoop视频</a></h4>
+                    <div class="flex flex-between">
+                        <span class="inline-block">8298人学习</span>
+                        <a class="inline-block">会员</a>
+                    </div>
+                </div>
+            </li>
+            <li class="w25 cursor bg-fff">
+                <div class="img p-relative">
+                    <img src="images/recommend2.jpg" alt="">
+                    <a href="html/video.html" class="inline-block p-absolute text-center text-fff">开始学习</a>
+                </div>
+                <div class="text">
+                    <h4><a href="html/video.html" class="inline-block">SPARK课程讲解</a></h4>
+                    <div class="flex flex-between">
+                        <span class="inline-block">3663人学习</span>
+                        <a class="inline-block">会员</a>
+                    </div>
+                </div>
+            </li>
+            <li class="w25 cursor bg-fff">
+                <div class="img p-relative">
+                    <img src="images/recommend3.png" alt="">
+                    <a href="html/video.html" class="inline-block p-absolute text-center text-fff">开始学习</a>
+                </div>
+                <div class="text">
+                    <h4><a href="html/video.html" class="inline-block">spark管理及优化</a></h4>
+                    <div class="flex flex-between">
+                        <span class="inline-block">2718人学习</span>
+                        <a href="html/video.html" class="inline-block">免费</a>
+                    </div>
+                </div>
+            </li>
+            <li class="w25 cursor bg-fff mr0">
+                <div class="img p-relative">
+                    <img src="images/recommend4.png" alt="">
+                    <a href="html/video.html" class="inline-block p-absolute text-center text-fff">开始学习</a>
+                </div>
+                <div class="text">
+                    <h4><a href="html/video.html" class="inline-block">hadoop优化课程</a></h4>
+                    <div class="flex flex-between">
+                        <span class="inline-block">3417人学习</span>
+                        <a class="inline-block">免费</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!--为你推荐结束-->
+
+<!--大数据最新课程开始-->
+<section class="curriculum bg-f8f8f8">
+    <div class="center">
+        <div class="title flex flex-between">
+            <h2>大数据最新课程</h2>
+            <a href="html/Video_Course.html">更多></a>
+        </div>
+        <ul class="flex flex-wrap">
+            <li class="cursor bg-fff">
+                <div class="img p-relative w100 over-hidden">
+                    <img src="images/curriculum1.png" alt="" class="w100">
+                    <a href="html/video.html" class="p-absolute inline-block text-center text-fff">开始学习</a>
+                </div>
+                <div class="text w100 box-border-box">
+                    <h4><a href="html/video.html">hive离线数据库</a></h4>
+                    <div class="flex flex-between">
+                        <span class="text-999">7043人学习</span>
+                        <a>会员</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor bg-fff">
+                <div class="img p-relative w100 over-hidden">
+                    <img src="images/curriculum2.jpg" alt="" class="w100">
+                    <a href="html/video.html" class="p-absolute inline-block text-center text-fff">开始学习</a>
+                </div>
+                <div class="text w100 box-border-box">
+                    <h4><a href="html/video.html">flume课程</a></h4>
+                    <div class="flex flex-between">
+                        <span class="text-999">8125人学习</span>
+                        <a>会员</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor bg-fff">
+                <div class="img p-relative w100 over-hidden">
+                    <img src="images/curriculum3.png" alt="" class="w100">
+                    <a href="html/video.html" class="p-absolute inline-block text-center text-fff">开始学习</a>
+                </div>
+                <div class="text w100 box-border-box">
+                    <h4><a href="html/video.html">lucene索引</a></h4>
+                    <div class="flex flex-between">
+                        <span class="text-999">1519人学习</span>
+                        <a>会员</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor mr0 bg-fff">
+                <div class="img p-relative w100 over-hidden">
+                    <img src="images/curriculum4.png" alt="" class="w100">
+                    <a href="html/video.html" class="p-absolute inline-block text-center text-fff">开始学习</a>
+                </div>
+                <div class="text w100 box-border-box">
+                    <h4><a href="html/video.html">大数据shell脚本</a></h4>
+                    <div class="flex flex-between">
+                        <span class="text-999">1183人学习</span>
+                        <a>会员</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor bg-fff">
+                <div class="img p-relative w100 over-hidden">
+                    <img src="images/curriculum5.png" alt="" class="w100">
+                    <a class="p-absolute inline-block text-center text-fff">开始学习</a>
+                </div>
+                <div class="text w100 box-border-box">
+                    <h4><a href="html/video.html">spark管理及优化</a></h4>
+                    <div class="flex flex-between">
+                        <span class="text-999">2720人学习</span>
+                        <a href="html/video.html">会员</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor bg-fff">
+                <div class="img p-relative w100 over-hidden">
+                    <img src="images/curriculum6.png" alt="" class="w100">
+                    <a href="html/video.html" class="p-absolute inline-block text-center text-fff">开始学习</a>
+                </div>
+                <div class="text w100 box-border-box">
+                    <h4><a href="html/video.html">舆情大数据平台分析</a></h4>
+                    <div class="flex flex-between">
+                        <span class="text-999">9995人学习</span>
+                        <a>免费</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor bg-fff">
+                <div class="img p-relative w100 over-hidden">
+                    <img src="images/curriculum7.png" alt="" class="w100">
+                    <a href="html/video.html" class="p-absolute inline-block text-center text-fff">开始学习</a>
+                </div>
+                <div class="text w100 box-border-box">
+                    <h4><a href="html/video.html">storm实时分析</a></h4>
+                    <div class="flex flex-between">
+                        <span class="text-999">2567人学习</span>
+                        <a>会员</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor mr0 bg-fff">
+                <div class="img p-relative w100 over-hidden">
+                    <img src="images/curriculum8.jpg" alt="" class="w100">
+                    <a href="html/video.html" class="p-absolute inline-block text-center text-fff">开始学习</a>
+                </div>
+                <div class="text w100 box-border-box">
+                    <h4><a href="html/video.html">SPARK课程讲解</a></h4>
+                    <div class="flex flex-between">
+                        <span class="text-999">3665人学习</span>
+                        <a>会员</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!--大数据最新课程结束-->
+
+<!--UI设计最新课程开始-->
+<section class="ui curriculum bg-f8f8f8">
+    <div class="center">
+        <div class="title flex flex-between">
+            <h2>UI设计最新课程开始</h2>
+            <a href="html/Video_Course.html">更多></a>
+        </div>
+        <ul class="flex flex-wrap">
+            <li class="cursor bg-fff">
+                <div class="img p-relative w100 over-hidden">
+                    <img src="images/ui1.jpg" alt="" class="w100">
+                    <a href="" class="p-absolute inline-block text-center text-fff">开始学习</a>
+                </div>
+                <div class="text box-border-box w100">
+                    <h4 class="text-ellipsis"><a href="html/video.html">MBE风格图标/插画创意/钟表设计</a></h4>
+                    <div class="flex flex-between">
+                        <span class="text-999">3017人学习</span>
+                        <a>会员</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor bg-fff">
+                <div class="img p-relative w100 over-hidden">
+                    <img src="images/ui2.jpg" alt="" class="w100">
+                    <a href="html/video.html" class="p-absolute inline-block text-center text-fff">开始学习</a>
+                </div>
+                <div class="text box-border-box w100">
+                    <h4 class="text-ellipsis"><a href="html/video.html">MBE风格图标/插画创意/太阳设计</a></h4>
+                    <div class="flex flex-between">
+                        <span class="text-999">3020人学习</span>
+                        <a>会员</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor bg-fff">
+                <div class="img p-relative w100 over-hidden">
+                    <img src="images/ui3.jpg" alt="" class="w100">
+                    <a href="html/video.html" class="p-absolute inline-block text-center text-fff">开始学习</a>
+                </div>
+                <div class="text box-border-box w100">
+                    <h4 class="text-ellipsis"><a href="html/video.html">MBE风格图标/插画创意/笑脸设计</a></h4>
+                    <div class="flex flex-between">
+                        <span class="text-999">3017人学习</span>
+                        <a>会员</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor mr0 bg-fff">
+                <div class="img p-relative w100 over-hidden">
+                    <img src="images/ui4.jpg" alt="" class="w100">
+                    <a href="html/video.html" class="p-absolute inline-block text-center text-fff">开始学习</a>
+                </div>
+                <div class="text box-border-box w100">
+                    <h4 class="text-ellipsis"><a href="html/video.html">MBE风格图标/插画创意/台灯设计</a></h4>
+                    <div class="flex flex-between">
+                        <span class="text-999">3017人学习</span>
+                        <a>会员</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor bg-fff mb0">
+                <div class="img p-relative w100 over-hidden">
+                    <img src="images/ui5.jpg" alt="" class="w100">
+                    <a href="html/video.html" class="p-absolute inline-block text-center text-fff">开始学习</a>
+                </div>
+                <div class="text box-border-box w100">
+                    <h4 class="text-ellipsis"><a href="html/video.html">MBE风格图标/插画创意/冷饮设计</a></h4>
+                    <div class="flex flex-between">
+                        <span class="text-999">3018人学习</span>
+                        <a>会员</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor bg-fff mb0">
+                <div class="img p-relative w100 over-hidden">
+                    <img src="images/ui6.jpg" alt="" class="w100">
+                    <a href="html/video.html" class="p-absolute inline-block text-center text-fff">开始学习</a>
+                </div>
+                <div class="text box-border-box w100">
+                    <h4 class="text-ellipsis"><a href="html/video.html">MBE风格图标/插画创意/星型设计</a></h4>
+                    <div class="flex flex-between">
+                        <span class="text-999">3023人学习</span>
+                        <a>会员</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor bg-fff mb0">
+                <div class="img p-relative w100 over-hidden">
+                    <img src="images/ui7.jpg" alt="" class="w100">
+                    <a href="html/video.html" class="p-absolute inline-block text-center text-fff">开始学习</a>
+                </div>
+                <div class="text box-border-box w100">
+                    <h4 class="text-ellipsis"><a href="html/video.html">电商设计-冬季服装</a></h4>
+                    <div class="flex flex-between">
+                        <span class="text-999">3027人学习</span>
+                        <a>会员</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor mr0 bg-fff mb0">
+                <div class="img p-relative w100 over-hidden">
+                    <img src="images/ui8.jpg" alt="" class="w100">
+                    <a href="html/video.html" class="p-absolute inline-block text-center text-fff">开始学习</a>
+                </div>
+                <div class="text box-border-box w100">
+                    <h4 class="text-ellipsis"><a href="html/video.html">电商设计-圣诞狂欢节</a></h4>
+                    <div class="flex flex-between">
+                        <span class="text-999">3026人学习</span>
+                        <a>会员</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!--UI设计最新课程结束-->
+
+<!--WEB前端最新课程开始-->
+<section class="web bg-f8f8f8">
+    <div class="center">
+        <div class="title flex flex-between">
+            <h2>WEB前端最新课程</h2>
+            <a href="html/Video_Course.html">更多></a>
+        </div>
+        <ul class="flex">
+            <li class="cursor w25 bg-fff">
+                <div class="img p-relative over-hidden">
+                    <img src="images/web1.jpg" alt="">
+                    <a href="html/video.html" class="inline-block p-absolute text-center text-fff">开始学习</a>
+                </div>
+                <div class="text w100 box-border-box">
+                    <h4><a href="html/video.html" class="inline-block">HTML和CSS基础</a></h4>
+                    <div class="flex flex-between">
+                        <span class="inline-block text-999">2.4万人学习</span>
+                        <a class="inline-block">免费</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor w25 bg-fff">
+                <div class="img p-relative over-hidden">
+                    <img src="images/web2.jpg" alt="">
+                    <a href="html/video.html" class="inline-block p-absolute text-center text-fff">开始学习</a>
+                </div>
+                <div class="text w100 box-border-box">
+                    <h4><a href="html/video.html" class="inline-block">css3</a></h4>
+                    <div class="flex flex-between">
+                        <span class="inline-block text-999">32人学习</span>
+                        <a class="inline-block">免费</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor w25 bg-fff">
+                <div class="img p-relative over-hidden">
+                    <img src="images/web2.jpg" alt="">
+                    <a href="html/video.html" class="inline-block p-absolute text-center text-fff">开始学习</a>
+                </div>
+                <div class="text w100 box-border-box">
+                    <h4><a href="html/video.html" class="inline-block">spark管理及优化</a></h4>
+                    <div class="flex flex-between">
+                        <span class="inline-block text-999">2718人学习</span>
+                        <a class="inline-block">免费</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cursor w25 bg-fff mr0">
+                <div class="img p-relative over-hidden">
+                    <img src="images/web1.jpg" alt="">
+                    <a href="html/video.html" class="inline-block p-absolute text-center text-fff">开始学习</a>
+                </div>
+                <div class="text w100 box-border-box">
+                    <h4><a href="html/video.html" class="inline-block">javascript</a></h4>
+                    <div class="flex flex-between">
+                        <span class="inline-block text-999">3417人学习</span>
+                        <a class="inline-block">免费</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!--WEB前端最新课程结束-->
+
+<!--在线直播开始-->
+<section class="live bg-f0f0f0">
+    <div class="center">
+        <div class="title flex flex-between">
+            <h2>在线直播</h2>
+            <a href="html/Video_Course.html">更多></a>
+        </div>
+        <ul class="flex">
+            <li class="cursor w25">
+                <div class="img p-relative over-hidden">
+                    <img src="images/live1.jpg" alt="">
+                    <a href="html/video.html" class="block p-absolute text-center text-fff">开始学习</a>
+                </div>
+                <div class="text bg-fff">
+                    <a href="html/video.html" class="block text-center">AI基础到精通</a>
+                </div>
+            </li>
+            <li class="cursor w25">
+                <div class="img p-relative over-hidden">
+                    <img src="images/live2.jpg" alt="">
+                    <a href="html/video.html" class="block p-absolute text-center text-fff">开始学习</a>
+                </div>
+                <div class="text bg-fff">
+                    <a href="html/video.html" class="block text-center">全能UI设计师</a>
+                </div>
+            </li>
+            <li class="cursor w25">
+                <div class="img p-relative over-hidden">
+                    <img src="images/live3.jpg" alt="">
+                    <a href="html/video.html" class="block p-absolute text-center text-fff">开始学习</a>
+                </div>
+                <div class="text bg-fff">
+                    <a href="html/video.html" class="block text-center">大数据与云计算公开课</a>
+                </div>
+            </li>
+            <li class="cursor w25 mr0">
+                <div class="img p-relative over-hidden">
+                    <img src="images/live4.jpg" alt="">
+                    <a href="html/video.html" class="block p-absolute text-center text-fff">开始学习</a>
+                </div>
+                <div class="text bg-fff">
+                    <a href="html/video.html" class="block text-center">大数据爬虫</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!--在线直播结束-->
+
+<!--VIP专区开始-->
+<section class="vip">
+    <div class="center">
+        <div class="vip-left bg-fff">
+            <div class="top flex">
+                <div class="content-left">
+                    <i class="block margin-auto"></i>
+                    <h3 class="text-center">全站通VIP</h3>
+                    <small class="text-center block">(即将涨价)</small>
+                </div>
+                <div class="content-right box-border-box">
+                    <dl>
+                        <dt class="bolder">全站视频无限学习</dt>
+                        <dd class="p-relative">集合当前流行前端及后台视频教程</dd>
+                        <dd class="p-relative">选你钟爱的分类</dd>
+                        <dd class="p-relative">APP端课程无限观看</dd>
+                        <dd class="p-relative">全年免费分类学习</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="bottom text-center">
+                <button class="border-0"><a class="block text-fff">立即获取</a></button>
+            </div>
+        </div>
+        <div class="vip-right vip-left bg-fff">
+            <div class="top flex">
+                <div class="content-left">
+                    <i class="block margin-auto"></i>
+                    <h3 class="text-center">终身VIP</h3>
+                    <small class="text-center block">(即将涨价)</small>
+                </div>
+                <div class="content-right box-border-box">
+                    <dl>
+                        <dt class="text-ellipsis bolder">终身学习全站所有会员教程</dt>
+                        <dd class="text-ellipsis p-relative">包含全站通VIP所有权益</dd>
+                        <dd class="text-ellipsis p-relative">当前所有类别+未来所有新增分类免费学</dd>
+                        <dd class="text-ellipsis p-relative">时间不限,终身学习</dd>
+                        <dd class="text-ellipsis p-relative">一次充值,终身受益</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="bottom text-center">
+                <button class="border-0"><a class="block text-fff">立即获取</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+<!--vip专区结束-->
+
+<!--学员薪资开始-->
+<section class="salary">
+    <div class="center">
+        <div class="salary-left">
+            <div class="title">
+                <div class="box">
+                    <h2>学员薪资</h2>
+                </div>
+            </div>
+            <div class="content over-hidden">
+                <div class="caption text-center">
+                    <table class="tableid w100" border="0" cellspacing="0" cellpadding="0">
+                        <tr class="flex w100">
+                            <th class="w20">学员姓名</th>
+                            <th class="w20">所在城市</th>
+                            <th class="w20">学员学历</th>
+                            <th class="w20">培训前薪资</th>
+                            <th class="w20">培训会薪资</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="table w100">
+                    <table id="table1" class="w100 text-center" border="0" cellspacing="0" cellpadding="0">
+                        <tr class="w100">
+                            <td class="w20">张*军</td>
+                            <td class="w20">山西</td>
+                            <td class="w20">高中</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">20000</td>
+                        </tr>
+                        <tr class="w100">
+                            <td class="w20">刘*丽</td>
+                            <td class="w20">北京市</td>
+                            <td class="w20">专科</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">13000</td>
+                        </tr>
+                        <tr class="w100">
+                            <td class="w20">王*军</td>
+                            <td class="w20">北京市</td>
+                            <td class="w20">本科</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">15000</td>
+                        </tr>
+                        <tr class="w100">
+                            <td class="w20">张黄*</td>
+                            <td class="w20">上海</td>
+                            <td class="w20">本科</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">13000</td>
+                        </tr>
+                        <tr class="w100">
+                            <td class="w20">李*军</td>
+                            <td class="w20">上海</td>
+                            <td class="w20">专科</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">9000</td>
+                        </tr>
+                        <tr class="w100">
+                            <td class="w20">张*山</td>
+                            <td class="w20">北京</td>
+                            <td class="w20">专科</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">12000</td>
+                        </tr>
+                        <tr class="w100">
+                            <td class="w20">刘王*</td>
+                            <td class="w20">上海</td>
+                            <td class="w20">高中</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">17000</td>
+                        </tr>
+                        <tr class="w100">
+                            <td class="w20">刘**</td>
+                            <td class="w20">北京市</td>
+                            <td class="w20">高中</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">14000</td>
+                        </tr>
+                        <tr class="w100">
+                            <td class="w20">李*山</td>
+                            <td class="w20">上海</td>
+                            <td class="w20">本科</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">16000</td>
+                        </tr>
+                    </table>
+                    <table id="table2" class="w100 text-center" border="0" cellspacing="0" cellpadding="0">
+                        <tr class="w100">
+                            <td class="w20">张*军</td>
+                            <td class="w20">山西</td>
+                            <td class="w20">高中</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">20000</td>
+                        </tr>
+                        <tr class="w100">
+                            <td class="w20">刘*丽</td>
+                            <td class="w20">北京市</td>
+                            <td class="w20">专科</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">13000</td>
+                        </tr>
+                        <tr class="w100">
+                            <td class="w20">王*军</td>
+                            <td class="w20">北京市</td>
+                            <td class="w20">本科</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">15000</td>
+                        </tr>
+                        <tr class="w100">
+                            <td class="w20">张黄*</td>
+                            <td class="w20">上海</td>
+                            <td class="w20">本科</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">13000</td>
+                        </tr>
+                        <tr class="w100">
+                            <td class="w20">李*军</td>
+                            <td class="w20">上海</td>
+                            <td class="w20">专科</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">9000</td>
+                        </tr>
+                        <tr class="w100">
+                            <td class="w20">张*山</td>
+                            <td class="w20">北京</td>
+                            <td class="w20">专科</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">12000</td>
+                        </tr>
+                        <tr class="w100">
+                            <td class="w20">刘王*</td>
+                            <td class="w20">上海</td>
+                            <td class="w20">高中</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">17000</td>
+                        </tr>
+                        <tr class="w100">
+                            <td class="w20">刘**</td>
+                            <td class="w20">北京市</td>
+                            <td class="w20">高中</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">14000</td>
+                        </tr>
+                        <tr class="w100">
+                            <td class="w20">李*山</td>
+                            <td class="w20">上海</td>
+                            <td class="w20">本科</td>
+                            <td class="w20">-&#45;&#45;</td>
+                            <td class="w20">16000</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="salary-right salary-left">
+            <div class="title">
+                <div class="box">
+                    <h2>最新资讯</h2>
+                </div>
+            </div>
+            <div class="content border-0">
+                <ol>
+                    <li><span class="inline-block text-center text-fff">1</span>悟空智慧教育_帮您定制您的学习体系_能就业就好业</li>
+                    <li><span class="inline-block text-center text-fff">2</span>悟空智慧-大数据是什么？好学吗？</li>
+                    <li><span class="inline-block text-center text-fff">3</span>悟空智慧教育-大数据工资大学多少</li>
+                    <li><span class="inline-block text-center text-000 bg-ddd">4</span>悟空智慧教育_如果选择培训学校_完善的定制教育体系</li>
+                    <li><span class="inline-block text-center text-000 bg-ddd">5</span>大数据时代如何写好数据新闻？</li>
+                    <li><span class="inline-block text-center text-000 bg-ddd">6</span>关于大数据平台的思考</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!--学员薪资结束-->
+
+<!--尾部开始-->
+<footer class="footer">
+    <div class="center clearFix">
+        <nav class="nav pull-left">
+            <ul class="flex flex-wrap">
+                <li class="text-center"><a href="html/about_us.html" class="inline-block">关于我们</a></li>
+                <li class="text-center"><a class="inline-block">版权声明</a></li>
+                <li class="text-center"><a class="inline-block">侵权举报</a></li>
+                <li class="text-center"><a class="inline-block">联系我们</a></li>
+                <li class="text-center"><a class="inline-block">售后服务</a></li>
+                <li class="text-center"><a href="html/vip.html" class="inline-block">VIP特权</a></li>
+            </ul>
+        </nav>
+        <div class="footer-right flex pull-right">
+            <figure class="text-center">
+                <img src="images/footer1.jpg" alt="">
+                <figcaption>
+                    <p class="text-center">官方公众号</p>
+                </figcaption>
+            </figure>
+            <figure class="text-center">
+                <img src="images/footer2.jpg" alt="">
+                <figcaption>
+                    <p class="text-center p-relative">官方微信</p>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</footer>
+<!--尾部结束-->
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<!--滚动条-->
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/public.js"></script>
+<script src="js/reducedUnit.js"></script>
+<!--验证码-->
+<script>
+    $(function () {
+        var imgCode = {
+            '0653':'0653',
+            '3457':'3457',
+            '3819':'3819',
+            '8562':'8562'
+        };
+        //图片名称
+        var imgCodeArr = ['0653','3457','3819','8562'];
+
+        var randomCode = imgCodeArr[Math.floor(Math.random()*imgCodeArr.length)];
+        var html = '<img alt="" src="code/'+randomCode+'.jpg">';
+        function iCode(){
+            randomCode = imgCodeArr[Math.floor(Math.random()*imgCodeArr.length)];
+            html = '<img alt="" src="code/'+randomCode+'.jpg">';
+            $('#v_container,#findV_container,#registerV_container').html(html);
+        }
+        $('#v_container,#findV_container,#registerV_container').click(function(){
+            iCode();
+        }).html(html);
+
+
+        /*
+        * getCheckTel
+        * findGetCheckTel
+        * registerGetCheckTel
+        *
+        * 电话号码输入框
+        * usertel
+        * findUsertel
+        * registerTel
+        *
+        *
+        * 图形验证码输入框
+        * checkImg
+        * findCheckImg
+        * registerCheckImg
+        * */
+        checkCode('getCheckTel' , 'usertel' , 'checkImg');
+        checkCode('findGetCheckTel' , 'findUsertel' , 'findCheckImg');
+        checkCode('registerGetCheckTel' , 'registerTel' , 'registerCheckImg');
+        function checkCode(ele , tel , img) {
+            $("#" + ele).click(function () {
+                var sTel = $('#' + tel).val();
+                //判断手机号码输入是否正确
+                if (!isTel(sTel)){
+                    $("#" + ele).parent().siblings('.input-group-tel').addClass('has-error');
+                    return false;
+                }
+                $('.input-group-tel').removeClass('has-error');
+                //设置按钮状态
+                var btn = $("#" + ele).button('loading');
+                //获取图片验证码输入框内容，判断是否一致
+                var checkImg = $('#' + img);
+                if(checkImg.val() === imgCode[randomCode]){
+                    console.log(true);
+                    iCode();
+                    checkImg.parent().removeClass('has-error');
+                    var num = 60;
+                    var time=setInterval(function(){
+                        num--;
+                        if(num === 0){
+                            btn.button('reset');
+                            clearInterval(time);
+                            return false;
+                        }
+                        btn.text(num+'s后再次发送')
+                    },1000);
+                }else{
+                    console.log(false);
+                    iCode();
+                    checkImg.parent().addClass('has-error');
+                    btn.button('reset');
+                    return false;
+                }
+            });
+        }
+        $('#registerForm').submit(function () {
+            if ($('#registerUser').val() === ''){
+                alert('请输入账户名');
+                return false;
+            }else if($('#registerPass').val() === '' || $('#registerPass').val() !== $('#registerPassAgain').val() || $('#registerPassAgain').val() === ''){
+                alert('请输入密码或您两次输入的密码不一致');
+                return false;
+            }else if(!isEmail($('#registerEmail'))){
+                alert('请输入正确的邮箱');
+                return false;
+            }
+        });
+
+
+        var index = 1;
+        $('#nav').on('click','a',function(){
+            index = $(this).parent().index();
+            $(this).parent().parent().siblings().css('transform','translateX('+index * 100+'%)')
+        });
+        $('#jumpFind').click(function(){
+            $('#land').modal('hide');
+            $('#findPassword').modal('show');
+        });
+        $('#jumpRegister').click(function(){
+            $('#land').modal('hide');
+            $('#registerModal').modal('show');
+        });
+        $('#returnLand').click(function() {
+            $('#land').modal('show');
+            $('#registerModal').modal('hide');
+        }).siblings('#closeRegister').click(function(){
+            $('#registerModal').modal('hide');
+        });
+        $('#closeLand').click(function(){
+            $('#land').modal('hide');
+        });
+        $('#closeFind').click(function(){
+            $('#findPassword').modal('hide');
+        });
+
+        $('#telLand').submit(function () {
+            var sTel = $('#usertel').val();
+            if (!isTel(sTel)){
+                alert('请输入正确的手机号码');
+                return false;
+            }else if($('#checkImg').val() === '' || $('#checkImg').val() !== imgCode[randomCode]){
+                alert('图形验证码错误');
+                return false;
+            }else if($('#checkTel').val() === ''){
+                alert('短信验证码错误');
+                return false;
+            }
+        });
+
+        $('#findLand').submit(function () {
+            if (!isTel($('#findUsertel') || $('#findUsertel').val() === '')){
+                alert('请输入正确的手机号');
+                return false;
+            }else if($('#findCheckImg').val() === '' || $('#findCheckImg').val() !== imgCode[randomCode]){
+                alert('图形验证码错误');
+                return false;
+            }else if($('#findCheckTel') === ''){
+                alert('短信验证码错误');
+                return false;
+            }else if($('#pass').val() === '' || $('#pass').val() !== $('#passCon').val()){
+                alert('您两次输入的密码不一致');
+                return false;
+            }
+        });
+
+        var oUsername = $('#username');
+        var oPassword = $('#password');
+        $('#usernameLand').submit(function () {
+            if(oUsername.val() === '' || oPassword.val() === ''){
+                alert('请输入用户名或密码!');
+                return false;
+            }else{
+                alert('用户名或密码错误!');
+                return false;
+            }
+        });
+        /*存储用户账号&&密码*/
+        oUsername.change(function () {
+            localStorage.setItem('username',oUsername.val());
+            console.log(localStorage.getItem('username'));
+        });
+        oPassword.change(function(){
+            localStorage.setItem('password',oPassword.val());
+            console.log(localStorage.getItem('password'));
+        });
+        if (localStorage.getItem('text') || localStorage.getItem('password')){
+            oUsername.val(localStorage.getItem('username'));
+            oPassword.val(localStorage.getItem('password'));
+        }
+    });
+</script>
+<script>
+    /*滚动条*/
+    $(document).ready(function () {
+        $("html").niceScroll({
+            cursorwidth: 7,
+            cursoropacitymin: 0.4,
+            cursorcolor: '#6e8cb6',
+            cursorborder: 'none',
+            cursorborderradius: 10,
+            autohidemode: 'leave',
+        });  // free your immagination
+    });
+    var oBtn = document.getElementById('btn');
+    var oList = document.getElementById('list');
+    oBtn.onclick = function () {
+        if (oList.classList.contains('hide')){
+            oList.classList.remove('hide');
+        } else{
+            oList.classList.add('hide');
+        }
+    };
+</script>
+</body>
+</html>
